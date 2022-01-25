@@ -1,3 +1,4 @@
-Este es el repositorio del Equipo Cheems.
-	Nombre del Proyecto: Kitty Cakes
-	Oscar Sosa Garcia
+Nombre del Proyecto: Kitty Cakes
+Integrantes:	
+	Leticia Somera León
+  Oscar Sosa Garcia
