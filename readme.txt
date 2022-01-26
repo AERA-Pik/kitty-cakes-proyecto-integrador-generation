@@ -6,3 +6,4 @@ Integrantes:
 	BRian Alfonso Bocanegra Hernández
 	Aaron Eduardo Ramirez Alcala
         Victor Alejandro Hernández Hernández
+        Karla León Resendiz
