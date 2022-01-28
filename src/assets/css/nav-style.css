@@ -1,0 +1,7 @@
+.container-nav{
+    background-color: var(--rosa-3);
+}
+
+.container-nav li{
+    align-self: center;
+}
