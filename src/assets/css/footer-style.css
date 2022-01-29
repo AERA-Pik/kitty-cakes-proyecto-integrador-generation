@@ -1,0 +1,128 @@
+.container {
+    max-width: 100%;
+    height: auto;    
+    color: var(--gris-kitty);   
+}
+
+.bg-image {
+    background-image: 
+    url(../img/kittycakes_wave-1.png),
+    url(../img/kittycakes_wave-1-flip.png);
+    background-size: 45% auto;
+    background-repeat: no-repeat; 
+    background-position: left bottom, right bottom;
+}
+
+ @media only screen and (max-width: 768px)  {
+    
+    .bg-image{        
+        background-position: left bottom, right bottom;
+        display: flex;      
+        background-image: 
+        url(../img/kittycakes_wave-1-flip.png);
+        background-size: 95% auto;
+        background-repeat: no-repeat; 
+        background-position: right bottom;        
+    }
+      
+    .d-flex .secciones {
+        align-content: center;
+        order: 1;
+    }
+    
+    .secciones ul {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .secciones ul li{        
+        text-align: center; 
+    }       
+    
+    .iconos {
+        padding-bottom: 12%;
+        order: 3;
+    }
+
+    .d-flex .dir-hora {
+        align-content: center;
+        order: 2;
+    }    
+
+    .dir-hora ul {
+        justify-content: center;
+        max-width: 100%;
+    }
+    
+    .dir-hora ul li{        
+        text-align: center; 
+    } 
+}
+
+.secciones  {        
+    line-height: 1.8;     
+}
+
+.secciones ul li a {    
+    width: 30px; 
+    text-decoration: none;
+    color: inherit;
+}
+
+.secciones ul {
+    margin-top: 55px;    
+}
+
+ul .dropdown:hover {
+    opacity: 0.7;    
+}
+
+.iconos {
+    text-align: center;
+}
+
+.iconos .icono-kitty {
+    padding-top: 16px;
+    padding-bottom: 12px;
+}
+
+.iconos .icono-kitty img {
+    width: 40%;
+}
+
+.iconos .redes-sociales {
+    text-align: center;
+    padding-bottom: 12px;
+}
+
+.iconos .redes-sociales a {
+    width: 80px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 8px;
+}
+
+.iconos .redes-sociales a:hover {
+    opacity: 0.8;
+}
+
+.iconos .copyright {
+    text-align: center;
+    padding-bottom: 8px;
+    font-size: 12px;  
+}
+
+.dir-hora {    
+    line-height: 1; 
+    margin-right: 0px;
+}  
+
+.dir-hora ul {    
+    margin-top: 55px;
+    width: 280px;
+    text-align: right;
+} 
+
+.dir-hora img {    
+     padding: 3px; 
+} 
