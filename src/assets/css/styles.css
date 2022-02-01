@@ -14,16 +14,23 @@
 /* Familia de fuente predefinida para todas las etiquetas */
 * {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 /* reajuste global de medida y cajas */
 html {
-    box-sizing: border-box;
+    display: block;
     font-size: 62.5%; /* 1 rem = 10px */
+    height: 100%; 
+    scroll-behavior: smooth;
 }
 
 /* Fondo del body */
 body{
     background-color: white;
+    height: 100%;
 }
 
 /* borrar y poner en 0 el margen o el padding por defecto de bootstrap */
@@ -39,6 +46,7 @@ h1 {
     font-family: 'Baloo Bhai 2', cursive;
     font-weight: bold;
     font-size: 10rem;
+    text-align: center;
 }
 
 h2 {

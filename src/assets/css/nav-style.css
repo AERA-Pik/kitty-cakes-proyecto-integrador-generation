@@ -1,7 +1,18 @@
-.container-nav{
+
+.menu-navegacion{
+    position: fixed;
     background-color: var(--rosa-3);
+    transition: background 0.3s;
+    width: 100%;
+    padding: auto;
+    z-index: 1;
 }
 
-.container-nav li{
+.navbar.container{
+    width: 100%;
+    margin: 0 2px;
+}
+
+.navbar li{
     align-self: center;
 }
