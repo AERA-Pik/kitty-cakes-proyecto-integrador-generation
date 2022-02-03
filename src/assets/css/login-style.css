@@ -1,7 +1,14 @@
+
 .login-box{
-    background-image: url(https://saboryestilo.com.mx/wp-content/uploads/elementor/thumbs/Cupcakes-Decorados-Amor-p1dlq1bkhs6sul711553gw3khrymu9g6lfqxavfqkg.jpg);
+    background-image: url(../img/registro/fondo-cupcakes.png);
    background-size: cover;
+   background-size: cover;
+   min-height: 100%;
+   height: auto !important;
+   height: 100%;
+   margin: 0 auto 0;
 }
+
 
 h1{
     font-size: 8vw;
