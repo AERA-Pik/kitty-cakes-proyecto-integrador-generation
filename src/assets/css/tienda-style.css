@@ -1,0 +1,91 @@
+:root {
+    /* colores */
+    --rosa-obscuro: #F3687B;
+    --rosa-kitty: #FA94A2;
+    --rosa-2: #EFBBBB;
+    --rosa-3: #FFD1CE;
+    --rosa-4: #FFE8EC;
+    --blanco-kitty: #FFF8FA;
+    --gris-kitty: #32322E;    
+}
+
+.img-banner {
+    opacity: 0.5; 
+    max-width: 100%;
+}
+.btn {
+    border-color: var(--rosa-kitty);
+    border-radius: 0.9rem;
+    height: 4rem;
+    background-color: var(--rosa-kitty);
+    font-size: 1.8rem;
+    color: white;
+    justify-content: baseline;
+    padding: 0.5rem 1rem;    
+}
+
+.btn:hover {
+    border-color: var(--rosa-obscuro);
+    background-color: var(--rosa-obscuro);
+    color: white;    
+} 
+
+.header-menu {   
+    position: relative; 
+    display: flex;
+    max-width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding-bottom: 6%;
+    padding: 0 0 6% 0;
+    margin: 0;
+
+}
+
+.titulo {
+    color: var(--rosa-obscuro);
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-fluid {
+    max-width: 100%;
+    display: inline-block;
+}
+
+.container-fluid p.nombre-producto {    
+    font-size: 1.8rem;
+    border-bottom: 4px solid var(--rosa-obscuro);
+}
+
+.container-fluid p.precio {
+    font-size: 1.8rem;
+    color: var(--rosa-kitty);
+} 
+
+.container-fluid .row .producto {
+    text-align: center;
+    align-content: center;
+    padding-bottom: 8%;   
+}
+
+.container-fluid .row img {
+    width: 30rem;
+    filter: drop-shadow(0.4rem 0.4rem 0.6rem var(--rosa-2));
+    border-radius: 40px;
+    padding-bottom: 5%;    
+}
+
+.bg-rosa {
+    background-color: var(--blanco-kitty);
+    width: 30rem;
+}
+
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
