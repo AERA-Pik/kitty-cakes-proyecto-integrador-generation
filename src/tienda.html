@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/nav-style.css">
     <link rel="stylesheet" href="assets/css/footer-style.css">
-    <link rel="stylesheet" href="assets/css/styletienda.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/tienda-style.css">
+    <title>Menú Kitty Cakes</title>
 </head>
-<body>
-    <div class="container-nav sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light"> 
-            <a class="nav-link active d-none d-lg-inline" aria-current="page" href="#"><img src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226px"></a>
-            <a class="nav-link active d-lg-none d-inline" aria-current="page" href="#"><img src="assets/img/logos/logo-simplificado.png" alt="logo kitty" width="48px"></a>
+<body id="top">
+    <div  class="container-nav sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="nav-link active d-none d-lg-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226"></a>
+            <a class="nav-link active d-lg-none d-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-simplificado.png" alt="logo kitty" width="48"></a>
             <ul class="row ml-auto">
               <li class="nav-item mr-3 d-inline d-sm-inline d-lg-none">
-                    <a class="nav-link" href="#"><img class="icon-32" src="assets/img/iconos/user-rosa.png" alt=""></a>
+                    <a class="nav-link" href="login.html"><img class="icon-32" src="assets/img/iconos/user-rosa.png" alt=""></a>
               </li>
               <li class="nav-item mr-5 d-inline d-sm-inline d-lg-none">
-                    <a class="nav-link" href="#"><img class="icon-32" src="assets/img/iconos/cart-rosa.png" alt=""></a>
+                    <a class="nav-link" href="carrito.html"><img class="icon-32" src="assets/img/iconos/cart-rosa.png" alt=""></a>
               </li>
             </ul>        
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,167 +29,95 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul class="navbar-nav ml-auto texto-nav">
                 <li class="nav-item mr-5 active nav-cel">
-                  <a class="nav-link active" href="#"><img class="icon-48" src="assets/img/iconos/Home_cat-rosa.png" alt="icono home"><span class="sr-only">(current)</span></a>
+                  <a class="nav-link active" href="index.html"><img class="icon-48" src="assets/img/iconos/Home_cat-rosa.png" alt="icono home"><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mr-5 nav-cel">
-                  <a class="nav-link" href="#"><span class="rosa-kitty textoNavVar">Nosotros</span></a>
+                  <a class="nav-link" href="nosotros.html"><span class="rosa-kitty textoNavVar">Nosotros</span></a>
                 </li>
                 <li class="nav-item mr-5 nav-cel">
-                  <a class="nav-link" href="#"><span class="rosa-kitty textoNavVar">Menú</span></a>
+                  <a class="nav-link" href="menu.html"><span class="rosa-kitty textoNavVar">Menú</span></a>
                 </li>
                 <li class="nav-item mr-5">
-                  <a class="nav-link" href="#"><span class="rosa-kitty textoNavVar">Tienda</span></a>
+                  <a class="nav-link" href="tienda.html"><span class="rosa-kitty textoNavVar">Tienda</span></a>
                 </li>
                 <li class="nav-item mr-5">
-                  <a class="nav-link" href="#"><span class="rosa-kitty textoNavVar">Contacto</span></a>
+                  <a class="nav-link" href="contacto.html"><span class="rosa-kitty textoNavVar">Contacto</span></a>
                 </li>
                 <li class="nav-item mr-5 d-none d-sm-none d-lg-block">
-                  <a class="nav-link" href="#"><img class="icon-48" src="assets/img/iconos/user-rosa.png" alt=""></a>
+                  <a class="nav-link" href="login.html"><img class="icon-48" src="assets/img/iconos/user-rosa.png" alt=""></a>
                 </li>
                 <li class="nav-item mr-5 d-none d-sm-none d-lg-block">
-                  <a class="nav-link" href="#"><img class="icon-48" src="assets/img/iconos/cart-rosa.png" alt=""></a>
+                  <a class="nav-link" href="carrito.html"><img class="icon-48" src="assets/img/iconos/cart-rosa.png" alt=""></a>
                 </li>
               </ul>
             </div>
         </nav>
     </div>
 
-  </head>
-<section>
-  <div class="banner">
-    <h2 class="h1 text-center  pt-5">Michi tienda</h2>
-  </div>
-  <div class="container">
-    <div class="row row-cols-md-3 row-cols-1 justify-content-center">
-      <div class="col mt-5">
-        <div class="row row-cols-1 bodycard">
-          <img class="imgProdct " src="assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 8.jpg" alt="">
-          <div class="col">
-            <h5 class="h2 linea text-center mt-2 pb-3"> Michi Destapador</h5>
+
+    <section class="header-menu mx-auto col- col-sm-12 col-md-12 col-lg-12">
+      <img src="assets/img/Baner_tienda.png" class="img-fluid img-banner" alt="">
+      <h1 class="titulo">Michi Tienda</h1>
+      <!-- <div class="titulo-menu"></div> -->
+         
+    </section>
+
+
+    <section>
+      <div class="container-fluid">
+        <div class="row row-cols-12 row-cols-sm-12 row-cols-md-6 row-cols-lg-4">
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+                <img class="imag-producto" src="assets/img/productos/destapador.jpg" alt="">
+                <div class="row">
+                    <div class="col-12 bg-rosa">
+                        <p class="nombre-producto">Michi Destapador</p>
+                    </div>
+                    <div class="col-12 bg-rosa">
+                        <p class="precio">$ 169.00</p>
+                    </div>
+                    <div class="col-12 bg-rosa">
+                        <a href="carrito.html" class="btn">Agregar al carrito</a>
+                    </div>
+                </div>            
           </div>
-          <div class="col">
-            <p class="text-center text-product">$189.00</p>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <img class="img-producto" src="assets/img/productos/calceta_m_clara.jpg" alt="">
+            <p class="nombre-producto">Michi Calcetas</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="btn">Agregar al carrito</a>
           </div>
-          <div class="col text-center">
-            <button type="button" class="boton mb-3">Agregar al carrito</button>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <img class="img-producto" src="assets/img/productos/espatula.jpg" alt="">
+            <p class="nombre-producto">Michi Espatula</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="btn">Agregar al carrito</a>
+          </div>
+        </div>
+        <div class="row mx-auto">
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <img class="img-producto" src="assets/img/productos/halloween_pin_1.jpg" alt="">
+            <p class="nombre-producto">Michi Pin de Halloween</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="btn">Agregar al carrito</a>
+          </div>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <img class="img-producto" src="assets/img/productos/KittyCakesProductos-20.jpg" alt="">
+            <p class="nombre-producto">Michi cucharas</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="btn">Agregar al carrito</a>
+          </div>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <img class="img-producto" src="assets/img/productos/KittyCakesProductos-15.jpg" alt="">
+            <p class="nombre-producto">Michi Peluche</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="btn">Agregar al carrito</a>
           </div>
         </div>
       </div>
-      <div class="col mt-5">
-        <div class="row row-cols-1 bodycard">
-          <img class="imgProdct" src="assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 8.jpg" alt="">
-          <div class="col">
-            <h5 class="h2 linea text-center mt-2 pb-3"> Michi Destapador</h5>
-          </div>
-          <div class="col">
-            <p class="text-center text-product">$189.00</p>
-          </div>
-          <div class="col text-center">
-            <button type="button" class="boton mb-3">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-      <div class="col mt-5">
-        <div class="row row-cols-1 bodycard">
-          <img class="imgProdct" src="assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 8.jpg" alt="">
-          <div class="col">
-            <h5 class="h2 linea text-center mt-2 pb-3"> Michi Destapador</h5>
-          </div>
-          <div class="col">
-            <p class="text-center text-product">$189.00</p>
-          </div>
-          <div class="col text-center">
-            <button type="button" class="boton mb-3">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-      <div class="col mt-5">
-        <div class="row row-cols-1 bodycard">
-          <img class="imgProdct" src="assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 8.jpg" alt="">
-          <div class="col">
-            <h5 class="h2 linea text-center mt-2 pb-3"> Michi Destapador</h5>
-          </div>
-          <div class="col">
-            <p class="text-center text-product">$189.00</p>
-          </div>
-          <div class="col text-center">
-            <button type="button" class="boton mb-3">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-      <div class="col mt-5">
-        <div class="row row-cols-1 bodycard">
-          <img class="imgProdct" src="assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 8.jpg" alt="">
-          <div class="col">
-            <h5 class="h2 linea text-center mt-2 pb-3"> Michi Destapador</h5>
-          </div>
-          <div class="col">
-            <p class="text-center text-product">$189.00</p>
-          </div>
-          <div class="col text-center">
-            <button type="button" class="boton mb-3">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-      <div class="col mt-5">
-        <div class="row row-cols-1 bodycard">
-          <img class="imgProdct" src="assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 8.jpg" alt="">
-          <div class="col">
-            <h5 class="h2 linea text-center mt-2 pb-3"> Michi Destapador</h5>
-          </div>
-          <div class="col">
-            <p class="text-center text-product">$189.00</p>
-          </div>
-          <div class="col text-center">
-            <button type="button" class="boton mb-3">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-      <div class="col mt-5">
-        <div class="row row-cols-1 bodycard">
-          <img class="imgProdct" src="assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 8.jpg" alt="">
-          <div class="col">
-            <h5 class="h2 linea text-center mt-2 pb-3"> Michi Destapador</h5>
-          </div>
-          <div class="col">
-            <p class="text-center text-product">$189.00</p>
-          </div>
-          <div class="col text-center">
-            <button type="button" class="boton mb-3">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-      <div class="col mt-5">
-        <div class="row row-cols-1 bodycard">
-          <img class="imgProdct" src="assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 8.jpg" alt="">
-          <div class="col">
-            <h5 class="h2 linea text-center mt-2 pb-3"> Michi Destapador</h5>
-          </div>
-          <div class="col">
-            <p class="text-center text-product">$189.00</p>
-          </div>
-          <div class="col text-center">
-            <button type="button" class="boton mb-3">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-      <div class="col mt-5">
-        <div class="row row-cols-1 bodycard">
-          <img class="imgProdct" src="assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 8.jpg" alt="">
-          <div class="col">
-            <h5 class="h2 linea text-center mt-2 pb-3"> Michi Destapador</h5>
-          </div>
-          <div class="col">
-            <p class="text-center text-product">$189.00</p>
-          </div>
-          <div class="col text-center">
-            <button type="button" class="boton mb-3">Agregar al carrito</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+    </section>
+
+
+
 
 
 
@@ -199,21 +127,21 @@
             <div class="row">
               <div class="d-flex secciones col-12 col-sm-12 col-md-12  col-lg-4">
                 <ul class="list-unstyled mx-auto texto-nav">
-                    <li class="dropdown"><a href="#">Nosotros
+                    <li class="dropdown"><a href="nosotros.html">Nosotros
                         </a></li>
-                    <li class="dropdown"><a href="#">Menú</a></li>
-                    <li class="dropdown"><a href="#">Michi tienda</a></li>
-                    <li class="dropdown"><a href="#">Contacto</a></li>
+                    <li class="dropdown"><a href="menu.html">Menú</a></li>
+                    <li class="dropdown"><a href="tienda.html">Michi tienda</a></li>
+                    <li class="dropdown"><a href="contacto.html">Contacto</a></li>
                 </ul> 
               </div>
               <div class="iconos col-12 col-sm-12 col-md-12 col-lg-4">
                 <div class="icono-kitty">
-                    <a href="#"><img src="assets/img/logos/logo-completo.png" alt=""></a>
+                    <a href="#top"><img src="assets/img/logos/logo-completo.png" alt=""></a>
                 </div>
                 <div class="redes-sociales">               
-                    <a class="dropdown" href="#"><img class="icon-24" src="assets/img/iconos/facebook.png" alt="facebook_kitty_cakes">
+                    <a class="dropdown" href="https://www.facebook.com/KittyCakesPastelitos/?ref=pages_you_manage "><img class="icon-24" src="assets/img/iconos/facebook.png" alt="facebook_kitty_cakes">
                     </a>
-                    <a href="#"><img class="icon-24" src="assets/img/iconos/instagram.png" alt="instagram_kitty_cakes">
+                    <a href="https://www.instagram.com/kittycakespastelitos/"><img class="icon-24" src="assets/img/iconos/instagram.png" alt="instagram_kitty_cakes">
                     </a>
                     <a href="#"><img class="icon-24" src="assets/img/iconos/whatsapp.png" alt="whatsapp_kitty_cakes">
                     </a>
@@ -227,14 +155,14 @@
                     </li>
                     <li class="horarios">                        
                         <p><img class="icon-24" src="assets/img/iconos/clock.png" alt="horarios_kitty_cakes">Horario: 9:00 - 17:00 horas</p>
-                    </li> 
+                    </li>
                     
                 </ul>
               </div>
           </div>                   
           </div>                
       </div>
-    </footer>
+  </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
