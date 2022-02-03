@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/nav-style.css">
+    <link rel="stylesheet" href="assets/css/footer-style.css">
+    <link rel="stylesheet" href="assets/css/carrito-style.css">
+    <title>Document</title>
+</head>
+<body id="top">
+    <div class="container-nav sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light" >
+            <a class="nav-link active d-none d-lg-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226px"></a>
+            <a class="nav-link active d-lg-none d-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-simplificado.png" alt="logo kitty" width="48px"></a>
+            <ul class="row ml-auto">
+              <li class="nav-item mr-3 d-inline d-sm-inline d-lg-none">
+                    <a class="nav-link" href="#"><img class="icon-32" src="assets/img/iconos/user-rosa.png" alt=""></a>
+              </li>
+              <li class="nav-item mr-5 d-inline d-sm-inline d-lg-none">
+                    <a class="nav-link" href="#"><img class="icon-32" src="assets/img/iconos/cart-rosa.png" alt=""></a>
+              </li>
+            </ul>        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <ul class="navbar-nav ml-auto texto-nav">
+                <li class="nav-item mr-5 active nav-cel">
+                  <a class="nav-link active" href="#"><img class="icon-48" src="assets/img/iconos/Home_cat-rosa.png" alt="icono home"><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-5 nav-cel">
+                  <a class="nav-link" href="nosotros.html"><span class="rosa-kitty textoNavVar">Nosotros</span></a>
+                </li>
+                <li class="nav-item mr-5 nav-cel">
+                  <a class="nav-link" href="menu.html"><span class="rosa-kitty textoNavVar">Menú</span></a>
+                </li>
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="tienda.html"><span class="rosa-kitty textoNavVar">Tienda</span></a>
+                </li>
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="contacto.html"><span class="rosa-kitty textoNavVar">Contacto</span></a>
+                </li>
+                <li class="nav-item mr-5 d-none d-sm-none d-lg-block">
+                  <a class="nav-link" href="login.html"><img class="icon-48" src="assets/img/iconos/user-rosa.png" alt=""></a>
+                </li>
+                <li class="nav-item mr-5 d-none d-sm-none d-lg-block">
+                  <a class="nav-link" href="carrito.html"><img class="icon-48" src="assets/img/iconos/cart-rosa.png" alt=""></a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </div>
+
+    <section>
+      <div>
+        <h1>MIAU CARRITO</h1>
+      </div>
+      <div class="container">        
+        <table class="table carrito">
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Precio Unitario</th>
+              <th scope="col">Precio Total</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="producto" id="producto-1">
+              <td scope="row" class=" col-1">
+                <a href="#"><img class="float-right " src="assets/img/productos/KittyCakesProductos-15.jpg" alt=""></a>
+              </td>
+              <td class="col-4">
+                <div class="text-truncate">
+                  <h4>Espacio Titulo de producto</h4>
+                </div>
+                <div class="text-truncate-container">
+                  <p class="text-truncate text-descripcion">Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit voluptates iusto </p>
+                </div>
+                <td class="col-2">
+                  <div >
+                    <input type="number" id="cantidad" style="width: 80%;" value="2">
+                  </div>
+                </td>
+                <td class="col-2">
+                  <div>$ <span class="precioUnitario">9,999.99</span></div>  <!-- solo caben 6 numero con punto decimal sin perder formato -->
+                </td>
+                <td class="col-2">
+                  <div>$ <span class="precioUnitario">9,999.99</span></div>                                   
+                </td>
+                <td class="col-1">
+                  <div><img class="icon-32 boton-eliminar" src="assets/img/iconos/x-lg.png" alt=""></div> 
+                </td>                
+                </div>
+              </td>
+            </tr>
+            <tr id="producto-2">
+              <td scope="row" class="imagenProducto col-1">
+                <a href="#"><img class="float-right" src="assets/img/productos/KittyCakesProductos-15.jpg" alt=""></a>
+              </td>
+              <td class="col-4">
+                <div class="text-truncate">
+                  <h4>Espacio Titulo de producto</h4>
+                </div>
+                <div class="text-truncate-container">
+                  <p class="text-truncate text-descripcion">Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit voluptates iusto </p>
+                </div>
+                <td class="col-2">
+                  <div >
+                    <input type="number" id="cantidad" style="width: 80%;" value="2">
+                  </div>
+                </td>
+                <td class="col-2">
+                  <div>$<span class="precioUnitario">9,999.99</span></div> 
+                </td>
+                <td class="col-2">
+                  <div>$<span class="precioTotal">9,999.99</span></div>                                   
+                </td>
+                <td class="col-1">
+                  <div><img class="icon-32 boton-eliminar" src="assets/img/iconos/x-lg.png" alt=""></div> 
+                </td>                
+                </div>
+              </td>
+            </tr>          
+          </tbody>          
+        </table>
+        <div>
+          <hr class="linea-carrito">
+        </div>
+        <div class="row">
+          <div class="col-8"></div>
+          <div class="col-2">
+            <h4 class="Total">Total:<h4>
+          </div>
+          <div class="col-2">
+            <h4 class="granTotal">$ <span id="granTotal">99,999.99</span></h4>                                 
+          </div>
+        </div>        
+
+
+        <!-- <div class="row producto">
+          
+          <div class="col-2">
+            <a href="#"><img class="float-right" src="assets/img/productos/KittyCakesProductos-15.jpg" alt=""></a>                         
+           
+          </div>
+          <div class="col-4 producto-textos-container">
+            <div class="text-truncate"><h4>Espacio Titulo de producto..............................</h4></div>
+            <div class="text-truncate-container"><p class="text-truncate text-descripcion">Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit voluptates iusto a accusamus consequatur labore porro vel fugiat nam................................................</p></div>
+          </div>
+          <div class="col-2"></div>
+          <div class="col-2"><p>$ <span>200</span></p></div>
+          <div class="col-2"><p>$ <span>400</span></p></div>
+          </div>
+        </div> -->        
+        <div class="d-flex mb-3">
+          <div class="p-2"><button class="boton-secundario">Volver a la Michi-tienda</button></div>
+          <div class="p-2"><button class="boton-secundario">Volver al menu</button></div>
+          <div class="ml-auto p-2"><button class="boton-primario">Pagar</button></div>
+        </div>
+      </div>
+         
+    </section>
+
+    <footer>
+      <div class="bg-image bg-image-movil">  
+          <div class="container">              
+            <div class="row">
+              <div class="d-flex secciones col-12 col-sm-12 col-md-12  col-lg-4">
+                <ul class="list-unstyled mx-auto texto-nav">
+                    <li class="dropdown"><a href="nosotros.html">Nosotros
+                        </a></li>
+                    <li class="menu.html"><a href="#">Menú</a></li>
+                    <li class="tienda.html"><a href="#">Michi tienda</a></li>
+                    <li class="contacto.html"><a href="#">Contacto</a></li>
+                </ul> 
+              </div>
+              <div class="iconos col-12 col-sm-12 col-md-12 col-lg-4">
+                <div class="icono-kitty">
+                    <a href="#top"><img src="assets/img/logos/logo-completo.png" alt=""></a>
+                </div>
+                <div class="redes-sociales">               
+                    <a class="dropdown" href="https://www.facebook.com/KittyCakesPastelitos"><img class="icon-24" src="assets/img/iconos/facebook.png" alt="facebook_kitty_cakes">
+                    </a>
+                    <a href="#"><img class="icon-24" src="assets/img/iconos/instagram.png" alt="instagram_kitty_cakes">
+                    </a>
+                    <a href="https://www.instagram.com/kittycakespastelitos/"><img class="icon-24" src="assets/img/iconos/whatsapp.png" alt="whatsapp_kitty_cakes">
+                    </a>
+                </div>
+                <p class="copyright">Kitty Cakes Pastelitos 2022</p>
+              </div>
+              <div class="d-flex dir-hora col-12 col-sm-12 col-md-12 col-lg-4">
+                <ul class="list-unstyled mx-auto">
+                    <li class="direccion">                        
+                        <p><img class="icon-24" src="assets/img/iconos/geo-alt.png" alt="direccion_kitty_cakes">Narvarte Poniente, CDMX, C. P. 03600</p>
+                    </li>
+                    <li class="horarios">                        
+                        <p><img class="icon-24" src="assets/img/iconos/clock.png" alt="horarios_kitty_cakes">Horario: 9:00 - 17:00 horas</p>
+                    </li>
+                    
+                </ul>
+              </div>
+          </div>                   
+          </div>                
+      </div>
+  </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+</html>
