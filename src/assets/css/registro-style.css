@@ -1,0 +1,133 @@
+.container-registro{
+    background-image: url(../img/registro/fondo-cupcakes.png);
+    background-size: cover;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto 0;
+}
+
+.title-login{
+    color: var(--rosa-obscuro);
+}
+
+.card-logo{
+  border-color:transparent;
+  background-color: var(--rosa-3);
+}
+
+.card-registration{
+  background-color: var(--rosa-3);
+  border-radius: 10rem;
+}
+
+
+/*Efecto inputs*/
+/*---------------------------------------------------*/
+.form-outline{
+  position: relative;
+  height: 4rem;
+  background-color: var(--blanco-kitty);
+  border-radius: 2rem;
+}
+
+.form-input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--rosa-kitty);
+  border-radius: 2rem;
+  font-family: inherit;
+  font-size: 16px;
+  color: black;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+
+.form-input:hover{
+  border-color: var(--rosa-kitty);
+}
+
+.form-input:focus{
+  border-color: var(--rosa-obscuro);
+}
+.label-name{
+  position: absolute;
+  font-size: 14px;
+  top: -1rem;
+  left: 1rem;
+  border-radius: 2rem;
+  padding: 0 0.5rem;
+  color: var(--rosa-obscuro);
+  cursor: text;
+  transition: top 200ms ease-in,
+  left 200ms ease-in,
+  font-size 200ms ease-in;
+  background-color: var(--rosa-3);
+}
+
+.form-input:focus ~ .label-name, 
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .label-name{
+  top: -3rem;
+  font-size: 16px;
+  left: 1.5rem;
+  background-color: var(--rosa-3);
+}
+
+ /*-----------------------------------------*/
+.form-check{
+  text-align: right;
+}
+
+.btn-password{
+  background-color: transparent;
+  border: transparent;
+  margin-top: 10px;
+  margin-left: auto;
+  z-index: 0;
+}
+
+.icon{
+  color: black;
+}
+
+@media only screen and (max-width: 1200px)  {
+
+  .container-registro{
+    align-items: center;
+  }
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px)  {
+
+  .container-registro{
+    align-items: center;
+  }
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 80px;
+  }
+
+}
+
+@media only screen and (max-width: 768px)  {
+
+  .container-registro{
+    align-items: center;
+  }
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 60px;
+  }
+
+}
+
+
