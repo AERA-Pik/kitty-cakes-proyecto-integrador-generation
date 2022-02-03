@@ -1,16 +1,7 @@
-/* .container {
+.container {
     max-width: 100%;
     height: auto;    
     color: var(--gris-kitty);   
-} */
-
-.footer{
-    height: 257px;
-    position:relative;
-    width: 100%;
-    left: 0;
-    z-index: 0;
-    /* top: 880px; */
 }
 
 .bg-image {

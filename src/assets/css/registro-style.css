@@ -1,5 +1,5 @@
 .container-registro{
-    background-image: url('../img/registro/fondo-cupcakes.png');
+    background-image: url(../img/registro/fondo-cupcakes.png);
     background-size: cover;
     min-height: 100%;
     height: auto !important;
@@ -23,6 +23,7 @@
 
 
 /*Efecto inputs*/
+/*---------------------------------------------------*/
 .form-outline{
   position: relative;
   height: 4rem;
@@ -74,6 +75,59 @@
   font-size: 16px;
   left: 1.5rem;
   background-color: var(--rosa-3);
+}
+
+ /*-----------------------------------------*/
+.form-check{
+  text-align: right;
+}
+
+.btn-password{
+  background-color: transparent;
+  border: transparent;
+  margin-top: 10px;
+  margin-left: auto;
+  z-index: 0;
+}
+
+.icon{
+  color: black;
+}
+
+@media only screen and (max-width: 1200px)  {
+
+  .container-registro{
+    align-items: center;
+  }
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 100px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px)  {
+
+  .container-registro{
+    align-items: center;
+  }
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 80px;
+  }
+
+}
+
+@media only screen and (max-width: 768px)  {
+
+  .container-registro{
+    align-items: center;
+  }
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 60px;
+  }
+
 }
 
 
