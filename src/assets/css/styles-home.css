@@ -133,15 +133,49 @@ p {
 /* =======================================SECCION 1 CAROUSEL======================================== */
 
 .carousel-inner{
-    max-height: 38rem;
+    max-height: 60rem;
 
 }
 #img-size-carousel{
     width: 100%;
 }
 
+.carousel-headers{
+    text-align: center;
+    font-size: 10vw;
+}
+
+.btn-align{
+    align-items: center;
+}
+
+.logo-inicio-carrusel{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: auto;
+    background-color: #FFF8FA;
+    border-radius: 1rem;
+    opacity: 100%;
+}
+
+.btn-font{
+    font-weight: bold;
+    font-size: 2.5vw;
+    background-color: #FA94A2;
+    border-width: thin;
+    border-color: #FFF8FA;
+    margin-top: 8%;
+    border-radius: 1rem;
+}
+
+.margen-inf-btn-orejas{
+    margin-bottom: 7%;
+}
+/* =====SECCIÓN 2 PREVIEW PRODUCTOS======== */
+
 #products-background-img{
-    background-image: url("/HomePI/assets/imgs/pastelitos-long.png");
+    background-image: url("/src/assets/img/pastelitos-long.png");
     background-color:  #FFE8EC;
 }
 
@@ -171,29 +205,50 @@ p {
     display: block;
 }
 
-.ears-banner-centrado{
-    width: 70%;
-    position: relative;
-    display: inline-block;
-    height: auto;
-    margin: auto;
-    text-align: center;
+.ears-banner-img{
+    width: 60%;
+    height: auto; 
 }
-/* 
-#img-contenedor{
+
+.div-ears-banner{
     position: relative;
-    display: flex;
     display: inline-block;
-    text-align: center;
+    margin-left: 28%;
+    margin-top: 5%;
 
-} */
+}
 
-#texto-banner-encima-centrado{
+.texto-banner-encima-centrado{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-90%, -20%);
+    text-align: center;
+    font-size: 2vw;
 }
-.fondo-orejas{
+/* .fondo-orejas{
     background-color: red;
+} */
+
+/* =========SECCIÓN 3 CARRUSEL IMAGENES NOSOTROS============ */
+
+#nosotros-margen-carrusel{
+   margin-top: 10%;
+   margin-left: 15%;
+   margin-right: 15%;
+}
+
+.margen-logo-carrusel{
+    margin-bottom: 5%;
+}
+
+.team-header{
+    text-align: center;
+    font-size: 8vw;
+    margin-bottom: 10%;
+    color: #32322E;
+}
+
+.last-btn-align{
+margin-top: 80%;
 }
