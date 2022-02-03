@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2&family=Be+Vietnam+Pro&family=Montserrat:ital,wght@1,300&family=Roboto+Slab&display=swap');
+
+
+
+@media only screen and ((max-width: 768px))  {
+    .img_gato{
+        width: 450px;
+        height: 250px;
+        display: block;
+        align-content: center;
+        margin-top: 10px;
+        
+        
+        
+
+    }
+    
+}
+
+.txt_somos{
+    background-color: var(--rosa-3);
+    margin: 5% 10% 5px 10%;
+    border-radius: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+    
+    
+}
+
+.linea{
+   
+    width: 150px;
+    margin-bottom: 10px;
+    border: solid 1px var(--rosa-obscuro);
+    align-self: center;
+}
+
+
+.card-img-top{
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    border-radius: 40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.card{
+    background-color: var(--rosa-2);
+    border-radius: 40px;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgb(0,0,0,0.5);
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+
+
+
+
+.iconos_card{
+    width: 300px;
+    height: 50px;
+    background-color: var(--rosa-kitty);
+
+    align-self: center;
+    padding: 10px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+
+
+
+@media screen and (min-width: 780px) and (max-width: 1540px) {
+    
+    .img_gato{
+        width: 450px;
+        height: 250px;
+        display: block;
+        align-content: center;
+        margin-top: 10px;
+    }
+    .txt_pastelitos{
+        width: 100%;
+        height: 50px;
+        margin-top: 40px;
+        display: inline-flex;
+        justify-content: center;
+        color: var(--rosa-obscuro);
+        font-size: 48px;
+        line-height: 24px;
+        letter-spacing: -0.015em;
+        /*font-family: Baloo Bhai;*/
+        font-family: 'Baloo Bhai 2', cursive ;
+    
+    }
+    .nosotros_header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--rosa-obscuro);
+        font-size: 100px;
+        line-height: 24px;
+        letter-spacing: -0.015em;
+        /*font-family: Baloo Bhai;*/
+        font-family: 'Baloo Bhai 2', cursive; 
+    
+        
+        
+    }
+
+    .iconos_card{
+        width: 300px;
+        height: 50px;
+        background-color: var(--rosa-kitty);
+        box-sizing:border-box;
+
+        align-self: center;
+        padding: 10px;
+        border-radius: 40px;
+        margin-bottom: 10px;
+    
+}
+.card-img-top{
+    width: 300px;
+    height: 300px;
+    align-self: center;
+    border-radius: 50%;
+   /* box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;*/
+
+}
+
+/*.card-img-top:hover{
+    box-shadow: 0px 1px 10px rgba(15, 194, 9, 0.2);
+    cursor: pointer;
+    transition: all 400ms ease;
+
+}*/
+    
+ 
+
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+    .img_gato{
+        width: 450px;
+        height: 250px;
+        display: block;
+        align-content: center;
+        margin-top: 10px;
+}
+
+.txt_pastelitos{
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    display: inline-flex;
+    justify-content: center;
+    color: var(--rosa-obscuro);
+    font-size: 48px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    /*font-family: Baloo Bhai;*/
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+/*Nosotros text*/
+.nosotros_header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--rosa-obscuro);
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    /*font-family: Baloo Bhai;*/
+    font-family: 'Baloo Bhai 2', cursive; ;
+    
+}
+    
+
+
+.iconos_card{
+    width: 400px;
+    height: 50px;
+    background-color: var(--rosa-kitty);
+
+    align-self: center;
+    padding: 10px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    
+}
+
+/*
+.card-img-top{
+    width: 300px;
+    height: auto;
+    align-self: center;
+    border-radius: 50%;
+}
+*/
+
+
+
+
+}
+@media screen and (max-width: 480px) {
+    .img_gato{
+        width: 450px;
+        height: 250px;
+        display: block;
+        align-content: center;
+        margin-top: 10px;
+}
+.txt_pastelitos{
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    display: inline-flex;
+    justify-content: center;
+    color: var(--rosa-obscuro);
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    /*font-family: Baloo Bhai;*/
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.nosotros_header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--rosa-obscuro);
+    font-size: 32px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    /*font-family: Baloo Bhai;*/
+    font-family: 'Baloo Bhai 2', cursive; ;
+
+    
+    
+}
+.card-img-top{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-self: center;
+    border-radius: 50%;
+
+}
+
+}
+
+
+
+
+
+.img_pastelitos {
+    width: 100%;
+    height: 50px;
+    margin-top: 40px;
+    display: inline-flex;
+    justify-content: center;
+
+}
+.pastelitos{
+    width: 900px;
+    height: 40px;
+    
+
+}
+
+.img_header{
+    opacity: 0.4;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+}
