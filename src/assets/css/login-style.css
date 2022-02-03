@@ -1,0 +1,96 @@
+.login-box{
+    background-image: url(https://saboryestilo.com.mx/wp-content/uploads/elementor/thumbs/Cupcakes-Decorados-Amor-p1dlq1bkhs6sul711553gw3khrymu9g6lfqxavfqkg.jpg);
+   background-size: cover;
+}
+
+h1{
+    font-size: 8vw;
+}
+
+.title-login{
+    color: var(--rosa-obscuro);
+}
+
+.card-logo{
+  border-color:transparent;
+  background-color: var(--rosa-3);
+}
+
+.card-registration{
+  background-color: var(--rosa-3);
+  border-radius: 10rem;
+}
+
+
+/*Efecto inputs*/
+/*---------------------------------------------------*/
+.form-outline{
+
+  position: relative;
+  height: 4rem;
+  background-color: var(--blanco-kitty);
+  border-radius: 2rem;
+}
+
+.form-input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--rosa-kitty);
+  border-radius: 2rem;
+  font-family: inherit;
+  font-size: 16px;
+  color: black;
+  outline: none;
+  padding: 1.25rem;
+  background: none;
+}
+
+.form-input:hover{
+  border-color: var(--rosa-kitty);
+}
+
+.form-input:focus{
+  border-color: var(--rosa-obscuro);
+}
+ .label-name{
+  position: absolute;
+  font-size: 14px;
+  top: -1rem;
+  left: 1rem;
+  border-radius: 2rem;
+  padding: 0 0.5rem;
+  color: black;
+  cursor: text;
+  transition: top 200ms ease-in,
+  left 200ms ease-in,
+  font-size 200ms ease-in;
+  background-color: var(--rosa-3);
+} 
+
+.form-input:focus ~ .label-name, 
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .label-name{
+  top: -3rem;
+  font-size: 16px;
+  left: 1.5rem;
+  background-color: var(--rosa-3);
+}
+
+ /*-----------------------------------------*/
+.form-check{
+  text-align: right;
+}
+
+.btn-password{
+  background-color: white;
+  border: transparent;
+  margin-top: 10px;
+  margin-left: 300px;
+  z-index: 0;
+}
+
+.icon{
+  color: black;
+}
