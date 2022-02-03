@@ -24,7 +24,7 @@
        
    }
 
-   p{
+   .texto-contáctanos{
         opacity: none;
         color: var(--rosa-obscuro);
         font-family: 'Baloo Bhai 2', cursive;
@@ -125,7 +125,7 @@
    }
 
 @media screen and (min-width: 480px) and (max-width: 780px) {
-     p{
+     .texto-contáctanos{
           font-size: 32px;
      }
      .contacto-bloque{
