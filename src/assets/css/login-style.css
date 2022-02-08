@@ -11,7 +11,11 @@
 
 
 h1{
-    font-size: 8vw;
+    font-size: 7vw;
+}
+
+h2{
+  color: black;
 }
 
 .title-login{
@@ -69,7 +73,7 @@ h1{
   left: 1rem;
   border-radius: 2rem;
   padding: 0 0.5rem;
-  color: black;
+  color: var(--rosa-obscuro);
   cursor: text;
   transition: top 200ms ease-in,
   left 200ms ease-in,
