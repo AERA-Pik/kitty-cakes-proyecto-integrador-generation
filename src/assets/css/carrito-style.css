@@ -59,7 +59,7 @@ tr, td {
     font-size: 3.2rem;
 }
 
-.total {
+.total-text {
     padding: 0.1rem 0;
     font-size: 3.2rem;
     text-align: right;
@@ -70,6 +70,10 @@ tr, td {
     font-size: 3.2rem;
 }
 
-.loles {
-    background: url;
+.boton-eliminar {
+    cursor: pointer;
+}
+
+.boton-eliminar:hover {
+    background-color: var(--rosa-kitty);
 }

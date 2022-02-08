@@ -24,12 +24,12 @@
        
    }
 
-   p{
+   .texto-contáctanos{
         opacity: none;
         color: var(--rosa-obscuro);
         font-family: 'Baloo Bhai 2', cursive;
         font-weight: bold;
-        font-size: 30px;  
+        font-size: 100px;  
    }
  
    .containerform{ 
@@ -122,4 +122,14 @@
         margin-left: 10px;
         font-family:  'Montserrat', sans-serif;
         font-size: 20px;
+   }
+
+@media screen and (min-width: 480px) and (max-width: 780px) {
+     .texto-contáctanos{
+          font-size: 32px;
+     }
+     .contacto-bloque{
+          margin-top: 60px;
+          margin-bottom: 60px;
+     }
    }

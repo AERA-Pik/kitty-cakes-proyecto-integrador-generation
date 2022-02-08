@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/nav-style.css">
     <link rel="stylesheet" href="assets/css/footer-style.css">
-    <link rel="stylesheet" href="/src/assets/css/styles-home.css">
+
+    <link rel="stylesheet" href="assets/css/styles-home.css">
 
     <title>Home</title>
   </head>
@@ -34,25 +35,26 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul class="navbar-nav ml-auto texto-nav">
                 <li class="nav-item mr-5 active nav-cel">
-                  <a class="nav-link active" href="#"><img class="icon-48" src="assets/img/iconos/Home_cat-rosa.png" alt="icono home"><span class="sr-only">(current)</span></a>
+
+                  <a class="nav-link active" href="index.html"><img class="icon-48" src="assets/img/iconos/Home_cat-rosa.png" alt="icono home"><span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mr-5 nav-cel">
-                  <a class="nav-link" href="#"><span class="rosa-kitty textoNavVar">Nosotros</span></a>
+                  <a class="nav-link" href="nosotros.html"><span class="rosa-kitty textoNavVar">Nosotros</span></a>
                 </li>
                 <li class="nav-item mr-5 nav-cel">
-                  <a class="nav-link" href="#"><span class="rosa-kitty textoNavVar">Menú</span></a>
+                  <a class="nav-link" href="menu.html"><span class="rosa-kitty textoNavVar">Menú</span></a>
                 </li>
                 <li class="nav-item mr-5">
-                  <a class="nav-link" href="#"><span class="rosa-kitty textoNavVar">Tienda</span></a>
+                  <a class="nav-link" href="tienda.html"><span class="rosa-kitty textoNavVar">Tienda</span></a>
                 </li>
                 <li class="nav-item mr-5">
-                  <a class="nav-link" href="#"><span class="rosa-kitty textoNavVar">Contacto</span></a>
+                  <a class="nav-link" href="contacto.html"><span class="rosa-kitty textoNavVar">Contacto</span></a>
                 </li>
                 <li class="nav-item mr-5 d-none d-sm-none d-lg-block">
-                  <a class="nav-link" href="#"><img class="icon-48" src="assets/img/iconos/user-rosa.png" alt=""></a>
+                  <a class="nav-link" href="login.html"><img class="icon-48" src="assets/img/iconos/user-rosa.png" alt=""></a>
                 </li>
                 <li class="nav-item mr-5 d-none d-sm-none d-lg-block">
-                  <a class="nav-link" href="#"><img class="icon-48" src="assets/img/iconos/cart-rosa.png" alt=""></a>
+                  <a class="nav-link" href="carrito.html"><img class="icon-48" src="assets/img/iconos/cart-rosa.png" alt=""></a>
                 </li>
               </ul>
             </div>
@@ -67,39 +69,61 @@
           <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+
     
         </ol>
             <!-- Primera imagen carrusel -->
     
         <div class="carousel-inner">
             <div class="card bg-dark text-white carousel-item active" data-bs-interval="2000">
-                <img src="/src/assets/img/gatoInicio.png" class="card-img" id="img-size-carousel" alt="...">
+
+                <img src="https://images.unsplash.com/photo-1596854307943-279e29c90c14?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cGluayUyMGNhdHxlbnwwfDB8MHx8&auto=format&fit=crop&w=600&q=60" class="card-img" id="img-size-carousel" alt="...">
                 <div class="card-img-overlay">
-                  <h1 class="card-title">Bienvenide</h1>
-                  <p class="card-text">...</p>
-                  <p class="card-text">...</p>
-                  <a class="btn btn-primary btn-lg" href="#" role="button">Ir al menú</a>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-center">
+                       <img src="assets/img/logos/logo-solo-letra.png" alt="" class="logo-inicio-carrusel">
+                      </div>
+                    </div>
+                  </div>
+                  <h1 class="card-title carousel-headers">Bienvenide</h1>
+                 <div class="container">
+                    <div class="row">
+                      <div class="col text-center">
+                        <a class="btn btn-lg btn-align btn-font" href="menu.html" role="button">Nuestro menú</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             <!-- Segunda imagen carrusel -->
           <div class="card bg-dark text-white carousel-item" data-bs-interval="2000">
-            <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" class="img-fluid" class="d-block w-100" id="img-size-carousel" alt="...">
+
+            <img src="https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" class="d-block w-100" id="img-size-carousel" alt="...">
             <div class="card-img-overlay">
-              <h1 class="card-title">Promociones</h1>
-                <p class="card-text"></p>
-                <p class="card-text"></p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Ir a promos</a>
+              <h1 class="card-title carousel-headers">Promociones</h1>
+              <div class="container">
+                <div class="row">
+                  <div class="col text-center">
+                    <a class="btn btn-lg btn-align btn-font" href="menu.html" role="button">Ir a las promos</a>
+                  </div>
+                </div>
+              </div>
               </div>
             </div>
             <!-- Tercera imagen carrusel -->
             <div class="card bg-dark text-white carousel-item" data-bs-interval="2000">
-                <img src="https://images.unsplash.com/photo-1633613286991-611fe299c4be?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" class="img-fluid" class="d-block w-100" alt="...">
+
+                <img src="assets/img/gatoInicio.png"  class="d-block w-100 img-fluid" alt="...">
                 <div class="card-img-overlay">
-                  <h1 class="card-title">Artículos destacados</h1>
-                    <p class="card-text"></p>
-                    <p class="card-text"></p>
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Ir a michi-tienda</a>
+                  <h1 class="card-title carousel-headers">Artículos destacados</h1>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col text-center">
+                        <a class="btn btn-lg btn-align btn-font" href="tienda.html" role="button">Ir a la michi-tienda</a>
+                      </div>
+                    </div>
+                  </div>
                   </div>
                 </div>
     
@@ -120,46 +144,44 @@
     
       <!-- Sección 2 preview menú y artículos -->
     <section id="products-background-img">
-    
-      <div class="container-fluid"   >
-        <!-- <img src="HomePI/assets/imgs/ears-banner.png" alt="ears-banner" class="ears-banner-centrado"> -->
-        <div >
-          <img src="/src/assets/img/banner-orejas.png" alt="" class="ears-banner-centrado">
-          <p class="texto-banner-encima-centrado fondo-orejas"> ¡Miau! Nuestros dulces pastelitos <br> te esperan.</p>
-          
-        </div>
-      </div>
-    
-      <div class="container-fluid"  id="products-background-img" >
-        <div class="row " >
-          <div class="col-md-6" id="title-items-preview">
-            !Miau! Nuestros dulces pastelitos te esperan.
-          </div>     
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <img src="/src/assets/img/banner-orejas.png" alt="orejas de gato" class="ears-banner" style="text-align: center;">
-          </div> 
-        </div>
-         <div class="row">
-          <div class="col-md-8" id="buttons-home" >
-            <a class="btn btn-primary btn-lg" href="#" role="button">Ir al menú</a>
+
+        <div class="div-ears-banner">
+          <img src="assets/img/banner-orejas.png" class="ears-banner-img img-fluid" alt="">
+          <div>
+            <h5 class="texto-banner-encima-centrado">¡Miau! Nuestros dulces pastelitos te esperan</h5>
           </div>
         </div>
+      <div class="container margen-inf-btn-orejas">
+        <div class="row">
+          <div class="col text-center">
+            <a class="btn btn-lg btn-align btn-font" href="menu.html" role="button">Ir al menú</a>
+          </div>
+        </div>
+      </div>    
+      <div class="container-fluid"  id="products-background-img" >
           <div class="row " >
             <div class="col-md-12">
-              <img src="HomePI/assets/imgs/sabado_cupcats.jpg" alt="cupcake" id="pastel-menu-preview"></div>
+              <img src="assets/img/productos/KittyCakesProductos-18.jpg" alt="cupcake" id="pastel-menu-preview"></div>
           </div>
-          <div class="row " >
-            <div class="col-md-8">No sabías que lo necesitabas. . . Purrrrr</div>
-            <div class="col-md-8"><a class="btn btn-primary btn-lg" href="#" role="button">Ir a michi-tienda</a></div>
+          <div class="div-ears-banner">
+            <img src="assets/img/banner-orejas.png" class="ears-banner-img img-fluid" alt="">
+            <div>
+              <h5 class="texto-banner-encima-centrado">No sabías que lo necesitabas... Purrrrr</h5>
+            </div>
           </div>
+        <div class="container margen-inf-btn-orejas">
+          <div class="row">
+            <div class="col text-center">
+              <a class="btn btn-lg btn-align btn-font" href="tienda.html" role="button">Ir a la michi-tienda</a>
+            </div>
+          </div>
+        </div>
           <div class="row " >
             <div class="col-md-6">
-              <img src="/kitty-cakes-proyecto-integrador-generation/src/assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 10.jpg" alt="producto" id="articulos-preview">
+              <img src="assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 10.jpg" alt="producto" id="articulos-preview">
             </div>
             <div class="col-md-6">
-              <img src="/kitty-cakes-proyecto-integrador-generation/src/assets/img/productos/KittyCakesProductos_Mesa de trabajo 1 copia 7.jpg" alt="producto" id="articulos-preview">
+              <img src="assets/img/productos/KittyCakesProductos-14.jpg" alt="producto" id="articulos-preview">
             </div>       
           </div>
       </div>
@@ -169,7 +191,7 @@
     
     <!-- Sección 3 carrusel preview  de nosotros -->
       <!-- Indicadores inferiores del carrusel -->
-    <section>
+    <section id="nosotros-margen-carrusel">
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -180,90 +202,124 @@
         <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
-      </ol>
+      </ol
+      <!-- ===========HEADER CARRUSEL NOSOTROS============= -->
+      <div class="container ">
+        <div class="row">
+          <div class="col text-center">
+           <img src="assets/img/logos/logo-solo-letra.png" alt="" class="logo-inicio-carrusel margen-logo-carrusel">
+          </div>
+        </div>
+      </div>
+      <h3 class="team-header">TEAM</h3>
       <!-- Primera foto carrusel nosotros -->
     <div class="carousel-inner">
       <div class="card bg-dark text-white carousel-item active" data-bs-interval="500">
-          <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" class="card-img" class="img-fluid" alt="...">
+          <img src="https://images.unsplash.com/photo-1496442485495-dcb2fa6bb0bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE4fHxwZW9wbGV8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" class="card-img" class="img-fluid" alt="...">
           <div class="card-img-overlay">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p>
-            <p class="card-text"></p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Acerca de nosotros</a>
+            <div class="container">
+              <div class="row">
+                <div class="col text-center">
+                  <a class="btn btn-lg btn-font last-btn-align" href="nosotros.html" role="button">Conócenos</a>
+                  <!-- Quite la clase btn-align de arriba -->
+                </div>
+              </div>
+            </div
           </div>
         </div>
       <!-- Segunda foto carrusel nosotros -->
     <div class="card bg-dark text-white carousel-item" data-bs-interval="500">
-      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" class="img-fluid" class="d-block w-100" alt="...">
+      <img src="https://images.unsplash.com/photo-1455103433115-33cd90e2a3d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE3fHxwZW9wbGV8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" class="img-fluid" class="d-block w-100" alt="...">
       <div class="card-img-overlay">
-        <h5 class="card-title"></h5>
-        <p class="card-text"></p>
-        <p class="card-text"></p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Acerca de nosotros</a>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <a class="btn btn-lg btn-align btn-font last-btn-align" href="nosotros.html" role="button">Conócenos</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
       <!-- Tercera foto carrusel nosotros -->
       <div class="card bg-dark text-white carousel-item" data-bs-interval="500">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60" class="img-fluid" class="d-block w-100" alt="...">
+          <img src="https://images.unsplash.com/photo-1496266738130-6b6087f91c9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTA2fHxwZW9wbGV8ZW58MHwyfDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60" class="img-fluid" class="d-block w-100" alt="...">
           <div class="card-img-overlay">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p>
-            <p class="card-text"></p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Acerca de nosotros</a>
+            <div class="container">
+              <div class="row">
+                <div class="col text-center">
+                  <a class="btn btn-lg btn-align btn-font last-btn-align" href="nosotros.html" role="button">Conócenos</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
           <!-- Cuarta foto carrusel nosotros -->
           <div class="card bg-dark text-white carousel-item" data-bs-interval="500">
-              <img src="https://images.unsplash.com/photo-1566121652444-41d39986a87a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" class="img-fluid" class="d-block w-100" alt="...">
+              <img src="https://images.unsplash.com/photo-1436363271110-9de4ee5dcc6e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fHBlb3BsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=600&q=60" class="img-fluid" class="d-block w-100" alt="...">
               <div class="card-img-overlay">
-                <h5 class="card-title"></h5>
-                <p class="card-text"></p>
-                <p class="card-text"></p>
-                <a class="btn btn-primary btn-lg" href="#" role="button">Acerca de nosotros</a>
+                <div class="container">
+                  <div class="row">
+                    <div class="col text-center">
+                      <a class="btn btn-lg btn-align btn-font last-btn-align" href="nosotros.html" role="button">Conócenos</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           <!-- Quinta foto carrusel nosotros -->
           <div class="card bg-dark text-white carousel-item" data-bs-interval="500">
-            <img src="https://images.unsplash.com/photo-1566121652444-41d39986a87a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" class="img-fluid" class="d-block w-100" alt="...">
+            <img src="https://images.unsplash.com/photo-1508473161895-5dabcc2f59cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fHBlb3BsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=600&q=60" class="img-fluid" class="d-block w-100" alt="...">
             <div class="card-img-overlay">
-              <h5 class="card-title"></h5>
-              <p class="card-text"></p>
-              <p class="card-text"></p>
-              <a class="btn btn-primary btn-lg" href="#" role="button">Acerca de nosotros</a>
+              <div class="container">
+                <div class="row">
+                  <div class="col text-center">
+                    <a class="btn btn-lg btn-align btn-font last-btn-align" href="nosotros.html" role="button">Conócenos</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         <!-- Sexta foto carrusel nosotros -->
         <div class="card bg-dark text-white carousel-item" data-bs-interval="500">
-          <img src="https://images.unsplash.com/photo-1566121652444-41d39986a87a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" class="d-block w-100" alt="...">
+          <img src="https://images.unsplash.com/photo-1528271537-64e11fc31bba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlb3BsZXxlbnwwfDJ8MHx8&auto=format&fit=crop&w=600&q=60" class="d-block w-100" alt="...">
           <div class="card-img-overlay">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p>
-            <p class="card-text"></p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Acerca de nosotros</a>
+            <div class="container">
+              <div class="row">
+                <div class="col text-center">
+                  <a class="btn btn-lg btn-align btn-font last-btn-align" href="nosotros.html" role="button">Conócenos</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       <!-- Séptima foto carrusel nosotros -->
       <div class="card bg-dark text-white carousel-item" data-bs-interval="500">
-        <img src="https://images.unsplash.com/photo-1566121652444-41d39986a87a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" class="d-block w-100" alt="...">
+        <img src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8cGVvcGxlfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=600&q=60" class="d-block w-100" alt="...">
         <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-            <p class="card-text">Last updated 3 mins ago</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Link</a>
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <a class="btn btn-lg btn-align btn-font last-btn-align" href="nosotros.html" role="button">Conócenos</a>
+              </div>
+            </div>
+          </div>
           </div>
         </div>
-    </div>
     <!-- Octava foto carrusel nosotros -->
     <div class="card bg-dark text-white carousel-item" data-bs-interval="500">
-      <img src="https://images.unsplash.com/photo-1566121652444-41d39986a87a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" class="d-block w-100" alt="...">
+      <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8cGVvcGxlfGVufDB8MnwwfHw%3D&auto=format&fit=crop&w=600&q=60" class="d-block w-100" alt="...">
       <div class="card-img-overlay">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-          <p class="card-text">Last updated 3 mins ago</p>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Link</a>
+        <div class="container">
+          <div class="row">
+            <div class="col text-center">
+              <a class="btn btn-lg btn-align btn-font last-btn-align" href="nosotros.html" role="button">Conócenos</a>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
+  </div>
     </section>
 <!-- ============FOOTER=========== -->
     <footer>
@@ -272,16 +328,16 @@
               <div class="row">
                 <div class="d-flex secciones col-12 col-sm-12 col-md-12  col-lg-4">
                   <ul class="list-unstyled mx-auto texto-nav">
-                      <li class="dropdown"><a href="#">Nosotros
+                      <li class="dropdown"><a href="nosotros.html">Nosotros
                           </a></li>
-                      <li class="dropdown"><a href="#">Menú</a></li>
-                      <li class="dropdown"><a href="#">Michi tienda</a></li>
-                      <li class="dropdown"><a href="#">Contacto</a></li>
+                      <li class="dropdown"><a href="menu.html">Menú</a></li>
+                      <li class="dropdown"><a href="tienda.html">Michi tienda</a></li>
+                      <li class="dropdown"><a href="contacto.html">Contacto</a></li>
                   </ul> 
                 </div>
                 <div class="iconos col-12 col-sm-12 col-md-12 col-lg-4">
                   <div class="icono-kitty">
-                      <a href="#"><img src="assets/img/logos/logo-completo.png" alt=""></a>
+                      <a href="index.html"><img src="assets/img/logos/logo-completo.png" alt=""></a>
                   </div>
                   <div class="redes-sociales">               
                       <a class="dropdown" href="#"><img class="icon-24" src="assets/img/iconos/facebook.png" alt="facebook_kitty_cakes">
@@ -318,4 +374,4 @@
 
 
 </body>
-    
+</html>
