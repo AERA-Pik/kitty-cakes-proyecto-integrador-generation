@@ -112,6 +112,8 @@ p {
 
 .boton-primario:hover {
     background-color: var(--rosa-obscuro);
+    color: white;
+    text-decoration: none;
 }
 
 .boton-secundario {    
