@@ -1,0 +1,75 @@
+body {
+    background-color: var(--blanco-kitty);
+
+}
+
+h1 {
+    color: var(--rosa-obscuro);
+    text-align: center;
+    margin: 6rem auto;
+}
+
+.container {
+    padding-left: 12rem;
+    padding-right: 12rem;
+    
+}
+
+.h4 {
+    font-size: 3.2rem;
+}
+
+.linea-carrito{
+    margin:0 auto ;
+    margin-top: 0px;
+    height: 0.8rem;
+    border-width:0;
+    background-color:var(--rosa-3);
+}
+
+section img{
+    width: 10.5rem;
+    border: 0.1rem solid var(--rosa-kitty);
+    border-radius: 20px;
+    float: left;
+}
+
+.producto-textos-container {
+    padding: 2rem 0;
+}
+
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: inherit;
+    border-top: none;
+}
+
+.table thead th {
+    font-size: 1.8rem;
+    position: relative;    
+    padding-right: 15px;
+    padding-left: 15px;
+    border-style: none none solid;
+    border-bottom-width: 0.8rem;
+    border-color: var(--rosa-obscuro);
+}
+
+tr, td {
+    padding: 1rem 0;
+    font-size: 3.2rem;
+}
+
+.total {
+    padding: 0.1rem 0;
+    font-size: 3.2rem;
+    text-align: right;
+}
+
+.granTotal {
+    padding: 0.1rem 0;
+    font-size: 3.2rem;
+}
+
+.loles {
+    background: url;
+}

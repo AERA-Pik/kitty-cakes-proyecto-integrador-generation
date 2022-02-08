@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2&family=Be+Vietnam+Pro&family=Montserrat:ital,wght@1,300&family=Roboto+Slab&display=swap');
+
+
+
+
+.txt_somos{
+    background-color: var(--rosa-3);
+    margin: 5% 10% 5px 10%;
+    border-radius: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    
+    
+    
+}
+
+.linea{
+   
+    width: 150px;
+    margin-bottom: 10px;
+    border: solid 1px var(--rosa-obscuro);
+    align-self: center;
+}
+
+.card{
+    background-color: var(--rosa-2);
+    border-radius: 40px;
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+
+    /**/
+    margin: 30px;
+
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(202, 71, 71, 1);
+    cursor: default;
+    transition: all 400ms ease;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1200px) { 
+    
+    .img_gato{
+        width: 350px;
+        height: 350px;
+        display: block;
+        align-content: center;
+        margin-top: 10px;
+    }
+    .txt_pastelitos{
+        width: 100%;
+        height: 50px;
+        margin-top: 40px;
+        display: inline-flex;
+        justify-content: center;
+        color: var(--rosa-obscuro);
+        font-size: 48px;
+        
+    
+    }
+    .nosotros_header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--rosa-obscuro);
+        
+        
+         
+    
+        
+        
+    }
+
+    
+
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .nosotros_header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--rosa-obscuro);   
+    }
+    .txt_pastelitos{
+        width: 100%;
+        height: 50px;
+        margin-top: 40px;
+        display: inline-flex;
+        justify-content: center;
+        color: var(--rosa-obscuro);
+        font-size: 48px;
+        
+    
+    }
+    
+    
+ }
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .nosotros_header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--rosa-obscuro);  
+    }
+    .txt_pastelitos{
+        width: 100%;
+        height: 50px;
+        margin-top: 40px;
+        display: inline-flex;
+        justify-content: center;
+        color: var(--rosa-obscuro);
+        font-size: 48px;
+        
+    
+    }
+ 
+ }
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .nosotros_header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--rosa-obscuro);
+        font-size: 64px;
+        
+
+        
+    }
+
+    .txt_pastelitos{
+        width: 100%;
+        height: 50px;
+        margin-top: 40px;
+        display: inline-flex;
+        justify-content: center;
+        color: var(--rosa-obscuro);
+        font-size: 32px;
+        
+    
+    }
+
+ }
+    
+ 
+
+
+@media (max-width: 576px)  {
+    .img_gato{
+        width: 350px;
+        height: 350px;
+        display: block;
+        align-content: center;
+        margin-top: 10px;
+}
+
+    .txt_pastelitos{
+        width: 100%;
+        height: 50px;
+        margin-top: 40px;
+        display: inline-flex;
+        justify-content: center;
+        font-size: 32px;
+        
+
+    }
+
+
+    .nosotros_header{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--rosa-obscuro);
+        font-size: 32px;
+        
+
+        
+    }
+    
+
+
+
+
+}
+
+
+
+
+
+
+.img_pastelitos {
+    width: 100%;
+    height: 50px ;
+    margin-top: 40px;
+    display: inline-flex;
+    justify-content: center;
+
+}
+.pastelitos{
+    width: 900px;
+    height: 40px;
+    
+
+}
+
+.img_header{
+    opacity: 0.5;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.iconos_card{
+    background-color: var(--rosa-kitty);
+
+}
+
+
+.card-img-top{
+    width: 70%;
+    height: 70%;
+    align-self: center;
+    border-radius: 40px;
+    
+    
+}
