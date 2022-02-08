@@ -5,3 +5,7 @@
 .navbar li{
     align-self: center;
 }
+
+.navbar {
+    padding: 1rem 1rem;
+}
