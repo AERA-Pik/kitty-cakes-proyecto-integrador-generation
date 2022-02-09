@@ -57,7 +57,7 @@
 
 .container-fluid p.nombre-producto {    
     font-size: 1.8rem;
-    border-bottom: 4px solid var(--rosa-obscuro);
+    /* border-bottom: 4px solid var(--rosa-obscuro); */
 }
 
 .container-fluid p.precio {
@@ -79,7 +79,7 @@
 }
 
 .bg-rosa {
-    background-color: var(--blanco-kitty);
+    /* background-color: var(--blanco-kitty); */
     width: 30rem;
 }
 
