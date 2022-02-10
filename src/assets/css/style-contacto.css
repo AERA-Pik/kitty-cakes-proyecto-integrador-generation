@@ -11,38 +11,37 @@
         --gris-kitty: #32322E;    
 }
 
-   .container-contáctanos{
+   .header-contáctanos{   
+     position: relative; 
+     display: flex;
+     max-width: 100%;
+     display: inline-block;
+     text-align: center;
+     padding: 0 0 0 0;
+     margin-bottom: 90px;
 
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       width: auto;
-       height: 217px;
-       background-image: url(../img/fondo-h1.jpg);
-       background-size: cover;
-       opacity: 0.6;
-       
-   }
-
-   .texto-contáctanos{
-        opacity: none;
-        color: var(--rosa-obscuro);
-        font-family: 'Baloo Bhai 2', cursive;
-        font-weight: bold;
-        font-size: 100px;  
-   }
+ 
+ }
+ 
+ .texto-contáctanos {
+     font-family: 'Baloo Bhai 2';
+     color: var(--rosa-obscuro);
+     position: absolute;
+     top: 42%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     
+ }
  
    .containerform{ 
-        border-radius: 40px;
+        border-radius: 2rem;
        display: block;
        background-color: var(--rosa-3);
        width: 80%;
        height: 612;
        margin-left: auto;
        margin-right: auto;
-       margin-top: 30px;
-       margin-bottom: 30px;
-      
+       margin-bottom: 90px;
    }
 
    form {
@@ -50,12 +49,12 @@
         width: 100%;
         padding: 10px 10px;
    }
-   /* ::placeholder { 
-       color: var(--rosa-3); 
-       font-family: 'Montserrat', sans-serif;
-       font-size: 12px;          
+   ::placeholder { 
      
-     } */
+       font-family: 'Montserrat', sans-serif;
+       font-size: 14px;          
+     
+     }
    form .contenido {
         display: block;
         position: relative;
@@ -65,30 +64,50 @@
         padding: 30px 10px 10px;
    }
 
-   form .contenido label {
+    form .contenido label {
         display: block;
         position: absolute;
+        font-size: 14px;
+        color: var(--rosa-obscuro);
+        font-family: 'Montserrat', sans-serif;
         width: auto;
         top: 10px;
-        left: 50px;
-        padding: 5px 5px;
-        border-radius: 20px;
-        background-color:  #FFE8EC;
-   }
+        left: 25px;
+         padding: 4px 5px; 
+        border-radius: 2rem;
+        background-color:  var(--rosa-3);
+   } 
    
+
+   .form-control:focus ~ .contenido label, 
+   .form-control:not(:placeholder-shown).form-control:not(:focus) ~ .contenido label{
+     top: -3rem;
+     font-size: 16px;
+     left: 1.5rem;
+     background-color: var(--rosa-3);
+   } 
+
    form .contenido input {
         align-items: center;
-        display: block;
+         display: block; 
         border: 1px solid var(--rosa-kitty);
-        border-radius: 20px;
+        font-size: 14px;
+        color: var(--rosa-obscuro);
+        border-radius: 2rem; 
         padding: 10px 10px;
         font-size: 18px;
         font-family: 'Montserrat', sans-serif;
         width: 100%;
         height: 100%;
    }
-    
+   form .contenido input:hover{
+     border-color: var(--rosa-kitty);
+   }
    
+   form .contenido input:focus{
+     border-color: var(--rosa-obscuro);
+   } 
+
 
    .boton-primario {
         background-color: var(--rosa-kitty);
@@ -106,30 +125,38 @@
    .boton-primario:hover {
         background-color: var(--rosa-obscuro);
 }
-
+.contacto-bloque{
+     align-items: center;
+     justify-content: center;
+}
    .icono{
-        width: 32px;
-        height: 32px;
+       
         margin-bottom: 24px;
         margin-left: 28px;
    }
-   .contacto-bloque{
-        margin-top: 60px;
-        margin-bottom: 60px;
-   }
+   
    .info-contacto{
-        margin-bottom: 24px;
-        margin-left: 10px;
-        font-family:  'Montserrat', sans-serif;
-        font-size: 20px;
+     font-size: 1.8rem;
+     font-family: 'Montserrat', sans-serif;
+     padding-left: 10px;
    }
+  
 
-@media screen and (min-width: 480px) and (max-width: 780px) {
+
+   @media screen and (min-width: 480px) and (max-width: 780px) {
      .texto-contáctanos{
           font-size: 32px;
      }
-     .contacto-bloque{
-          margin-top: 60px;
-          margin-bottom: 60px;
+    
+     .icono{
+          width: 32px;
+          height: 32px;
+          margin-bottom: 24px;
+          margin-left: 28px;
      }
+     .info-contacto{
+          font-size: 1.2rem;
+     }
+     
    }
+
