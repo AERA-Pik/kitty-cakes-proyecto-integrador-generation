@@ -13,7 +13,7 @@
     background-position: left bottom, right bottom;
 }
 
- @media only screen and (max-width: 768px)  {
+ @media only screen and (max-width: 992px)  {
     
     .bg-image{        
         background-position: left bottom, right bottom;
