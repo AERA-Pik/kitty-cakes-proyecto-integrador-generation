@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/nav-style.css">
     <link rel="stylesheet" href="assets/css/style-contacto.css">
     <link rel="stylesheet" href="assets/css/footer-style.css">
-    <title>Document</title>
+    <title>Contacto Kittycakes</title>
 </head>
 <body id="top">
   <div  class="container-nav sticky-top">
@@ -55,76 +55,62 @@
   </div>
 
   
+  <section class="header-contáctanos mx-auto col- col-sm-12 col-md-12 col-lg-12">
+    <img src="assets/img/productos/header3.png" alt="" style="opacity: 0.5; max-width: 100%;">
+    <h1 class="texto-contáctanos">CONTÁCTANOS</h1>   
+  </section>
 
   <section>
-    <div class="container-contáctanos sm-col-12" >
-        <p class="texto-contáctanos">Contáctanos</p>
-      </div>
+    
       <div class="containerform">
         <form>
           <div class="row">
-            <div class="col  align-items-center">
-              <div class="row  d-none d-lg">
-                <div class="col ">
-                <div class="form-outline contenido  d-flex flex-sm-column flex-xsm-column flex-lg-row justify-content-lg-around ">
-                  <label for="nombre">Nombre</label>
-                  <input class="" type="text" class="form-control" placeholder="Nombre">
-                </div>
-                </div>
-                <div class="col ">
-
-                <div class="form-outline contenido d-flex flex-sm-column flex-xsm-column flex-lg-row justify-content-lg-around ">
-                  <label for="apellido">Apellido</label>
-                  <input type="text" class="form-control" placeholder="Apellido">
-                </div>
-                </div>
-              </div>
-
-              <div class="form-outline contenido  d-flex flex-sm-column flex-xsm-column flex-lg-row justify-content-lg-around d-none d-sm-block">
-                <label for="nombre">Nombre</label>
-                <input class="" type="text" class="form-control" placeholder="Nombre">
-              </div><div class="form-outline contenido  d-flex flex-sm-column flex-xsm-column flex-lg-row justify-content-lg-around d-none d-sm-block">
-                <label for="nombre">Apellido</label>
-                <input class="" type="text" class="form-control" placeholder="apellido">
-              </div>
-              <div class="form-outline contenido col-12 ">
-                <label for="correo electrónico">Correo</label>
-                <input type="text" class="form-control" placeholder="ejemplo@kittycakes.com">
-              </div>
+            <div class="col  align-items-center justify-content-center">
+              
               <div class="form-outline contenido col-12">
-                <label for="Asunto">Asunto</label>
-                <input type="text" class="form-control" placeholder="¿Cómo podemos ayudarte?">
+                <label for="Nombre">Nombre(s)</label>
+                <input class="" type="text" class="form-control" placeholder="Escribe tu nombre aquí" required>
               </div>
-              <div class="form-outline contenido col-12">
-                <label for="contenido">Contenido</label>
-                <input type="text" class="form-control" placeholder="Cuerpo de tu correo">
+              <div class="form-outline contenido  col-12">
+                <label class="" for="nombre">Apellidos</label>
+                <input class="" type="text" class="form-control" placeholder="Escribe tus apellidos aquí" required>
+              </div>
+              <div class="form-outline contenido  col-12">
+                <label class="label-name" for="Correo electrónico">Correo electrónico</label>
+                <input class="" type="email" class="form-input" placeholder="ejemplo@kittycakes.com" required>
+              </div>  
+              
+
+              <div class="form-outline contenido  col-12">
+                <label for="Tu mensaje">Tu mensaje</label>
+                <input class="" type="text" class="form-control" placeholder="¿Cómo podemos ayudarte?" required>
               </div>
               <div class="form-row text-center">
                 <div class="col-12">
-                  <input  class="boton-primario " type="button" value="Enviar" />
+                  <button class="boton-primario " onclick="validar()">Enviar</button> <!--se unifica el tamaño con la clase que puso aaron en el css-->
                 </div>
               </div>   
             </div>
-            <div class="col contacto-bloque align-items-center ">
-              <div class="d-flex align-items-center ">
-                <img class="icono" src="assets/img/iconos/whatsapp.png" alt="imagen con un icono de whats app">
-                <span class="info-contacto">+527225572870</span>
+            <div class="col contacto-bloque ">
+              <div class="d-flex align-items-center">
+                <img  class="icono" src="assets/img/iconos/whatsapp.png"  alt="whats app" />
+                <span class=" info-contacto">+527225572870</span>
               </div>
               <div class="d-flex align-items-center ">
-                <a href="https://www.instagram.com/kittycakespastelitos/"><img class="icono" src="assets/img/iconos/instagram.png" alt=""></a>
+                <a href="https://www.instagram.com/kittycakespastelitos/"><img class="icono" src="assets/img/iconos/instagram.png" alt="icono de Instagram"></a>
                 <span class="info-contacto">@kittycakes</span>
               </div>
-              <div class="d-flex mb-24 align-items-center ">
+              <div class="d-flex align-items-center ">
                 <a href="https://www.facebook.com/KittyCakesPastelitos/"><img class="icono" src="assets/img/iconos/facebook.png" alt="icono de facebook"></a>
                 <span class="info-contacto">/KittyCakesPastelitos</span>
               </div>
               <div class="d-flex align-items-center ">
                 <img class="icono" src="assets/img/iconos/geo-alt.png" alt="icono geo">
-                <span class="info-contacto">Narvarte poniente, CDMX C.P.0360</span>
+                <span class="info-contacto">Narvarte poniente, CDMX, C.P.03600</span>
               </div>
-              <div class="d-flex align-items-center">
-                <img class="icono" src="assets/img/iconos/clock.png" alt="">
-                <span class="info-contacto">Horario: 9:00-17:00</span>   
+              <div class="d-flex align-items-center contacto-ind">
+                <img class="icono" src="assets/img/iconos/clock.png" alt="icono de un reloj">
+                <span class="info-contacto">Horario: 9:00-17:00 horas.</span>   
               </div>
             </div>
           </div>
@@ -187,5 +173,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     -->
+
+ 
 </body>
 </html>
