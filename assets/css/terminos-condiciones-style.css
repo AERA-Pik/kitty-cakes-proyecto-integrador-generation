@@ -1,0 +1,27 @@
+body {
+    background-color: var(--rosa-3);
+
+}
+
+h1 {
+    color: var(--rosa-obscuro);
+    text-align: center;
+    margin: 6rem auto;
+}
+
+li {    
+    font-size: 1.8rem;
+}
+
+
+.texto{
+    text-align: justify;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media only screen and (max-width: 576px) {
+  h1{
+      font-size: 60px;
+  }
+ }
