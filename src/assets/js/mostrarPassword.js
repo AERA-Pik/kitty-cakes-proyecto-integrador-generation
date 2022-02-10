@@ -1,28 +1,28 @@
-function mostrarPassword1(){
-    var cambio1 = document.getElementById("password-1");
-    if(cambio1.type == "password"){
-        cambio1.type = "text";
-        $('.icon1').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
-    }else{
-        cambio1.type = "password";
+//CONTRASEÑA
+document.querySelector('.icon1').addEventListener('click', e => {
+    const password1 = document.getElementById('password-1');
+    //if (e.target.classList.contains('show')) { //input de contraseña el elemento contiene
+    if(password1.type == "password") {
+        //e.target.classList.remove('show'); 
+        password1.type = 'text'; //muestra contraseña
+        $('.icon1').removeClass('fa fa-eye-slash').addClass('fa fa-eye'); //cambia icono
+    } else {
+        //e.target.classList.add('show');
+        password1.type = 'password'; //oculta contraseña
         $('.icon1').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
     }
-} 
+});
 
-function mostrarPassword2(){
-    var cambio2 = document.getElementById("password-2");
-    if(cambio2.type == "password"){
-        cambio2.type = "text";
+//CONFIRMAR CONTRASEÑA
+document.querySelector('.icon2').addEventListener('click', e => {
+    const password2 = document.getElementById('password-2');
+    if (password2.type == "password") {
+        //e.target.classList.remove('show');
+        password2.type = 'text'; 
         $('.icon2').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
-    }else{
-        cambio2.type = "password";
+    } else {
+        //e.target.classList.add('show');
+        password2.type = 'password';
         $('.icon2').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
     }
-} 
-
-$(document).ready(function () {
-//CheckBox muestra contraseña
-    $('#ShowPassword').click(function () {
-        $('#Password').attr('type', $(this).is(':checked') ? 'text' : 'password');
-    });
 });
