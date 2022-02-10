@@ -5,6 +5,12 @@
     height: auto !important;
     height: 100%;
     margin: 0 auto 0;
+    align-items: center;
+}
+
+.boton-primario.registro,
+.boton-secundario.registro{
+  width: 170px; /*130*/
 }
 
 .title-login{
@@ -19,9 +25,62 @@
 .card-registration{
   background-color: var(--rosa-3);
   border-radius: 10rem;
+  align-items: center;
 }
 
+/*VALIDACION*/
+/*cambia color de borde
+dependiendo la validación*/
+.error input {
+    border:2px red solid;
+}
 
+.success input {
+    border:2px green solid;
+}
+
+/*Esconde iconos de validación*/
+.form-outline i {
+     position:absolute;
+     right:25px;
+     top:8px;
+     visibility: hidden;
+ }
+
+/*muestra iconos al ser el caso validado*/
+ .success i.fa-check-circle{
+    font-size: 24px;
+     visibility: visible;
+     color:green;
+ }
+
+ .error i.fa-exclamation-circle {
+   font-size: 24px;
+    visibility: visible;
+    color:red;
+}
+
+/*esconde mensaje de error*/
+ .form-outline p {
+     font-size: 14px;
+     padding-left: 20px;
+     color:red;
+     visibility: hidden;
+ }
+
+ /*muestra mensaje de error al validar error*/
+ .error p {
+     visibility: visible;
+     padding-top: 40px;
+     font-weight: bold;
+ }
+
+.error .label-name{
+  top: -3rem;
+  font-size: 16px;
+  left: 1.5rem;
+  background-color: var(--rosa-3);
+}
 /*Efecto inputs*/
 /*---------------------------------------------------*/
 .form-outline{
@@ -44,15 +103,18 @@
   color: black;
   outline: none;
   padding: 1.25rem;
+  padding-left: 1.5rem;
   background: none;
+  padding-top: 1.7rem;
 }
 
 .form-input:hover{
-  border-color: var(--rosa-kitty);
+  border:2px solid var(--rosa-kitty);
+
 }
 
 .form-input:focus{
-  border-color: var(--rosa-obscuro);
+  border: 2px solid var(--rosa-obscuro);
 }
 .label-name{
   position: absolute;
@@ -79,9 +141,10 @@
 
  /*-----------------------------------------*/
 .form-check{
-  text-align: right;
+  text-align: center;
 }
 
+/*Icono de Ojo*/
 .btn-password{
   background-color: transparent;
   border: transparent;
@@ -93,6 +156,11 @@
 .icon{
   color: black;
 }
+
+#label-contra{
+  padding-top: 9px;
+}
+/*----------------------------------*/
 
 @media only screen and (max-width: 1200px)  {
 
@@ -106,7 +174,7 @@
 
 }
 
-@media only screen and (max-width: 1000px)  {
+@media only screen and (max-width: 992px)  {
 
   .container-registro{
     align-items: center;
@@ -120,14 +188,33 @@
 
 @media only screen and (max-width: 768px)  {
 
-  .container-registro{
-    align-items: center;
-  }
   .title-login{
     color: var(--rosa-obscuro);
     font-size: 60px;
   }
 
 }
+
+@media only screen and (max-width: 576px) {
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 70px;
+  }
+  .subtitle-signup{
+    font-size: 30px;
+  }
+  /*muestra iconos al ser el caso validado*/
+ .success i.fa-check-circle{
+    font-size: 20px;
+     visibility: visible;
+     color:green;
+ }
+
+ .error i.fa-exclamation-circle {
+   font-size: 20px;
+    visibility: visible;
+    color:red;
+}
+ }
 
 

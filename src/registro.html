@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="assets/css/nav-style.css">
     <link rel="stylesheet" href="assets/css/registro-style.css">
     <link rel="stylesheet" href="assets/css/footer-style.css">
-    <title>Document</title>
+    <title>Registro</title>
 </head>
 <body>
   <div class="container-nav sticky-top">
@@ -60,149 +60,118 @@
     <section class="container-registro">
       <div class="container py-5">
         <div class="row justify-content-center align-items-center">
-          <div class="col-10 col-lg-5 col-xl-7">
+          <div class="col-12 col-lg-6 col-xl-6">
             <h1 class="title-login text-center">BIENVENIDE</h1>
             <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
               <div class="card-body">
-    
-        <form action="#" class="form p-5 p-sm-3 p-md-3 p-lg-3" id="form1">
+        <!--Formulario-->
+        <form action="#" class="form p-2 p-sm-3 p-md-3 p-lg-3" id="form1" method="get">
+          <h2 class="subtitle-signup text-center">Regístrate</h2>
+          <!--LOGO KITTY CAKES-->
           <div class="card mx-auto card-logo mb-5" style="width: 20rem;">
             <img class="card-img-top" src="assets/img/logos/logo-simplificado.png" alt="Card image cap">
           </div>
-
-          <div class="row pb-3">
-                <div class="col-6 d-none d-sm-none d-md-inline d-lg-inline">
+          <!--NOMBRE Y APELLIDOS-->
+          <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 pb-5"> <!--Parte Responsive-->
                   <div class="form-outline">
-                    <input type="text" id="firstName" class="form-input" placeholder=" " required/>
+                    <input type="text" id="firstName" class="form-input" placeholder="Escribe tu nombre aquí"/>
                     <label class="label-name" for="firstName">Nombre</label>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
                   </div>
                 </div>
-                <div class="col-6 d-none d-sm-none d-md-inline d-lg-inline">
+
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 pb-5"> <!--Parte Responsive-->
                   <div class="form-outline">
-                    <input type="text" id="lastName" class="form-input" placeholder=" "/>
+                    <input type="text" id="lastName" class="form-input" placeholder="Escribe tus apellidos aquí"/>
                     <label class="label-name" for="lastName">Apellidos</label>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p>Error Message</p>
                   </div>
                 </div>
           </div>
 
-<!--Parte Responsiva Inicio-->
-          <div class="row">
-            <div class="col-12 pb-3 d-inline d-sm-inline d-md-none d-lg-none">
-              <div class="form-outline">
-                <input type="text" id="firstName" class="form-input" placeholder=" " required/>
-                <label class="label-name" for="firstName">Nombre</label>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-                <div class="col-12 mt-5 pb-3 d-inline d-sm-inline d-md-none d-lg-none">
-                  <div class="form-outline">
-                    <input type="text" id="lastName" class="form-input" placeholder=" "/>
-                    <label class="label-name" for="lastName">Apellidos</label>
-                  </div>
-                </div>
-          </div>
-<!--Parte Responsiva Fin-->
-
-          <div class="row mt-5 pb-3">
+          <!--TELÉFONO-->
+          <div class="row mt-5 pb-5">
             <div class="col-md-12">
                 <div class="form-outline">
                   <input type="text" id="phoneNumber" class="form-input pb-3" placeholder="Ej. +52 5564748494" />
                   <label class="label-name" for="phoneNumber">Teléfono</label>
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <p>Error Message</p>
                 </div>
             </div>
           </div>
-          
-          <div class="row mt-5 pb-3">
+          <!--CORREO-->
+          <div class="row mt-5 pb-5">
             <div class="col-md-12">
                 <div class="form-outline">
-                  <input type="email" id="email" class="form-input" placeholder="Ej. nombre@kitty-cakes.com"/>
-                  <label class="label-name" for="email">Correo</label>
+                  <input type="email" id="email" class="form-input" placeholder="ejemplo@kittycakes.com"/>
+                  <label class="label-name" for="email">Correo electrónico</label>
+                  <i class="fas fa-check-circle"></i>
+                  <i class="fas fa-exclamation-circle"></i>
+                  <p>Error Message</p>
                 </div>
             </div>
           </div>
-
-          <div class="row mt-5">
-                <div class="col-6 d-none d-sm-none d-md-inline d-lg-inline">
+          <!--CONTRASEÑA CONFIRMAR-CONTRASEÑA-->
+          <div class="row">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5">
                   <div class="form-outline">
-                    <input type="password" id="password-1" class="form-input" placeholder=" " required/>
+                    <input type="password" id="password-1" class="form-input" placeholder="******"/>
                     <label class="label-name" for="password-1">Contraseña</label>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>                
                     <div class="input-group-append">
-                          <button id="show_password" class="btn-password mr-2" type="button" onclick="mostrarPassword1()">     
+                          <button id="show-password-1" class="btn-password mr-2" type="button">     
                             <span class="fa fa-eye-slash icon1"></span> 
                           </button>
                     </div>
+                    <p class="pt-4">Error Message</p>   
                   </div>
+                  <label class="form-password-label ml-2 mt-4" id="label-contra" for="form2Example3g">
+                        "De 6 a 12 caracteres, al menos 1 número, al menos 1 mayúscula, 
+                        al menos 1 carácter especial (/$@*#!%?&._-), sin espacios"
+                  </label>
                 </div>
-                <div class="col-6 d-none d-sm-none d-md-inline d-lg-inline">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 mb-5">
                   <div class="form-outline">
-                    <input type="password" id="password-2" class="form-input" placeholder=" " required/>
+                    <input type="password" id="password-2" class="form-input" placeholder="******"/>
                     <label class="label-name" for="password-2">Confirmar contraseña</label>
                     <div class="input-group-append">
-                          <button id="show_password" class="btn-password mr-2" type="button" onclick="mostrarPassword2()">     
+                          <button id="show-password-2" class="btn-password mr-2" type="button">     
                             <span class="fa fa-eye-slash icon2"></span> 
                           </button>
                     </div>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <p class="pt-4">Error Message</p>
                   </div>
                 </div>
           </div>
-<!--Parte Responsiva Inicio-->
-          <div class="row">
-            <div class="col-12 pb-3 d-inline d-sm-inline d-md-none d-lg-none">
-              <div class="form-outline">
-                    <input type="password" id="password-1" class="form-input" placeholder=" " required/>
-                    <label class="label-name" for="password-1">Contraseña</label>
-                    <div class="input-group-append">
-                          <button id="show_password" class="btn-password mr-2" type="button" onclick="mostrarPassword1()">     
-                            <span class="fa fa-eye-slash icon1"></span> 
-                          </button>
-                    </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-12 mt-5 pb-3 d-inline d-sm-inline d-md-none d-lg-none">
-              <div class="form-outline">
-                    <input type="password" id="password-2" class="form-input" placeholder=" " required/>
-                    <label class="label-name" for="password-2">Confirmar contraseña</label>
-                    <div class="input-group-append">
-                          <button id="show_password" class="btn-password mr-2" type="button" onclick="mostrarPassword2()">     
-                            <span class="fa fa-eye-slash icon2"></span> 
-                          </button>
-                    </div>
-              </div>
-            </div>
-          </div>
-<!--Parte Responsiva Fin-->
-          <div class="row mt-3">
-            <div class="col-md-6 ml-2 mr-2">
-              <label class="form-password-label" for="form2Example3g">
-                De 6 a 12 caracteres, al menos 1 número, al menos 1 mayúscula, 
-                al menos 1 caracter especial (/$@*#!%?&._-)
-              </label>
-            </div>
-            <div class="form-check mr-3">
+          <div class="form-check mt-1">
               <input
-                class="form-check-input ml-3"
-                type="checkbox"
-                value=""
-                id="form2Example3cg"
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  required
+                  id="form2Example3cg"
               />
-              <label class="form-check-label ml-5" for="form2Example3g">
-                He leído y acepto los <a href="#!" class="text-body"><u>Terminos y condiciones</u></a>
+              <label class="form-check-label ml-2" for="form2Example3g">
+                  He leído y acepto los <a href="terminos_condiciones.html" class="text-body"><u>Términos y condiciones</u></a>
               </label>
-            </div>
           </div>
-          
-          <div class="d-flex justify-content-center mt-5">
-            <button type="button" class="boton-primario">Registrate</button>
+          <div class="d-flex justify-content-center mt-1 pt-4">
+            <button type="submit" class="boton-primario registro">Regístrarse</button>
           </div>
           <p class="text-center text-muted mt-5">¿Ya tienes una cuenta?</p>
-          <div class="d-flex justify-content-center mt-5">
+          <div class="d-flex justify-content-center mt-2">
             <a href="login.html">
-              <button type="button" class="boton-secundario">Iniciar sesión</button>
+              <button type="button" class="boton-secundario registro">Iniciar sesión</button>
             </a>
             
           </div>
@@ -260,6 +229,7 @@
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="assets/js/mostrarPassword.js"></script>
+    <script src="assets/js/validar.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
