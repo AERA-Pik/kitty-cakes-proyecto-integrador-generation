@@ -160,11 +160,12 @@ p {
 }
 
 .btn-font{
+    color: white;
     font-weight: bold;
     font-size: 2.5vw;
     background-color: #FA94A2;
     border-width: thin;
-    border-color: #FFF8FA;
+    border: none;
     margin-top: 8%;
     border-radius: 1rem;
 }
@@ -175,12 +176,13 @@ p {
 /* =====SECCIÓN 2 PREVIEW PRODUCTOS======== */
 
 #products-background-img{
-    background-image: url("img/pastelitos-long.png");
+    background-image: url("/src/assets/img/pastelitos-long.png");
     background-color:  #FFE8EC;
+    
 }
 
 #pastel-menu-preview{
-    width: 50%;
+    width: 47%;
     height: auto;
     clip-path: circle();
     display: block;
@@ -188,7 +190,7 @@ p {
 }
 
 #articulos-preview{
-    width: 80%;
+    width: 68%;
     height: auto;
     clip-path: circle();
     display: block;
