@@ -12,14 +12,35 @@ form.addEventListener('submit', (event)=>{
     event.preventDefault();
     /*stops the default action of an element from happening
     Prevent a submit button from submitting a form */
-
-    validarForm();
+   
+   validarForm();
     
-    /* if(isFormValid==true){
-        form.submit();
+    if(isFormValid()==true){ //si formulario es valido muestra ventana de exito
+        //ventana emergente sweetalert2
+        Swal.fire({
+            title: '¡Te registraste exitosamente!',
+            text: 'Presiona OK para continuar',
+            icon: 'success',
+            width: '45%',
+            backdrop: true,
+            confirmButtonText: 'OK',
+            timer: 8000,
+            //timerProgressBar: true,
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+            allowEnterKey: false,
+            confirmButtonColor: 'green',
+            stopKeyDownPropagation: true
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    //al confirmar el boton OK valida el form por completo
+                    form.submit();
+                    //event.preventDefault();
+                } 
+            })
     }else {
         event.preventDefault();
-    } */
+    }
 
 });
 
@@ -137,3 +158,31 @@ function passwordValido(pw) {
 
 }
 
+//CONTRASEÑA
+document.querySelector('.icon1').addEventListener('click', e => {
+    const password1 = document.getElementById('password-1');
+    //if (e.target.classList.contains('show')) { //input de contraseña el elemento contiene
+    if(password1.type == "password") {
+        //e.target.classList.remove('show'); 
+        password1.type = 'text'; //muestra contraseña
+        $('.icon1').removeClass('fa fa-eye-slash').addClass('fa fa-eye'); //cambia icono
+    } else {
+        //e.target.classList.add('show');
+        password1.type = 'password'; //oculta contraseña
+        $('.icon1').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+    }
+});
+
+//CONFIRMAR CONTRASEÑA
+document.querySelector('.icon2').addEventListener('click', e => {
+    const password2 = document.getElementById('password-2');
+    if (password2.type == "password") {
+        //e.target.classList.remove('show');
+        password2.type = 'text'; 
+        $('.icon2').removeClass('fa fa-eye-slash').addClass('fa fa-eye');
+    } else {
+        //e.target.classList.add('show');
+        password2.type = 'password';
+        $('.icon2').removeClass('fa fa-eye').addClass('fa fa-eye-slash');
+    }
+});
