@@ -65,7 +65,7 @@
             <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
               <div class="card-body">
         <!--Formulario-->
-        <form action="#" class="form p-2 p-sm-3 p-md-3 p-lg-3" id="form1" method="get">
+        <form action="" class="form p-2 p-sm-3 p-md-3 p-lg-3" id="form1" method="get">
           <h2 class="subtitle-signup text-center">Regístrate</h2>
           <!--LOGO KITTY CAKES-->
           <div class="card mx-auto card-logo mb-5" style="width: 20rem;">
@@ -75,12 +75,12 @@
           <div class="row">
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 pb-5"> <!--Parte Responsive-->
                   <div class="form-outline">
-                    <input type="text" id="firstName" class="form-input" placeholder="Escribe tu nombre aquí"/>
+                    <input type="text" id="firstName" class="form-input" placeholder="Escribe tu nombre aquí" required/>
                     <label class="label-name" for="firstName">Nombre</label>
                     <i class="fas fa-check-circle"></i>
                     <i class="fas fa-exclamation-circle"></i>
                     <p>Error Message</p>
-                  </div>
+                  </div>   
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-6 col-lg-6 mt-5 pb-5"> <!--Parte Responsive-->
@@ -110,7 +110,7 @@
           <div class="row mt-5 pb-5">
             <div class="col-md-12">
                 <div class="form-outline">
-                  <input type="email" id="email" class="form-input" placeholder="ejemplo@kittycakes.com"/>
+                  <input type="email" id="email" class="form-input" placeholder="ejemplo@kittycakes.com" required/>
                   <label class="label-name" for="email">Correo electrónico</label>
                   <i class="fas fa-check-circle"></i>
                   <i class="fas fa-exclamation-circle"></i>
@@ -166,12 +166,12 @@
               </label>
           </div>
           <div class="d-flex justify-content-center mt-1 pt-4">
-            <button type="submit" class="boton-primario registro">Regístrarse</button>
-          </div>
+            <button type="submit" class="boton-primario" id="registro">Regístrarse</button>
+          </div>   
           <p class="text-center text-muted mt-5">¿Ya tienes una cuenta?</p>
           <div class="d-flex justify-content-center mt-2">
             <a href="login.html">
-              <button type="button" class="boton-secundario registro">Iniciar sesión</button>
+              <button type="button" class="boton-secundario">Iniciar sesión</button>
             </a>
             
           </div>
@@ -228,13 +228,14 @@
 </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
-    <script src="assets/js/mostrarPassword.js"></script>
-    <script src="assets/js/validar.js"></script>
+    <script src="assets/js/registro_validar.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
+    <script src="assets/js/sweetAlert.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
