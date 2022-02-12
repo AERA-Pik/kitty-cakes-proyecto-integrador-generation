@@ -21,7 +21,7 @@ form.addEventListener('submit', (event)=>{
             title: '¡Te registraste exitosamente!',
             text: 'Presiona OK para continuar',
             icon: 'success',
-            width: '45%',
+            width: '55%',
             backdrop: true,
             confirmButtonText: 'OK',
             timer: 8000,
