@@ -9,6 +9,12 @@
     --gris-kitty: #32322E;    
 }
 
+/* body > [aria-hidden="true"] {
+     filter: blur(10px); 
+    background-image: url(../img/rectangulo-tienda.png);
+    
+} */
+
 .img-banner {
     opacity: 0.5; 
     max-width: 100%;
@@ -28,7 +34,14 @@
     border-color: var(--rosa-obscuro);
     background-color: var(--rosa-obscuro);
     color: white;    
-} 
+}
+
+.producto:hover {
+    border-color: var(--rosa-4);
+    background-color: var(--rosa-4);
+    border-radius: 1rem;
+    
+}
 
 .header-menu {   
     position: relative; 
@@ -71,6 +84,7 @@
     padding-bottom: 8%;   
 }
 
+
 .container-fluid .row img {
     width: 30rem;
     filter: drop-shadow(0.4rem 0.4rem 0.6rem var(--rosa-2));
@@ -86,6 +100,21 @@
 
 @media only screen and (max-width: 768px) {
     h1 {
-        font-size: 5rem;
+        font-size: 4rem;
     }
+}
+
+/* Clases para sweet alert */
+
+.estilo-pop {
+    padding: 7rem;
+    border-radius: 40px;
+    background-color: var(--blanco-kitty);
+}
+
+.imag-producto {
+    width: 30rem;
+    filter: drop-shadow(0.4rem 0.4rem 0.6rem var(--rosa-2));
+    border-radius: 40px;
+   /*  padding-bottom: 5%; */
 }
