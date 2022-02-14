@@ -1,3 +1,31 @@
+.card {
+    text-align: center;
+    border: none;
+}
+
+/* .pop-image {
+    text-align: center;
+    display: inline-block; 
+    border-radius: 40px;
+} */
+.pop-titulo {
+    font-weight: bold;
+    color: var(--rosa-obscuro);
+}
+
+.pop-texto {
+    color: var(--gris-kitty);
+}
+
+.pop-precio {
+    font-weight: bold;
+    color: var(--gris-kitty);
+}
+
+.pop-icono {
+    width: 4rem;
+}
+
 .banner-menu {   
     position: relative; 
     display: flex;
@@ -15,56 +43,64 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-/* 
-.container{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box; 
-} */
 
-.container-menu .row {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.menu .container-fluid .row {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
 }
 
-.container-menu .row .producto{
+.menu .container-fluid .row .producto{
     text-align: center;
     align-content: center;
+    padding-right: 5%;
+    padding-left: 5%;
     padding-bottom: 10%;   
     position: relative;
     overflow: hidden;
 }
 
-.container-menu .row .box {
-    width: 30rem;
+.menu .container-fluid .row .producto .img-producto img {
     filter: drop-shadow(0.4rem 0.4rem 0.6rem var(--rosa-2));
     border-radius: 40px;
-/*     
-    cursor: pointer;
-    transition: all 500ms ease-out; */
+    left: 0;
+    cursor: pointer;    
 }
 
-.container-menu .row .img-producto .capa img{
-    width: 30.6rem; 
+.menu .container-fluid .row .img-producto {
+    position: relative;    
+}
+
+.menu .container-fluid .row .img-producto img.capa {
     border-radius: 42px;
     position: absolute;
     top: 0;
-    visibility: hidden;
+    opacity: 0;    
+    transition: opacity 0.3s;
 }
 
-.container-menu .row .img-producto:hover > .capa img{
-    visibility: visible;
-    left: 7.2rem;
+.menu .container-fluid .row .img-producto img.capa > * {
+    transform: translateY(20px);
+    transition: transform 0.3s;
 }
 
-.container-menu .row p.nombre-producto {    
+.menu .container-fluid .row .img-producto img.capa:hover{
+    opacity: 0.85; 
+    transform: scale(1.01);
+    
+}
+
+.menu .container-fluid .row .img-producto img.capa:hover > *{   
+    transition: transform 0.3s;
+    
+}
+
+.menu .container-fluid .row p.nombre-producto {    
     font-size: 1.8rem;
     padding-top: 1.8rem; 
 }
 
-.container-menu p.precio {
+.menu .container-fluid p.precio {
     font-size: 1.8rem;
     color: var(--rosa-kitty);
     padding-bottom: 1rem; 
@@ -76,16 +112,71 @@
     }
 }
 
-/*
-.filtro-seleccion {
-    display: flex; 
-    justify-content: center;
-    align-items: center; 
-    position: absolute;
-    top: 0;
-    left: 7.5rem;
+/* section#imagenes-modal {
+    margin: 0;
+    padding: 50px 2.5%;
+    width: 95%;
+    height: 200px;
+    background-color: var(--rosa-2);
+}
 
-    top: 36%;
-    left: 50%;
-    transform: translate(-50%, -50%);    
+div.modal-reposo {
+    margin: 0;
+    padding: 0;
+    width: 16.6%;
+    height: auto;
+    overflow: hidden;
+    transform: all 0.1s;
+    float: left;
+}
+
+div.modal-activo {
+    position: absolute;
+    left: 0;
+    z-index: 2000;
+    margin: 0;
+    padding: 100px 15%;
+    width: 70%;
+    overflow: hidden;
+    border-radius: 0;
+    background-color: white;
+    float: left;
+}
+
+div.modal-reposo:hover {
+    border-radius: 50%;
+}
+
+div.info-modal-reposo img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border-radius: 0;
+    height: auto;
+}
+
+div.info-modal-reposo h4, div.info-modal-reposo h5, div.info-modal-reposo p {
+    display: none;
+}
+
+div.info-modal-activo {
+    margin: 0 auto;
+    padding: 50px;
+    width: 80%;
+    height: auto;
+    border-radius: 0;
+    background-color: gray;
+}
+
+div.info-modal-activo p.cerrar-tarjeta {
+    float: right;
+    cursor: pointer;    
+}
+
+div.info-modal-activo img.modal-img-producto {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    border-radius: 50%;
+    height: auto;
 } */
