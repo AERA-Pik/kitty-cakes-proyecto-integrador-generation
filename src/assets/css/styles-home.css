@@ -175,11 +175,21 @@ p {
 }
 /* =====SECCIÓN 2 PREVIEW PRODUCTOS======== */
 
-#products-background-img{
-    background-image: url("/src/assets/img/pastelitos-long.png");
-    background-color:  #FFE8EC;
-    
+/*Colocar opacidad a background*/
+.products-background-img{
+    background: var(--rosa-4);
+    position: relative;
 }
+.products-background-img::before{
+    background: url("../img/pastelitos-long.png");
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+}
+/*-------------------------------------------*/
 
 #pastel-menu-preview{
     width: 47%;

@@ -162,19 +162,19 @@ dependiendo la validación*/
 }
 /*----------------------------------*/
 
-@media only screen and (max-width: 1200px)  {
+@media only screen and (max-width: 1230px)  {
 
   .container-registro{
     align-items: center;
   }
   .title-login{
     color: var(--rosa-obscuro);
-    font-size: 100px;
+    font-size: 90px;
   }
 
 }
 
-@media only screen and (max-width: 992px)  {
+@media only screen and (max-width: 1050px)  {
 
   .container-registro{
     align-items: center;
@@ -188,6 +188,9 @@ dependiendo la validación*/
 
 @media only screen and (max-width: 768px)  {
 
+  .container-registro{
+    align-items: center;
+  }
   .title-login{
     color: var(--rosa-obscuro);
     font-size: 60px;
@@ -198,7 +201,7 @@ dependiendo la validación*/
 @media only screen and (max-width: 576px) {
   .title-login{
     color: var(--rosa-obscuro);
-    font-size: 70px;
+    font-size: 45px;
   }
   .subtitle-signup{
     font-size: 30px;

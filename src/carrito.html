@@ -59,118 +59,120 @@
         <h1>MIAU CARRITO</h1>
       </div>
       <div class="container">        
-        <table class="table carrito">
+        <table class="table carrito table-hover table-responsive-lg" id="carrito">
           <thead>
             <tr>
-              <th scope="col"></th>
-              <th scope="col">Descripcion</th>
-              <th scope="col">Cantidad</th>
-              <th scope="col">Precio Unitario</th>
-              <th scope="col">Precio Total</th>
-              <th></th>
+              <th scope="col" class="table-header d-none d-lg-table-cell">Producto</th>
+              <th scope="col" class="table-header d-none d-lg-table-cell">Cantidad</th>
+              <th scope="col" class="table-header d-none d-lg-table-cell">Precio</th>
+              <th scope="col" class="table-header d-none d-lg-table-cell">Subtotal</th>
+              <th class="table-header"></th>              
             </tr>
           </thead>
-          <tbody class="carritoDeProductos">
-            <tr class="productoEnCarrito" id="id-producto">
-              <td scope="row" class=" col-1">
-                <a href="#"><img class="float-right " src="assets/img/productos/KittyCakesProductos-15.jpg" alt=""></a>
-              </td>
-              <td class="col-4">
-                <div class="text-truncate">
-                  <h4>Espacio Titulo de producto</h4>
-                </div>
-                <div class="text-truncate-container">
-                  <p class="text-truncate text-descripcion">Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit voluptates iusto </p>
-                </div>
-                <td class="col-2">
-                  <div >
-                    <input class="cantidadDeProducto" type="number" id="cantidad" style="width: 80%;" value="3">
+          <tbody class="carritoDeProductos">                      
+            <tr class="productoEnCarrito" id="id-producto"> 
+              <td data-th="Producto" class="">
+                <div class="row">
+                  <div class="col-2" style="padding: 0;">
+                    <a href="#"><img class="img-responsive" src="assets/img/productos/KittyCakesProductos-15.jpg" alt=""></a>
                   </div>
-                </td>
-                <td class="col-2">
-                  <div>$ <span class="precioUnitario">140.00</span></div>  <!-- solo caben 6 numero con punto decimal sin perder formato -->
-                </td>
-                <td class="col-2">
-                  <div>$ <span class="precioTotal">420.00</span></div>                                   
-                </td>
-                <td class="col-1">
-                  <img class="icon-32 boton-eliminar" src="assets/img/iconos/x-lg.png" alt=""> 
-                </td>
+                  <div class="col-10">
+                    <h4 class="nomargin">Espacio Titulo de producto</h4>    
+                    <p class="text-descripcion">Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit voluptates iusto </p>
+                  </div>                  
+                </div>
+              </td>
+              <td data-th="Cantidad" class="col-2">
+                <div class="d-inline-block">
+                  <input class="cantidadDeProducto" type="number" id="cantidad" style="width: 80%;" value="3">
+                </div>
+              </td>
+              <td data-th="Precio" class="col-2 ">
+                <div class="d-inline-block">$<span class="precioUnitario">140.00</span></div>
+              </td>
+              <td data-th="Subtotal" class="col-2">
+                <div class="d-inline-block">$<span class="precioTotal">420.00</span></div>                                   
+              </td>
+              <td data-th="Eliminar" class="col-1">
+                <img class="icon-32 boton-eliminar" src="assets/img/iconos/x-lg.png" alt=""> 
               </td>
             </tr>
-            <tr class="productoEnCarrito" id="id-producto">
-              <td scope="row" class=" col-1">
-                <a href="#"><img class="float-right " src="assets/img/productos/KittyCakesProductos-15.jpg" alt=""></a>
-              </td>
-              <td class="col-4">
-                <div class="text-truncate">
-                  <h4>Espacio Titulo de producto</h4>
-                </div>
-                <div class="text-truncate-container">
-                  <p class="text-truncate text-descripcion">Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit voluptates iusto </p>
-                </div>
-                <td class="col-2">
-                  <div >
-                    <input class="cantidadDeProducto" type="number" id="cantidad" style="width: 80%;" value="2">
+
+            <tr class="productoEnCarrito" id="id-producto"> 
+              <td data-th="Producto" class="">
+                <div class="row">
+                  <div class="col-2" style="padding: 0;">
+                    <a href="#"><img class="img-responsive" src="assets/img/productos/KittyCakesProductos-15.jpg" alt=""></a>
                   </div>
-                </td>
-                <td class="col-2">
-                  <div>$ <span class="precioUnitario">140.50</span></div>  <!-- solo caben 6 numero con punto decimal sin perder formato -->
-                </td>
-                <td class="col-2">
-                  <div>$ <span class="precioTotal">281.00</span></div>                                   
-                </td>
-                <td class="col-1">
-                  <img class="icon-32 boton-eliminar" src="assets/img/iconos/x-lg.png" alt=""> 
-                </td>
+                  <div class="col-10">
+                    <h4 class="nomargin">Espacio Titulo de producto</h4>    
+                    <p class="text-descripcion">Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit voluptates iusto </p>
+                  </div>                  
+                </div>
+              </td>
+              <td data-th="Cantidad" class="col-2">
+                <div class="d-inline-block">
+                  <input class="cantidadDeProducto" type="number" id="cantidad" style="width: 80%;" value="3">
+                </div>
+              </td>
+              <td data-th="Precio" class="col-2 ">
+                <div class="d-inline-block">$<span class="precioUnitario">140.00</span></div>
+              </td>
+              <td data-th="Subtotal" class="col-2">
+                <div class="d-inline-block">$<span class="precioTotal">420.00</span></div>                                   
+              </td>
+              <td data-th="Eliminar" class="col-1">
+                <img class="icon-32 boton-eliminar" src="assets/img/iconos/x-lg.png" alt=""> 
               </td>
             </tr>
-            <tr class="productoEnCarrito" id="id-producto">
-              <td scope="row" class=" col-1">
-                <a href="#"><img class="float-right " src="assets/img/productos/KittyCakesProductos-15.jpg" alt=""></a>
-              </td>
-              <td class="col-4">
-                <div class="text-truncate">
-                  <h4>Espacio Titulo de producto</h4>
-                </div>
-                <div class="text-truncate-container">
-                  <p class="text-truncate text-descripcion">Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit voluptates iusto </p>
-                </div>
-                <td class="col-2">
-                  <div >
-                    <input class="cantidadDeProducto" type="number" id="cantidad" style="width: 80%;" value="3">
+            
+            <tr class="productoEnCarrito" id="id-producto"> 
+              <td data-th="Producto" class="">
+                <div class="row">
+                  <div class="col-2" style="padding: 0;">
+                    <a href="#"><img class="img-responsive" src="assets/img/productos/KittyCakesProductos-15.jpg" alt=""></a>
                   </div>
-                </td>
-                <td class="col-2">
-                  <div>$ <span class="precioUnitario">140.00</span></div>  <!-- solo caben 6 numero con punto decimal sin perder formato -->
-                </td>
-                <td class="col-2">
-                  <div>$ <span class="precioTotal">420.00</span></div>                                   
-                </td>
-                <td class="col-1">
-                  <img class="icon-32 boton-eliminar" src="assets/img/iconos/x-lg.png" alt=""> 
-                </td>
+                  <div class="col-10">
+                    <h4 class="nomargin">Espacio Titulo de producto</h4>    
+                    <p class="text-descripcion">Descripcion: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque suscipit voluptates iusto </p>
+                  </div>                  
+                </div>
               </td>
-            </tr>          
-          </tbody>          
+              <td data-th="Cantidad" class="col-2">
+                <div class="d-inline-block">
+                  <input class="cantidadDeProducto" type="number" id="cantidad" style="width: 80%;" value="3">
+                </div>
+              </td>
+              <td data-th="Precio" class="col-2 ">
+                <div class="d-inline-block">$<span class="precioUnitario">140.00</span></div>
+              </td>
+              <td data-th="Subtotal" class="col-2">
+                <div class="d-inline-block">$<span class="precioTotal">420.00</span></div>                                   
+              </td>
+              <td data-th="Eliminar" class="col-1">
+                <img class="icon-32 boton-eliminar" src="assets/img/iconos/x-lg.png" alt=""> 
+              </td>
+            </tr>
+          </tbody>
         </table>
+
         <div>
           <hr class="linea-carrito">
         </div>
-        <div class="row">
-          <div class="col-8"></div>
-          <div class="col-2">
-            <h4 class="total-text">Total:<h4>
+        <div class="container-tfoot">
+          <div class="row text-right">
+            <div class="col-8 d-none d-lg-block"></div>
+            <div class="col d-inline-block">
+              <h4 class="total-text d-inline-block">Total: $</h4><span class="granTotal" id="granTotal">701.00</span>
+            </div>
+          </div>   
+          <div class="row mb-3">
+            <div class="accion p-2"><button class="boton-secundario" onclick="location.href='tienda.html'">Volver a la Michi-tienda</button></div>
+            <div class="accion p-2"><button class="boton-secundario" onclick="location.href='menu.html'">Volver al menu</button></div>
+            <div class="accion ml-auto p-2"><button class="boton-primario">Proceder al pago</button></div>
           </div>
-          <div class="col-2">
-            <h4>$ <span class="granTotal" id="granTotal">701.00</span></h4>                                 
-          </div>
-        </div>   
-        <div class="d-flex mb-3">
-          <div class="p-2"><button class="boton-secundario" onclick="location.href='tienda.html'">Volver a la Michi-tienda</button></div>
-          <div class="p-2"><button class="boton-secundario" onclick="location.href='menu.html'">Volver al menu</button></div>
-          <div class="ml-auto p-2"><button class="boton-primario">Pagar</button></div>
         </div>
+       
       </div>
          
     </section>
@@ -218,18 +220,10 @@
       </div>
   </footer>
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 
     <script src="assets/js/carrito.js"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
 </body>
 </html>
