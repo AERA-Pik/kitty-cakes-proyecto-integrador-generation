@@ -1,31 +1,3 @@
-.card {
-    text-align: center;
-    border: none;
-}
-
-/* .pop-image {
-    text-align: center;
-    display: inline-block; 
-    border-radius: 40px;
-} */
-.pop-titulo {
-    font-weight: bold;
-    color: var(--rosa-obscuro);
-}
-
-.pop-texto {
-    color: var(--gris-kitty);
-}
-
-.pop-precio {
-    font-weight: bold;
-    color: var(--gris-kitty);
-}
-
-.pop-icono {
-    width: 4rem;
-}
-
 .banner-menu {   
     position: relative; 
     display: flex;
@@ -39,7 +11,7 @@
 .titulo-menu {
     color: var(--rosa-obscuro);
     position: absolute;
-    top: 42%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -92,7 +64,6 @@
 
 .menu .container-fluid .row .img-producto img.capa:hover > *{   
     transition: transform 0.3s;
-    
 }
 
 .menu .container-fluid .row p.nombre-producto {    
@@ -106,77 +77,84 @@
     padding-bottom: 1rem; 
 } 
 
+.swal-wide .row {
+    max-width: 100%;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row img.pop-image {
+    margin: 1rem;  
+    border-radius: 2rem;
+    width: 80%;
+}
+
+.row .card-text {
+    text-align: left;
+    width: 80%;
+    margin: 1rem;
+}
+
+.row .pop-titulo {
+    font-weight: bold;
+    color: var(--rosa-obscuro);
+}
+
+.row .pop-texto {
+    color: var(--gris-kitty);
+}
+
+.row .pop-precio {
+    font-weight: bold;
+    color: var(--gris-kitty);
+}
+
 @media only screen and (max-width: 768px) {
-    h1 {
-        font-size: 5rem;
+   
+    .swal-wide {
+        width: 70% !important;
+        padding: 0.2%;
+    }
+
+    .row img.pop-image {
+        border-radius: 2rem;
+        width: 80%;
+    }
+
+    .row .card-text {
+        text-align: center;
+        width: 90%;
+    }
+
+    .row .card-text p{
+        font-size: 1.4rem;
     }
 }
 
-/* section#imagenes-modal {
-    margin: 0;
-    padding: 50px 2.5%;
-    width: 95%;
-    height: 200px;
-    background-color: var(--rosa-2);
-}
+@media only screen and (max-width: 992px) {
+    .banner-menu {   
+        position: relative; 
+        display: flex;
+        max-width: 100%;
+        display: inline-block;
+        text-align: center;
+        padding: 0 0 90px 0;
+        margin: 0;
+    }
+    
+    .titulo-menu {
+        color: var(--rosa-obscuro);
+        font-size: 5rem;
+        position: absolute;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-div.modal-reposo {
-    margin: 0;
-    padding: 0;
-    width: 16.6%;
-    height: auto;
-    overflow: hidden;
-    transform: all 0.1s;
-    float: left;
-}
+    .row .card-text {
+        text-align: center;
+        margin: auto;
+    }
 
-div.modal-activo {
-    position: absolute;
-    left: 0;
-    z-index: 2000;
-    margin: 0;
-    padding: 100px 15%;
-    width: 70%;
-    overflow: hidden;
-    border-radius: 0;
-    background-color: white;
-    float: left;
 }
-
-div.modal-reposo:hover {
-    border-radius: 50%;
-}
-
-div.info-modal-reposo img {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    border-radius: 0;
-    height: auto;
-}
-
-div.info-modal-reposo h4, div.info-modal-reposo h5, div.info-modal-reposo p {
-    display: none;
-}
-
-div.info-modal-activo {
-    margin: 0 auto;
-    padding: 50px;
-    width: 80%;
-    height: auto;
-    border-radius: 0;
-    background-color: gray;
-}
-
-div.info-modal-activo p.cerrar-tarjeta {
-    float: right;
-    cursor: pointer;    
-}
-
-div.info-modal-activo img.modal-img-producto {
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    border-radius: 50%;
-    height: auto;
-} */
