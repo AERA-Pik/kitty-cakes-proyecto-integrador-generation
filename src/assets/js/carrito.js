@@ -72,5 +72,33 @@ function cantidadCambiada(event) {
 for (var i = 0; i < elementoCantidadDeProducto.length; i++) {
     var input = elementoCantidadDeProducto[i];
     input.addEventListener('change', cantidadCambiada);
-}
+};
 
+
+//Alertas
+document.getElementById("btn-pagar").addEventListener("click", function(){
+    Swal.fire({
+        title: '<h3>FELICIDADES!</h3>',
+        html: '<p>Tu pedido ha sido realizado con exito<p>',
+        icon: 'success',        
+        confirmButtonText: 'Aceptar',
+        buttonsStyling: false,
+        customClass: {
+            confirmButton: 'boton-primario'
+
+        },
+        timer: 5000,        
+        footer: '<p>Seras redirigido a la siguiente pagina</p>',
+        width: "30%",
+        height: "80%",
+        allowOutsideClick: false,
+        allowEscapeKey: false,
+        allowEnterKey: false,
+        stopKeydownPropagation: false,
+        backdrop: true,
+
+    }).then(function() {
+        window.location = "index.html";
+
+    });
+})
