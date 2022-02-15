@@ -9,6 +9,10 @@
    margin: 0 auto 0;
 }
 
+.boton-primario.registro,
+.boton-secundario.registro{
+  width: 170px; 
+}
 
 h1{
     font-size: 7vw;
@@ -32,6 +36,105 @@ h2{
   border-radius: 10rem;
 }
 
+/*
+AQUI INICIA CODIGO DE VALIDACION
+*/
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 40px;
+	right: 10px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+	color: #e74c3c;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+/*
+AQUI TERMINA CODIGO DE VALIDACION 
+*/
+.error input {
+  border:2px red solid;
+}
+
+.success input {
+  border:2px green solid;
+}
+
+.form-outline i {
+     position:absolute;
+     right:25px;
+     top:8px;
+     visibility: hidden;
+ }
+ .form-outline i {
+  position:absolute;
+  right:25px;
+  top:8px;
+  visibility: hidden;
+}
+
+
+.success i.fa-check-circle{
+  font-size: 24px;
+   visibility: visible;
+   color:green;
+}
+
+.error i.fa-exclamation-circle {
+ font-size: 24px;
+  visibility: visible;
+  color:red;
+}
+
+/*esconde mensaje de error*/
+
+.form-outline small {
+   font-size: 14px;
+   padding-left: 20px;
+   color:red;
+   visibility: hidden;
+}
+
+/*muestra mensaje de error al validar error*/
+.error small {
+   visibility: visible;
+   padding-top: 40px;
+   font-weight: bold;
+}
+
+.error .label-name{
+top: -3rem;
+font-size: 16px;
+left: 1.5rem;
+background-color: var(--rosa-3);
+} 
 
 /*Efecto inputs*/
 /*---------------------------------------------------*/
@@ -91,17 +194,95 @@ h2{
 
  /*-----------------------------------------*/
 .form-check{
-  text-align: right;
+  text-align: center;
 }
 
+/*Icono de Ojo*/
 .btn-password{
-  background-color: white;
+  background-color: transparent;
   border: transparent;
   margin-top: 10px;
-  margin-left: 300px;
+  margin-left: auto;
   z-index: 0;
 }
 
 .icon{
   color: black;
+}
+
+/* form-control.success input{
+  border-color:green;
+}
+
+.form-control i{
+  visibility: hidden;
+  position: absolute;
+}
+
+.form-control.succes i.fa-exclamation-circle{
+  color:re
+} */
+
+#label-contra{
+  padding-top: 9px;
+}
+/*----------------------------------*/
+
+@media only screen and (max-width: 1230px)  {
+
+  .container-registro{
+    align-items: center;
+  }
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 90px;
+  }
+
+}
+
+@media only screen and (max-width: 1050px)  {
+
+  .container-registro{
+    align-items: center;
+  }
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 80px;
+  }
+
+}
+
+@media only screen and (max-width: 768px)  {
+
+  .container-registro{
+    align-items: center;
+  }
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 60px;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  .title-login{
+    color: var(--rosa-obscuro);
+    font-size: 45px;
+  }
+  .subtitle-signup{
+    font-size: 30px;
+  }
+  /*muestra iconos al ser el caso validado*/
+/*  .success i.fa-check-circle{
+    font-size: 20px;
+     visibility: visible;
+     color:green;
+ }
+
+ .error i.fa-exclamation-circle {
+   font-size: 20px;
+    visibility: visible;
+    color:red;
+}
+ } */
 }
