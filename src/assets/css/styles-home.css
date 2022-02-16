@@ -138,6 +138,7 @@ p {
 }
 #img-size-carousel{
     width: 100%;
+    display: block;
 }
 
 .carousel-header{
