@@ -132,4 +132,5 @@ p {
 
 .boton-secundario:hover {
     background-color: var(--blanco-kitty);
+    border: 2px solid var(--rosa-obscuro);
 }

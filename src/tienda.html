@@ -1,284 +1,204 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/nav-style.css">
     <link rel="stylesheet" href="assets/css/footer-style.css">
     <link rel="stylesheet" href="assets/css/tienda-style.css">
+    <link rel="shortcut icon" href="assets/img/logos/logo-simplificado.png" type="image/x-icon">
+    
     <title>Tienda Kitty Cakes</title>
 </head>
-
 <body id="top">
-    <div class="container-nav sticky-top">
+    <div  class="container-nav sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="nav-link active d-none d-lg-inline" aria-current="page" href="index.html"><img
-                    src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226"></a>
-            <a class="nav-link active d-lg-none d-inline" aria-current="page" href="index.html"><img
-                    src="assets/img/logos/logo-simplificado.png" alt="logo kitty" width="48"></a>
+            <a class="nav-link active d-none d-lg-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226"></a>
+            <a class="nav-link active d-lg-none d-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-simplificado.png" alt="logo kitty" width="48"></a>
             <ul class="row ml-auto">
-                <li class="nav-item mr-3 d-inline d-sm-inline d-lg-none">
-                    <a class="nav-link" href="login.html"><img class="icon-32" src="assets/img/iconos/user-rosa.png"
-                            alt=""></a>
-                </li>
-                <li class="nav-item mr-5 d-inline d-sm-inline d-lg-none">
-                    <a class="nav-link" href="carrito.html"><img class="icon-32" src="assets/img/iconos/cart-rosa.png"
-                            alt=""></a>
-                </li>
-            </ul>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <li class="nav-item mr-3 d-inline d-sm-inline d-lg-none">
+                    <a class="nav-link" href="login.html"><img class="icon-32" src="assets/img/iconos/user-rosa.png" alt=""></a>
+              </li>
+              <li class="nav-item mr-5 d-inline d-sm-inline d-lg-none">
+                    <a class="nav-link" href="carrito.html"><img class="icon-32" src="assets/img/iconos/cart-rosa.png" alt=""></a>
+              </li>
+            </ul>        
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <ul class="navbar-nav ml-auto texto-nav">
-                    <li class="nav-item mr-5 active nav-cel">
-                        <a class="nav-link active" href="index.html"><img class="icon-48"
-                                src="assets/img/iconos/Home_cat-rosa.png" alt="icono home"><span
-                                class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item mr-5 nav-cel">
-                        <a class="nav-link" href="nosotros.html"><span
-                                class="rosa-kitty textoNavVar">Nosotros</span></a>
-                    </li>
-                    <li class="nav-item mr-5 nav-cel">
-                        <a class="nav-link" href="menu.html"><span class="rosa-kitty textoNavVar">Menú</span></a>
-                    </li>
-                    <li class="nav-item mr-5">
-                        <a class="nav-link" href="tienda.html"><span class="rosa-kitty textoNavVar">Tienda</span></a>
-                    </li>
-                    <li class="nav-item mr-5">
-                        <a class="nav-link" href="contacto.html"><span
-                                class="rosa-kitty textoNavVar">Contacto</span></a>
-                    </li>
-                    <li class="nav-item mr-5 d-none d-sm-none d-lg-block">
-                        <a class="nav-link" href="login.html"><img class="icon-48" src="assets/img/iconos/user-rosa.png"
-                                alt=""></a>
-                    </li>
-                    <li class="nav-item mr-5 d-none d-sm-none d-lg-block">
-                        <a class="nav-link" href="carrito.html"><img class="icon-48"
-                                src="assets/img/iconos/cart-rosa.png" alt=""></a>
-                    </li>
-                </ul>
+              <ul class="navbar-nav ml-auto texto-nav">
+                <li class="nav-item mr-5 active nav-cel">
+                  <a class="nav-link active" href="index.html"><img class="icon-48" src="assets/img/iconos/Home_cat-rosa.png" alt="icono home"><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mr-5 nav-cel">
+                  <a class="nav-link" href="nosotros.html"><span class="rosa-kitty textoNavVar">Nosotros</span></a>
+                </li>
+                <li class="nav-item mr-5 nav-cel">
+                  <a class="nav-link" href="menu.html"><span class="rosa-kitty textoNavVar">Menú</span></a>
+                </li>
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="tienda.html"><span class="rosa-kitty textoNavVar">Tienda</span></a>
+                </li>
+                <li class="nav-item mr-5">
+                  <a class="nav-link" href="contacto.html"><span class="rosa-kitty textoNavVar">Contacto</span></a>
+                </li>
+                <li class="nav-item mr-5 d-none d-sm-none d-lg-block">
+                  <a class="nav-link" href="login.html"><img class="icon-32" src="assets/img/iconos/user-rosa.png" alt=""></a>
+                </li>
+                <li class="nav-item mr-5 d-none d-sm-none d-lg-block">
+                  <a class="nav-link" href="carrito.html"><img class="icon-32" src="assets/img/iconos/cart-rosa.png" alt=""></a>
+                </li>
+              </ul>
             </div>
         </nav>
     </div>
 
 
-    <section class="header-menu mx-auto col- col-sm-12 col-md-12 col-lg-12">
-        <img src="assets/img/Baner_tienda.png" class="img-fluid img-banner" alt="">
-        <h1 class="titulo">MICHI TIENDA</h1>
-        <!-- <div class="titulo-menu"></div> -->
+    <section class="banner-tienda col- col-sm-12 col-md-12 col-lg-12">
+      <img src="assets/img/productos/header3.png" alt="" style="opacity: 0.5; max-width: 100%;">
+      <h1 class="titulo-tienda">MICHI TIENDA</h1>              
     </section>
 
-    <section>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img class="" src="assets/img/productos/destapador.jpg" alt="">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="nombre-producto">Michi Destapador</p>
-                            <img src="assets/img/Line_division.png" height="20px" width="20px" alt="">
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <p class="precio">$ 169.00</p>
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <a id="btn1" href="#" class="btn">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img class="" src="assets/img/productos/destapador.jpg" alt="">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="nombre-producto">Michi Espatula</p>
-                            <img src="assets/img/Line_division.png" height="20px" width="20px" alt="">
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <p class="precio">$ 169.00</p>
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <a href="carrito.html" class="btn">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img class="" src="assets/img/productos/destapador.jpg" alt="">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="nombre-producto">Michi Guante</p>
-                            <img src="assets/img/Line_division.png" height="20px" width="20px" alt="">
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <p class="precio">$ 169.00</p>
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <a href="carrito.html" class="btn">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img class="" src="assets/img/productos/destapador.jpg" alt="">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="nombre-producto">Michi Calcetas Blancas</p>
-                            <img src="assets/img/Line_division.png" height="20px" width="20px" alt="">
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <p class="precio">$ 169.00</p>
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <a href="carrito.html" class="btn">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img class="" src="assets/img/productos/destapador.jpg" alt="">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="nombre-producto">Michi Calcetas Negras</p>
-                            <img src="assets/img/Line_division.png" height="20px" width="20px" alt="">
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <p class="precio">$ 169.00</p>
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <a href="carrito.html" class="btn">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img class="" src="assets/img/productos/destapador.jpg" alt="">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="nombre-producto">Michi Calcetas Rayadas</p>
-                            <img src="assets/img/Line_division.png" height="20px" width="20px" alt="">
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <p class="precio">$ 169.00</p>
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <a href="carrito.html" class="btn">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img class="" src="assets/img/productos/destapador.jpg" alt="">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="nombre-producto">Michi Pin Halloween 1</p>
-                            <img src="assets/img/Line_division.png" height="20px" width="20px" alt="">
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <p class="precio">$ 169.00</p>
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <a href="carrito.html" class="btn">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img class="" src="assets/img/productos/destapador.jpg" alt="">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="nombre-producto">Michi Pin Halloween 2</p>
-                            <img src="assets/img/Line_division.png" height="20px" width="20px" alt="">
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <p class="precio">$ 169.00</p>
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <a href="carrito.html" class="btn">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
-                    <img class="" src="assets/img/productos/destapador.jpg" alt="">
-                    <div class="row">
-                        <div class="col-12">
-                            <p class="nombre-producto">Michi Pin Halloween 3</p>
-                            <img src="assets/img/Line_division.png" height="20px" width="20px" alt="">
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <p class="precio">$ 169.00</p>
-                        </div>
-                        <div class="col-12 bg-rosa">
-                            <a href="carrito.html" class="btn">Agregar al carrito</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+    <section class="tienda" >
+      <div class="container-fluid">
+        <div class="row">
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
+            <div class="img-producto">
+              <img class="box img-fluid" src="assets/img/productos/destapador.jpg" alt=""> 
+              <img class="capa img-fluid" onclick="sweetalertclick()" src="assets/img/filtro_producto.png" alt="">
+            </div>     
+            <p class="nombre-producto">Michi Destapador</p>            
+            <p class="precio">$ 169.00</p>  
+            <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
+          </div>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="img-producto">
+              <img class="box img-fluid" src="assets/img/productos/espatula.jpg" alt=""> 
+              <img class="capa img-fluid" src="assets/img/filtro_producto.png" alt="">
+            </div>    
+            <p class="nombre-producto">Michi Espatula</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="boton-primario">Agregar al carrito</a>
+          </div>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">           
+            <div class="img-producto">
+              <img class="box img-fluid" src="assets/img/productos/guante.jpg" alt=""> 
+              <img class="capa img-fluid" src="assets/img/filtro_producto.png" alt="">
+            </div>    
+            <p class="nombre-producto">Michi Guante</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="boton-primario">Agregar al carrito</a>
+          </div>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="img-producto">
+              <img class="box img-fluid" src="assets/img/productos/calceta_m_clara.jpg" alt=""> 
+              <img class="capa img-fluid" src="assets/img/filtro_producto.png" alt="">
+            </div>    
+            <p class="nombre-producto">Michi Calcetas Blancas</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="boton-primario">Agregar al carrito</a>
+          </div>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="img-producto">
+              <img class="box img-fluid" src="assets/img/productos/calceta_m_obscura.jpg" alt=""> 
+              <img class="capa img-fluid" src="assets/img/filtro_producto.png" alt="">
+            </div>    
+            <p class="nombre-producto">Michi Calcetas Obscuras</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="boton-primario">Agregar al carrito</a>
+          </div>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="img-producto">
+              <img class="box img-fluid" src="assets/img/productos/calceta_negra.jpg" alt=""> 
+              <img class="capa img-fluid" src="assets/img/filtro_producto.png" alt="">
+            </div>    
+            <p class="nombre-producto">Michi Calcetas Rayadas</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="boton-primario">Agregar al carrito</a>
+          </div>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="img-producto">
+              <img class="box img-fluid" src="assets/img/productos/halloween_pin_1.jpg" alt=""> 
+              <img class="capa img-fluid" src="assets/img/filtro_producto.png" alt="">
+            </div>    
+            <p class="nombre-producto">Michi Pin Halloween 1</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="boton-primario">Agregar al carrito</a>
+          </div>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="img-producto">
+              <img class="box img-fluid" src="assets/img/productos/halloween_pin_2.jpg" alt=""> 
+              <img class="capa img-fluid" src="assets/img/filtro_producto.png" alt="">
+            </div>    
+            <p class="nombre-producto">Michi Pin Halloween 2</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="boton-primario">Agregar al carrito</a>
+          </div>
+          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+            <div class="img-producto">
+              <img class="box img-fluid" src="assets/img/productos/halloween_pin_3.jpg" alt=""> 
+              <img class="capa img-fluid" src="assets/img/filtro_producto.png" alt="">
+            </div>    
+            <p class="nombre-producto">Michi Pin Halloween 3</p>            
+            <p class="precio">$ 169.00</p>
+            <a href="carrito.html" class="boton-primario">Agregar al carrito</a>
+          </div>
+        </div>     
+      </div>
     </section>
+
 
     <footer>
-        <div class="bg-image bg-image-movil">
-            <div class="container">
-                <div class="row">
-                    <div class="d-flex secciones col-12 col-sm-12 col-md-12  col-lg-4">
-                        <ul class="list-unstyled mx-auto texto-nav">
-                            <li class="dropdown"><a href="nosotros.html">Nosotros
-                                </a></li>
-                            <li class="dropdown"><a href="menu.html">Menú</a></li>
-                            <li class="dropdown"><a href="tienda.html">Michi tienda</a></li>
-                            <li class="dropdown"><a href="contacto.html">Contacto</a></li>
-                        </ul>
-                    </div>
-                    <div class="iconos col-12 col-sm-12 col-md-12 col-lg-4">
-                        <div class="icono-kitty">
-                            <a href="#top"><img src="assets/img/logos/logo-completo.png" alt=""></a>
-                        </div>
-                        <div class="redes-sociales">
-                            <a class="dropdown"
-                                href="https://www.facebook.com/KittyCakesPastelitos/?ref=pages_you_manage "><img
-                                    class="icon-24" src="assets/img/iconos/facebook.png" alt="facebook_kitty_cakes">
-                            </a>
-                            <a href="https://www.instagram.com/kittycakespastelitos/"><img class="icon-24"
-                                    src="assets/img/iconos/instagram.png" alt="instagram_kitty_cakes">
-                            </a>
-                            <a href="#"><img class="icon-24" src="assets/img/iconos/whatsapp.png"
-                                    alt="whatsapp_kitty_cakes">
-                            </a>
-                        </div>
-                        <p class="copyright">Kitty Cakes Pastelitos 2022</p>
-                    </div>
-                    <div class="d-flex dir-hora col-12 col-sm-12 col-md-12 col-lg-4">
-                        <ul class="list-unstyled mx-auto">
-                            <li class="direccion">
-                                <p><img class="icon-24" src="assets/img/iconos/geo-alt.png"
-                                        alt="direccion_kitty_cakes">Narvarte Poniente, CDMX, C. P. 03600</p>
-                            </li>
-                            <li class="horarios">
-                                <p><img class="icon-24" src="assets/img/iconos/clock.png"
-                                        alt="horarios_kitty_cakes">Horario: 9:00 - 17:00 horas</p>
-                            </li>
-
-                        </ul>
-                    </div>
+      <div class="bg-image bg-image-movil">  
+          <div class="container">              
+            <div class="row">
+              <div class="d-flex secciones col-12 col-sm-12 col-md-12  col-lg-4">
+                <ul class="list-unstyled mx-auto texto-nav">
+                    <li class="dropdown"><a href="nosotros.html">Nosotros
+                        </a></li>
+                    <li class="dropdown"><a href="menu.html">Menú</a></li>
+                    <li class="dropdown"><a href="tienda.html">Michi tienda</a></li>
+                    <li class="dropdown"><a href="contacto.html">Contacto</a></li>
+                </ul> 
+              </div>
+              <div class="iconos col-12 col-sm-12 col-md-12 col-lg-4">
+                <div class="icono-kitty">
+                    <a href="#top"><img src="assets/img/logos/logo-completo.png" alt=""></a>
                 </div>
-            </div>
-        </div>
-    </footer>
-    <!-- ==JS de la tienda -->
-    <script src="assets/js/tienda.js"></script>
-    <!-- Optional JavaScript; choose one of the two! -->
+                <div class="redes-sociales">               
+                    <a class="dropdown" href="https://www.facebook.com/KittyCakesPastelitos/?ref=pages_you_manage "><img class="icon-24" src="assets/img/iconos/facebook.png" alt="facebook_kitty_cakes">
+                    </a>
+                    <a href="https://www.instagram.com/kittycakespastelitos/"><img class="icon-24" src="assets/img/iconos/instagram.png" alt="instagram_kitty_cakes">
+                    </a>
+                    <a href="#"><img class="icon-24" src="assets/img/iconos/whatsapp.png" alt="whatsapp_kitty_cakes">
+                    </a>
+                </div>
+                <p class="copyright">Kitty Cakes Pastelitos 2022</p>
+              </div>
+              <div class="d-flex dir-hora col-12 col-sm-12 col-md-12 col-lg-4">
+                <ul class="list-unstyled mx-auto">
+                    <li class="direccion">                        
+                        <p><img class="icon-24" src="assets/img/iconos/geo-alt.png" alt="direccion_kitty_cakes">Narvarte Poniente, CDMX, C. P. 03600</p>
+                    </li>
+                    <li class="horarios">                        
+                        <p><img class="icon-24" src="assets/img/iconos/clock.png" alt="horarios_kitty_cakes">Horario: 9:00 - 17:00 horas</p>
+                    </li>
+                    
+                </ul>
+              </div>
+          </div>                   
+          </div>                
+      </div>
+  </footer>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
-
-    <!-- ==Swwet Alert 2== -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="assets/js/tienda.js"></script>
 </body>
-
 </html>
