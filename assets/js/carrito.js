@@ -98,7 +98,6 @@ document.getElementById("btn-pagar").addEventListener("click", function(){
         backdrop: true,
 
     }).then(function() {
-        window.location = "index.html";
-
+        window.location = "resumen.html";
     });
 })
