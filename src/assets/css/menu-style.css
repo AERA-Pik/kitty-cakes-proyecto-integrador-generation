@@ -80,12 +80,13 @@
 .swal-wide .row {
     max-width: 100%;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .row img.pop-image {
-    margin: 1rem;  
+    margin-top: 2rem;  
+    margin-bottom: 1rem;
     border-radius: 2rem;
     width: 80%;
 }
@@ -93,21 +94,24 @@
 .row .card-text {
     text-align: left;
     width: 80%;
-    margin: 1rem;
 }
 
 .row .pop-titulo {
     font-weight: bold;
+    font-size: 1.5rem;
     color: var(--rosa-obscuro);
 }
 
 .row .pop-texto {
+    font-size: 1.5rem;
     color: var(--gris-kitty);
 }
 
 .row .pop-precio {
     font-weight: bold;
+    font-size: 1.5rem;
     color: var(--gris-kitty);
+    margin-bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -152,9 +156,12 @@
         transform: translate(-50%, -50%);
     }
 
+    .menu .container-fluid .row .producto {
+        padding-bottom: 20%;
+    }
+
     .row .card-text {
         text-align: center;
         margin: auto;
     }
-
 }
