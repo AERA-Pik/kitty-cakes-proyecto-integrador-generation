@@ -46,8 +46,8 @@
 .menu .container-fluid .row .img-producto img.capa {
     border-radius: 42px;
     position: absolute;
-    top: 0;
-    opacity: 0;    
+    top: 0; 
+    opacity: 0;
     transition: opacity 0.3s;
 }
 
