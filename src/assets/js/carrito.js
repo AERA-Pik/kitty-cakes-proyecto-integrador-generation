@@ -79,7 +79,7 @@ for (var i = 0; i < elementoCantidadDeProducto.length; i++) {
 document.getElementById("btn-pagar").addEventListener("click", function(){
     Swal.fire({
         title: '<h3>FELICIDADES!</h3>',
-        html: '<p>Tu pedido ha sido realizado con exito<p>',
+        html: '<p>Tu pedido ha sido realizado con éxito<p>',
         icon: 'success',        
         confirmButtonText: 'Aceptar',
         buttonsStyling: false,
@@ -88,7 +88,7 @@ document.getElementById("btn-pagar").addEventListener("click", function(){
 
         },
         timer: 5000,        
-        footer: '<p>Seras redirigido a la siguiente pagina</p>',
+        footer: '<p>Serás redirigido a la siguiente página</p>',
         width: "30%",
         height: "80%",
         allowOutsideClick: false,
