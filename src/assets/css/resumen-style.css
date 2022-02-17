@@ -1,0 +1,123 @@
+body {
+    background-color: var(--blanco-kitty);
+
+}
+
+h1 {
+    color: var(--rosa-obscuro);
+    text-align: center;
+    margin: 6rem auto;
+}
+
+.row {
+    margin: 0;
+}
+
+section .container {
+    padding-left: 36rem;
+    padding-right: 36rem;
+    
+}
+
+.h4 {
+    font-size: 3.2rem;
+}
+
+.linea-carrito{
+    margin:0 auto ;
+    margin-top: 0px;
+    height: 0.8rem;
+    border-width:0;
+    background-color:var(--rosa-3);
+}
+
+section img{
+    width: 100%;
+    min-width: 10%;
+    border: 0.1rem solid var(--rosa-kitty);
+    border-radius: 20px;
+    float: left;
+}
+
+
+.table td, .table th {
+    padding: 0.75rem;
+    vertical-align: inherit;
+    border-top: none;
+}
+
+.table thead th {
+    font-size: 1.8rem;
+    position: relative;    
+    padding-right: 15px;
+    padding-left: 15px;
+    border-style: none none solid;
+    border-bottom-width: 0.8rem;
+    border-color: var(--rosa-obscuro);
+}
+
+tr, td {
+    padding: 1rem 0;    
+    font-size: 3.2rem;
+}
+
+.total-text {
+    padding: 0.1rem 0;
+    font-size: 3.2rem;
+}
+
+.granTotal {
+    font-size: 3.2rem;
+}
+
+.boton-eliminar {
+    cursor: pointer;
+}
+
+.boton-eliminar:hover {
+    background-color: var(--rosa-kitty);
+}
+
+@media only screen and (max-width: 992px) {
+    
+    h1 {       
+        margin: 3.2rem auto;
+        font-size: 4rem;
+    }
+
+    tr{
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid var(--rosa-obscuro)
+    }
+
+    section .container {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;        
+        
+    }
+
+    table#carrito tbody td {                
+        display: inline-block; 
+        padding: .6rem; 
+        min-width:320px;
+    }
+    
+	table#carrito tbody td:before {
+        display: inline-block;                
+        content: attr(data-th);
+        text-align: left;
+        
+	}
+
+    .container-tfoot div{
+        display: block;
+        text-align: center!important;
+    }
+
+    .container-tfoot button {
+        width: 100%;
+    }
+
+
+}

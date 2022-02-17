@@ -1,77 +1,169 @@
-document.getElementById("btn1").addEventListener("click", function(){
+function sweetalertclick() {
     Swal.fire({
-        //title: '',
-        text: 'Michi',
-        html: '<div class="row"><div class="col-12 col-md-6 text-center text-md-right"><img class="imag-producto img-fluid" src="assets/img/productos/destapador.jpg" alt=""></div><div class="col-12 col-md-6 w-100"><div class="row"><div class="col-12 align-self-start text-center text-md-left"><p class="h1 mt-3 mt- mb-3">Michi Destapdor</p></div><div class="col-12 text-center text-md-left align-self-center mb-md-3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, rem.</p></div><div class="col-12 text-center text-md-left mb-md-3"><p class="precio">$ 169.00</p></div><div class="col-12 text-center text-md-left align-self-end"><button onclick="" class="btn w-auto">Agregar <span class = "d-none d-md-inline"> al carrito</span></button></div></div></div></div></div>',
-        // icon:
-        // confirmButtonText:
-        // footer:
-        width: "30%",
-        height: "80%",
-        // padding:
-        //background: `#FFF8FA`,
-        //grow: "column",
-        //backdrop: `#FA94A2`,
-        // timer:
-        // timerProgressBar:
-        // toast:
-        // position:
-        allowOutsideClick: true,
-        // allowEscapeKey:
-        // allowEnterKey:
-        // stopKeydownPropagation:
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/destapador.jpg" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><p class= "titulo-pop h1"><span  class="pop-titulo">Michi Destapador</span></p><p class="pop-texto text-justify">Destapa tus cervecitas al estilo gatuno con este hermoso michi destapador.</p><br><p><span class="pop-precio">$ 169.00</span></p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
         backdrop: 'rgb(239,187,187,0.7)',
-        // input:
-        // inputPlaceholder:
-        // inputValue:
-        // inputOptions:
-        
-        customClass: {
-            //container: 'container'
-            popup: 'estilo-pop container',
-            // 	header
-            //title: 'col-6',
-            //closeButton: 'btn',
-            // 	icon:
-            //image: "imag-producto col-6",
-            // 	content:
-            // 	input:
-            // 	actions:
-            //confirmButton: 'btn'
-            // 	cancelButton:
-            // 	footer:	
-        },
-        // 	container:
-        // 	popup:
-        // 	header:
-        // 	title:
-        // 	closeButton:
-        // 	icon:
-        //  image:
-        content: 'michi destapador',
-        // 	input:
-        // 	actions:
-        // 	confirmButton:
-        // 	cancelButton:
-        // 	footer:	
-    
-        showConfirmButton: false,
-        // confirmButtonColor:
-        //confirmButtonAriaLabel: 'Agregar al carrito',
-    
-        //showCancelButton: false,
-        // cancelButtonText:
-        // cancelButtonColor:
-        // cancelButtonAriaLabel:
-        
-        //buttonsStyling: '#FFF8FA',
-        // showCloseButton:
-        // closeButtonAriaLabel:
-    
-    
-        //imageUrl: 'assets/img/productos/destapador.jpg',
-        //imageWidth: 100,
-        //imageHeight: 100,
-        // imageAlt:
-    });
-});
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+function sweetalertclick2() {
+    Swal.fire({
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/espatula.jpg" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Michi Espátula Antiadherente</h5><p class=" text-justify pop-texto">Dale un toque gatuno a la hora de cocinar tus platillos favoritos con esta simpática michi espátula antiadherente. Contenido: una pieza. Tamaño: único.</p><p class="pop-precio">$ 179.00</p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+function sweetalertclick3() {
+    Swal.fire({
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/guante.jpg" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Michi Guante de Cocina</h5><p class=" text-justify pop-texto">Protege tus hermosas manitas al cocinar usando nuestro tierno michi guante de cocina. Contenido: una pieza, Talla: única.</p><p class="pop-precio">$ 169.00</p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+function sweetalertclick4() {
+    Swal.fire({
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/calceta_m_clara.jpg" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Michi Calcetines Blancos</h5><p class=" text-justify pop-texto">Mantén tus pawtitas calientitas con estilo gatuno. Modelo: manchitas tonos claros. Contenido: un par. Talla: única.</p><p class="pop-precio">$ 65.00</p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+function sweetalertclick5() {
+    Swal.fire({
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/calceta_m_obscura.jpg" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Michi Calcetines Obscuros</h5><p class="text-justify pop-texto">Mantén tus pawtitas calientitas con estilo gatuno. Modelo: manchitas tonos obscuros. Contenido: un par. Talla: única.</p><p class="pop-precio">$ 65.00</p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+function sweetalertclick6() {
+    Swal.fire({
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/calceta_negra.jpg" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Michi Calcetines Rayados</h5><p class="pop-texto">Mantén tus pawtitas calientitas con estilo gatuno. Modelo: rayas negras con gris. Contenido: un par. Talla: única.</p><p class="pop-precio">$ 65.00</p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+function sweetalertclick7() {
+    Swal.fire({
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/halloween_pin_1.jpg" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Michi Pin Calabaza</h5><p class="text-justify pop-texto">Pin de michi calabaza ideal para un halloween muy gatuno.</p><p class="pop-precio">$ 55.00</p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+function sweetalertclick8() {
+    Swal.fire({
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/pin_michiLunar.jpg" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Michi Pin Lunar</h5><p class="text-justify pop-texto">Pin de un misterioso michi junto con las fases lunares.</p><p class="pop-precio">$ 55.00</p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+function sweetalertclick9() {
+    Swal.fire({
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/pin_michiAstronauta.jpg" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Michi Astronauta</h5><p class="text-justify pop-texto">Tierno pin con forma de michi astronauta.</p><p class="pop-precio">$ 55.00</p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+function sweetalertclick10() {
+    Swal.fire({
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/promo_cupcakes.png" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Promo Cupcats Clásicos</h5><p class="pop-texto">Cupcakes de chocolate y  mantequilla decorados con crema batida, a sólo $12.00 cada uno</p><p class="pop-precio">$ 12.00</p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+function sweetalertclick11() {
+    Swal.fire({
+        html: 
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/promo_cupcakes.png" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Promo Cupcats Clásicos</h5><p class="pop-texto">Cupcakes de chocolate y  mantequilla decorados con crema batida, a sólo $12.00 cada uno</p><p class="pop-precio">$ 12.00</p></div></div></div>',
+        confirmButtonText: 'Regresar',
+        confirmButtonColor: '#FA94A2',
+        width: '50%',
+        padding: '1%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
+
+
+function sweetalertcarrito() {
+    Swal.fire({
+        icon: 'success',
+        html: 
+        '<h5 class="pop-carrito">Tu compra se agregó exitosamente al miau carrito</h5>',
+        confirmButtonText: 'OK',
+        confirmButtonColor: '#FA94A2',
+        width: '40%',
+        padding: '2%',
+        backdrop: 'rgb(239,187,187,0.7)',
+        background: 'var(--blanco-kitty);',
+        customClass: 'swal-wide'
+    })
+}
