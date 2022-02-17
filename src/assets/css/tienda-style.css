@@ -1,5 +1,5 @@
 body {
-    cursor: url('/assets/img/cursor_kitty.png'), auto;
+    cursor: url('/src/assets/img/cursor_kitty.cur'), auto;
 }
 .banner-tienda {   
     position: relative; 
