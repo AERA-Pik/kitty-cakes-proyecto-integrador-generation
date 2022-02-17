@@ -58,7 +58,7 @@
 
     
     <!--Login-->
-    <section class="login-box">
+    <section class="login-box" id="formulario">
       <div class="container py-5">
        <div class="row justify-content-center align-items-center">
          
@@ -75,60 +75,64 @@
 
           <div class="row pb-3">
 
-          </div><!-- 
-
-Correo Electronico -->
-<div class="row mt-5 pb-5">
-  <div class="col-md-12">
-      <div class="form-outline">
-        <input type="email" id="email" class="form-input" placeholder="ejemplo@kittycakes.com" required/>
-        <label class="label-name" for="email">Correo electrónico</label>
-         <i class="fas fa-check-circle"></i> 
-        <i class="fas fa-exclamation-circle"></i> 
-        <small>Error Message</small>
-        
-      </div>
-  </div>
-</div>
+          </div>
+          
+          
+          <div class="formulario__grupo " id="grupo_correo">
+            <div class="col-md-12">
+                <div class="form-outline" id="grupo_correo">
+                  <input type="email" id="email" class="form-input" name="correo" placeholder="ejemplo@kittycakes.com" required/>
+                 
+                  <label class="label-name" for="email" >Correo electrónico  </label>
+                  
+                </div>
+                
+            </div>
+          </div>
           <br>
           <br>
           <br>
-          <div class="row mt-5 pb-3">
+          <br>
+          <br>
+          <br>
+          <div class="" id="grupo_password">
                 <div class="col-md-12">
                   <div class="form-outline">
                     <input type="password" id="password-1" class="form-input" placeholder=" " required/>
-                    <label class="label-name" for="password1">Contraseña:</label>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-excalamation-circle"></i>
-                    <small>Error Message</small>
+                    <label class="label-name" for="password-1">Contraseña</label>
                     <div class="input-group-append">
-                          <button id="show_password" class="btn-password  " type="button" onclick="mostrarPassword()" >      
+                          <button id="show_password" class="btn-password  " type="button" onclick="mostrarPassword()" > 
                           </button>
                           
                     </div>
+                    <div class="valid-feedback"> Correcto!</div>
                   </div>
 
                 </div>
 
           </div>
-          <div class="d-flex justify-content-center mt-2">
-            <button type="submit" class="boton-secundario registro" id="warnings">Iniciar sesión</button>
+          <br>
+          <div class="errorlogin" id="error"></div> 
+          <div class="d-flex justify-content-center mt-5">
+            <button type="button" class="boton-secundario" onclick="return enviarFormulario()">Iniciar sesión</button>
           </div>
-
+           
           <p class="text-center text-muted mt-5">¿Aún no tienes cuenta?</p>
           <a style="text-decoration: none;" href="registro.html">
             <div class="d-flex justify-content-center mt-5">
-                <button type="button" class="boton-primario registro">Regístrate</button>
+                <button type="button" class="boton-primario">Regístrate</button>
               </div>
           </a>
 
         </form>
+      
         </div>
       </div>
     </div>
   </div>
 </div>
 </section>
+
 
 
     <!--footer-->

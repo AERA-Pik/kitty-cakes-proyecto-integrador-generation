@@ -1,93 +1,77 @@
-/* accedemos a todos los elementos */
-const form = document.getElementById('form1');
-const correo = document.getElementById('email');
-const contra = document.getElementById('password1');
+const formulario = document.getElementById("formulario");
+const inputs =document.querySelector("#formulario input");
 
-/*crea callback method */
-/* form.addEventListener('submit', (event)=>{
-    event.preventDefault();
-    checkImputs();
-});
+var correo = document.getElementById("email");
+var password= document.getElementById("password-1");
+var error= document.getElementById("error");
+error.style.color= "red";
 
-function checkImputs(){
-    const correoValue=email.value.trim();
-    const contraValue=password1.value.trim();    
+const expresiones = {
+	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros,
+	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
+    password: /^.{6,12}$/ // 4 a 12 digitos.
+}
 
-    if(usuarioValue ===''){
-        setErrorFor()
+ 
+
+
+//Validacion de boton enviar datos
+
+function enviarFormulario(){
+    console.log("Enviando formulario...");
+
+    var mensajesError=[];
+
+if(correo.value === null || correo.value === ""){
+    mensajesError.push("Ingresa tu correo eletrónico")
+    console.log("ingresar correo ")
+} 
+
+ if(password.value === null || password.value === ""){
+    mensajesError.push("Ingresa tu contraseña")
+    console.log("ingresa contraseña")
+} 
+    error.innerHTML = mensajesError.join(" e ");
+return false;
+} 
+// termina validacion de datos
+
+
+
+const validarFormulario=(e)=>{
+    switch(e.target.name){
+        case "correo":
+            if(expresiones.correo.test(e.target.value)){
+                
+            }else{
+                document.getElementById('grupo_correo').classList.add('form-outline-incorrecto');
+            }
+            
+        
+        break;
+
+        case "password":
+            if(expresiones.password.test(e.target.value)){
+
+            }else{
+                document.getElementById('grupo_password').classList.add('formulario_grupo-incorrecto')
+            }
+        
+        break;
     }
+} 
+
+/* const campos = {
+    correo: false,
+	password: false,
 }
+ */
 
-function setErrorFor(input,message){
-    const formControl=input.parentElement;
-    const small=control.querySelector('small');
-    formControl.ClassName='form-control error';
-    small.innerText=message;
-}
 
-function setSuccessFor(input){
-    const formControl=input.parentEmenet;
-    formControl.ClassName='form-control succes'
-}
+/* var nombre=document.getElementById('nombre');
+var password=document.getElementById('password');
+error.style.color='red'; 
+ */
 
-functionisEmail(){
-    return /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-    return reg.test(email);
-} */
 
-form.addEventListener('submit', e => {
-	e.preventDefault();
-	
-	checkInputs();
-});
-
-function checkInputs() {
-	// trim to remove the whitespaces
-	const emailValue = email.value.trim();
-	const passwordValue = password1.value.trim();
-	
-	
-	if(usuarioValue === '') {
-		setErrorFor(usuario, 'No puede dejar el usuairo en blanco');
-	} else {
-		setSuccessFor(usuario);
-	}
-	
-	if(emailValue === '') {
-		setErrorFor(email, 'No puede dejar el email en blanco');
-	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'No ingreso un email válido');
-	} else {
-		setSuccessFor(email);
-	}
-	
-	if(passwordValue === '') {
-		setErrorFor(password, 'Password no debe ingresar en blanco.');
-	} else {
-		setSuccessFor(password);
-	}
-	
-	if(password2Value === '') {
-		setErrorFor(password2, 'Password2 no debe ngresar en blanco');
-	} else if(passwordValue !== password2Value) {
-		setErrorFor(password2, 'Passwords no coinciden');
-	} else{
-		setSuccessFor(password2);
-	}
-}
-
-function setErrorFor(input, message) {
-	const formControl = input.parentElement;
-	const small = formControl.querySelector('small');
-	formControl.className = 'form-control error';
-	small.innerText = message;
-}
-
-function setSuccessFor(input) {
-	const formControl = input.parentElement;
-	formControl.className = 'form-control success';
-}
-
-function isEmail(email) {
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)
-}
+console.log("Hola mundo");

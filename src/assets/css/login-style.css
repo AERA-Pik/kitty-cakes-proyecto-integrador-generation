@@ -21,6 +21,10 @@ h1{
 h2{
   color: black;
 }
+.errorlogin{
+  text-align: center;
+  font-size: 15px;
+}
 
 .title-login{
     color: var(--rosa-obscuro);
