@@ -1,3 +1,6 @@
+body {
+    cursor: url('/assets/img/cursor_kitty.png'), auto;
+}
 .banner-tienda {   
     position: relative; 
     display: flex;
