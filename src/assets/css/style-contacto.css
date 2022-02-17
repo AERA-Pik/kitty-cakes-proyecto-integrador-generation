@@ -1,17 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,100&display=swap');
 
-:root {
-    /* colores */
-        --rosa-obscuro: #F3687B;
-        --rosa-kitty: #FA94A2;
-        --rosa-2: #EFBBBB;
-        --rosa-3: #FFD1CE;
-        --rosa-4: #FFE8EC;
-        --blanco-kitty: #FFF8FA;
-        --gris-kitty: #32322E;    
-}
-
-   .header-contáctanos{   
+.header-contáctanos{   
      position: relative; 
      display: flex;
      max-width: 100%;
@@ -19,132 +7,244 @@
      text-align: center;
      padding: 0 0 0 0;
      margin-bottom: 90px;
-
+}
  
- }
- 
- .texto-contáctanos {
+.texto-contáctanos {
      font-family: 'Baloo Bhai 2';
      color: var(--rosa-obscuro);
      position: absolute;
      top: 42%;
      left: 50%;
      transform: translate(-50%, -50%);
-     
- }
- 
-   .containerform{ 
-        border-radius: 2rem;
-       display: block;
-       background-color: var(--rosa-3);
-       width: 80%;
-       height: 612;
-       margin-left: auto;
-       margin-right: auto;
-       margin-bottom: 90px;
-   }
-
-   form {
-        display: block;
-        width: 100%;
-        padding: 10px 10px;
-   }
-   ::placeholder { 
-     
-       font-family: 'Montserrat', sans-serif;
-       font-size: 14px;          
-     
-     }
-   form .contenido {
-        display: block;
-        position: relative;
-        width: calc(90%);
-        height: auto;
-        margin: 10px auto;
-        padding: 30px 10px 10px;
-   }
-
-    form .contenido label {
-        display: block;
-        position: absolute;
-        font-size: 14px;
-        color: var(--rosa-obscuro);
-        font-family: 'Montserrat', sans-serif;
-        width: auto;
-        top: 10px;
-        left: 25px;
-         padding: 4px 5px; 
-        border-radius: 2rem;
-        background-color:  var(--rosa-3);
-   } 
-   
-
-   .form-control:focus ~ .contenido label, 
-   .form-control:not(:placeholder-shown).form-control:not(:focus) ~ .contenido label{
-     top: -3rem;
-     font-size: 16px;
-     left: 1.5rem;
-     background-color: var(--rosa-3);
-   } 
-
-   form .contenido input {
-        align-items: center;
-         display: block; 
-        border: 1px solid var(--rosa-kitty);
-        font-size: 14px;
-        color: var(--rosa-obscuro);
-        border-radius: 2rem; 
-        padding: 10px 10px;
-        font-size: 18px;
-        font-family: 'Montserrat', sans-serif;
-        width: 100%;
-        height: 100%;
-        outline: none;
-   }
-   form .contenido input:hover{
-     border-color: var(--rosa-kitty);
-   }
-   
-   form .contenido input:focus{
-     border-color:   var(--rosa-obscuro) ;
-   } 
-
-
-   .boton-primario {
-        background-color: var(--rosa-kitty);
-        border: none;
-        border-radius: 6px;
-        color: white;
-        padding: 11px 34px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: 500;
-        margin: 10px auto;
-   }
-
-   .boton-primario:hover {
-        background-color: var(--rosa-obscuro);
 }
+
+.containerform{ 
+     border-radius: 2rem;
+     background-color: var(--rosa-3);
+     width: 90%;
+     margin-left: auto;
+     margin-right: auto; 
+     padding-top: 30px;
+     margin-bottom: 30px;
+}
+
+form{
+     padding: 50px 20px 30px 20px;
+}
+
 .contacto-bloque{
      align-items: center;
      justify-content: center;
 }
-   .icono{
-       
-        margin-bottom: 24px;
-        margin-left: 28px;
-   }
+
+.icono{
+     margin-bottom: 24px;
+     margin-left: 28px;
+     margin-top: 2rem;
+     width: 48px;
+}
    
-   .info-contacto{
+.info-contacto{
      font-size: 1.8rem;
      font-family: 'Montserrat', sans-serif;
      padding-left: 10px;
-   }
+}
+
+/*VALIDACION*/
+/*cambia color de borde
+dependiendo la validación*/
+.error input,
+.error textarea {
+    border:2px red solid;
+}
+
+.success input, 
+.success textarea{
+    border:2px green solid;
+}
+
+/*Esconde iconos de validación*/
+.form-outline i{
+     position:absolute;
+     right:25px;
+     top:8px;
+     visibility: hidden;
+ }
+
+/*muestra iconos al ser el caso validado*/
+.success i.fa-check-circle{
+    font-size: 24px;
+     visibility: visible;
+     color:green;
+}
+
+.error i.fa-exclamation-circle {
+   font-size: 24px;
+    visibility: visible;
+    color:red;
+}
+
+/*esconde mensaje de error*/
+.form-outline p{
+     font-size: 14px;
+     padding-left: 15px;
+     color:red;
+     padding-top:40px;
+     visibility: hidden;
+}
+
+.form-outline .mensaje{
+     padding-top: 0;
+}
+
+ /*muestra mensaje de error al validar error*/
+ .error p {
+     visibility: visible;
+     /*padding-top: 40px;*/
+     font-weight: bold;
+ }
+
+.error .label-name{
+  top: -3rem;
+  font-size: 16px;
+  left: 1.5rem;
+  background-color: var(--rosa-3);
+}
+
+/*Efecto inputs*/
+/*---------------------------------------------------*/
+.form-outline{
+     /*display: block;*/
+     position: relative;
+     background-color: var(--rosa-3);
+     /*height: 4rem;*/
+     height: auto;
+     /*margin-top: 5rem;*/
+     /*padding-bottom: 3rem;*/
+     border-radius: 2rem;
+     padding-left: 0;
+     padding-right: 0;
+     /*display: block;*/
+     /*width: calc(90%);
+     height: auto;*/
+     /* margin: 10px auto;
+     padding: 30px 10px 10px; */
+}
+
+.form-row{
+     padding-top: 2rem;
+     padding-bottom: 3rem;
+}
+/* .form-outline-box{
+     display: block;
+     position:relative;
+     margin-top: 5rem;
+     border-radius: 2rem;
+     height: auto;
+     padding: 0;
+}*/
+
+.form-input{
+  position: absolute;  
+  /*align-items: center;*/
+  /*display: block; */ 
+  /*padding: 10px 10px;*/
+  padding-bottom: 5rem;
+  height: 4rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*height: 100%;*/
+  border: 1px solid var(--rosa-kitty);
+  border-radius: 2rem;
+  font-family: inherit;
+  font-size: 16px;
+  background-color: white;
+  outline: none;
+  padding: 1.25rem;
+  padding-left: 1.5rem;
+  /*background: none;*/
+  padding-top: 1.7rem;
+}
+
+.form-input-box{
+   display: block; 
+   top: 0;
+   left: 0;
+   border: 1px solid var(--rosa-kitty);
+   color: var(--gris-kitty);
+   border-radius: 2rem; 
+   /*padding: 10px 10px;*/
+   font-size: 16px;
+   font-family: inherit;
+   background-color: white; 
+   width: 100%;
+   height: 10rem;
+   outline: none;  
+   padding: 1.25rem;
+   /*padding-left: 1.5rem;*/
+   /*background: none;*/
+   padding-top: 1.7rem;
+}
+
+.form-input:hover{
+  border:2px solid var(--rosa-kitty);
+}
+
+.form-input:focus{
+  border: 2px solid var(--rosa-obscuro);
+}
+
+.form-input-box:hover{
+  border:2px solid var(--rosa-kitty);
+}
+
+.form-input-box:focus{
+  border: 2px solid var(--rosa-obscuro);
+}
+
+.label-name{
+  /*display: block;*/
+  position: absolute;
+  font-size: 14px;
+  width: auto;
+  /*top: 10px;*/
+  /*left: 25px;*/
+  top: -1rem;
+  left: 1rem;
+  border-radius: 2rem;
+  /*padding: 4px 5px;*/ 
+  padding: 0 0.5rem;
+  color: var(--rosa-obscuro);
+  cursor: text;
+  transition: top 200ms ease-in,
+  left 200ms ease-in,
+  font-size 200ms ease-in;
+  background-color: var(--rosa-3);
+}
+
+
+.form-input:focus ~ .label-name, 
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .label-name{
+  top: -3rem;
+  font-size: 16px;
+  left: 1.5rem;
+  background-color: var(--rosa-3);
+}
+
+.form-input-box:focus ~ .label-name, 
+.form-input-box:not(:placeholder-shown).form-input-box:not(:focus) ~ .label-name{
+  top: -3rem;
+  font-size: 16px;
+  left: 1.5rem;
+  background-color: var(--rosa-3);
+}
+
+ /*-----------------------------------------*/
   
 
 
-   @media screen and (min-width: 480px) and (max-width: 780px) {
+   @media screen and (max-width: 780px) {
      .texto-contáctanos{
           font-size: 32px;
      }
@@ -156,8 +256,24 @@
           margin-left: 28px;
      }
      .info-contacto{
-          font-size: 1.2rem;
+          font-size: 1.4rem;
      }
      
    }
-
+   
+@media only screen and (max-width: 576px) {
+  .texto-contáctanos{
+     font-size: 32px;
+  }
+    
+  .icono{
+     width: 32px;
+     height: 32px;
+     margin-bottom: 24px;
+     margin-left: 28px;
+     margin-top: 2.5rem;
+  }
+  .info-contacto{
+     font-size: 1.4rem;
+  }
+ }
