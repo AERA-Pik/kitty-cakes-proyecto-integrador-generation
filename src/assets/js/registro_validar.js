@@ -30,7 +30,7 @@ form.addEventListener('submit', (event)=>{
             allowEscapeKey: false,
             allowEnterKey: false,
             confirmButtonColor: 'green',
-            stopKeyDownPropagation: true
+            //stopKeyDownPropagation: true
             }).then((result) => {
                 if (result.isConfirmed) {
                     //al confirmar el boton OK valida el form por completo
@@ -73,9 +73,9 @@ function validarForm() {
     if(telefono.value.trim() == ''){
         esError(telefono, 'Ingrese un teléfono');
     }else if(telefonoValido(telefono.value)){
-        esCorrecto(telefono, 'Ingrese un teléfono válido');
+        esCorrecto(telefono);
     } else{
-        esError(telefono);
+        esError(telefono, 'Ingrese un teléfono válido');
     }
     //EMAIL
     if(correo.value.trim() == ''){
@@ -126,8 +126,7 @@ function esCorrecto(element){
 
 //validación de teléfono
 function telefonoValido(telefono){
-    const regex = /^[5]\d{9}$/ //numero de 10 dig. que debe iniciar con numero 5, por codigo de área
-    //de CDMX,  checa el largo del string
+    const regex = /^([0-9]){10}$/ //numero de 10 dig. 
     //simbolos para denotar el inicio y final del string
     return regex.test(telefono)
 }
