@@ -1,5 +1,5 @@
 body {
-    cursor: url('/assets/img/cursor_kitty.png'), auto;
+    cursor: url('/assets/img/cursor_kitty.cur'), auto;
 }
 
 .banner-menu {   
@@ -53,7 +53,7 @@ body {
     top: 0; 
     opacity: 0;
     transition: opacity 0.3s;
-    cursor: url('/assets/img/cursor_kitty.png'), auto;
+    cursor: url('/assets/img/cursor_kitty.cur'), auto;
 }
 
 .menu .container-fluid .row .img-producto img.capa > * {
