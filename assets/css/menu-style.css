@@ -1,3 +1,7 @@
+body {
+    cursor: url('/assets/img/cursor_kitty.png'), auto;
+}
+
 .banner-menu {   
     position: relative; 
     display: flex;
@@ -49,6 +53,7 @@
     top: 0; 
     opacity: 0;
     transition: opacity 0.3s;
+    cursor: url('/assets/img/cursor_kitty.png'), auto;
 }
 
 .menu .container-fluid .row .img-producto img.capa > * {
