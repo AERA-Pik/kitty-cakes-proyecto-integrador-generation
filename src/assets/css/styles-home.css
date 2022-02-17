@@ -133,7 +133,7 @@ p {
 /* =======================================SECCION 1 CAROUSEL======================================== */
 
 .carousel-inner{
-    max-height: 70rem;
+    max-height: 80%;
     border: none;
 }
 #img-size-carousel{
@@ -271,23 +271,49 @@ p {
 
 /* =========SECCIÓN 3 CARRUSEL IMAGENES NOSOTROS============ */
 
-#nosotros-margen-carrusel{
-   margin-top: 10%;
+ #nosotros-margen-carrusel{
+  /* margin-top: 10%;
    margin-left: 15%;
    margin-right: 15%;
-}
+*/
+    margin-left: 22.5%;
+
+} 
 
 .margen-logo-carrusel{
-    margin-bottom: 5%;
+    margin-bottom: 0;
 }
 
 .team-header{
     text-align: center;
     font-size: 8vw;
-    margin-bottom: 10%;
+    margin-bottom: 0;
     color: #32322E;
 }
 
-.last-btn-align{
+/* .last-btn-align{
 margin-top: 80%;
+} */
+
+.btn-font-nosotros{
+    color: white;
+    font-weight: bold;
+    font-size: 2.5vw;
+    background-color: #FA94A2;
+    border-width: thin;
+    border: none;
+    margin-top: 70%;
+    border-radius: 1rem;
+}
+
+.fixed-img-size{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+.nosotros-carrusel-size{
+    height: 55%;
+    width: 55%;
 }
