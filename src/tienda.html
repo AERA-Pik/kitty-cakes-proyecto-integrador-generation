@@ -3,31 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ===Bootstrap=== -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- ===style general=== -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- ===style nav=== -->
     <link rel="stylesheet" href="assets/css/nav-style.css">
+    <!-- ===style footer=== -->
     <link rel="stylesheet" href="assets/css/footer-style.css">
+    <!-- ===style tienda=== -->
     <link rel="stylesheet" href="assets/css/tienda-style.css">
+   <!-- ===icono de ventana=== -->
     <link rel="shortcut icon" href="assets/img/logos/logo-simplificado.png" type="image/x-icon">
     
     <title>Tienda Kitty Cakes</title>
 </head>
-<body class="hidden" id="top">
-  <div class="centrado" id="onload">
-    <div class="preloader">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
-  </div>
-
-
+<body id="top">
+  <!-- ===navbar=== -->
     <div  class="container-nav sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="nav-link active d-none d-lg-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226"></a>
@@ -71,16 +63,19 @@
         </nav>
     </div>
 
+    <!-- ===banner de la tienda=== -->
 
     <section class="banner-tienda col- col-sm-12 col-md-12 col-lg-12">
       <img src="assets/img/productos/header3.png" alt="" style="opacity: 0.5; max-width: 100%;">
       <h1 class="titulo-tienda">MICHI TIENDA</h1>              
     </section>
 
-
+    <!-- === CARDS === -->
     <section class="tienda" >
       <div class="container-fluid">
+        <!-- === Row que contiene las cardas === -->
         <div class="row">
+          <!-- ===Destapador=== -->
           <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/destapador.jpg" alt=""> 
@@ -90,6 +85,7 @@
             <p class="precio">$ 169.00</p>  
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
           </div>
+          <!-- ===Esoatula=== -->
           <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/espatula.jpg" alt=""> 
@@ -99,6 +95,7 @@
             <p class="precio">$ 179.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
           </div>
+          <!-- ===Guante=== -->
           <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">           
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/guante.jpg" alt=""> 
@@ -108,6 +105,7 @@
             <p class="precio">$ 169.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
           </div>
+          <!-- ===claceta blanca=== -->
           <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/calceta_m_clara.jpg" alt=""> 
@@ -121,7 +119,8 @@
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/calceta_m_obscura.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick5()" src="assets/img/filtro_producto.png" alt="Michi Calcetas Obscuras">
-            </div>    
+            </div>  
+            <!-- ===calceta obscura=== -->  
             <p class="nombre-producto">Michi Calcetines Obscuros</p>            
             <p class="precio">$ 65.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
@@ -130,11 +129,13 @@
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/calceta_negra.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick6()" src="assets/img/filtro_producto.png" alt="Michi Calcetas Rayadas">
-            </div>    
+            </div>
+            <!-- ===calceta rayada=== -->    
             <p class="nombre-producto">Michi Calcetines Rayados</p>            
             <p class="precio">$ 65.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
           </div>
+          <!-- ===pin calabaza=== -->
           <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/halloween_pin_1.jpg" alt=""> 
@@ -144,6 +145,7 @@
             <p class="precio">$ 55.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
           </div>
+          <!-- ===pin lunar=== -->
           <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/pin_michiLunar.jpg" alt=""> 
@@ -153,6 +155,7 @@
             <p class="precio">$ 55.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
           </div>
+          <!-- ===pin astronauta=== -->
           <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/pin_michiAstronauta.jpg" alt=""> 
@@ -166,7 +169,7 @@
       </div>
     </section>
 
-
+    <!-- ===Footer=== -->
     <footer>
       <div class="bg-image bg-image-movil">  
           <div class="container">              
@@ -209,15 +212,12 @@
           </div>                
       </div>
   </footer>
-
+  <!-- ===Bootstap=== -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    
+    <!-- ===sweetAlert=== -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- ===js tienda=== -->
     <script src="assets/js/tienda.js"></script>
-<!-- Scrip loader -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="assets/js/loader.js"></script>
-    
 </body>
 </html>
