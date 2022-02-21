@@ -1,3 +1,4 @@
+/*Contenedor de Imagen*/
 .container-registro{
     background-image: url(../img/registro/fondo-cupcakes.png);
     background-size: cover;
@@ -8,20 +9,22 @@
     align-items: center;
 }
 
+/*Tamaño de Botones*/
 .boton-primario.registro,
 .boton-secundario.registro{
   width: 170px; /*130*/
 }
 
+/*Color de Bienvenida*/
 .title-login{
     color: var(--rosa-obscuro);
 }
 
+/*Color y alinación de contenido de contenedor de formulario*/
 .card-logo{
   border-color:transparent;
   background-color: var(--rosa-3);
 }
-
 .card-registration{
   background-color: var(--rosa-3);
   border-radius: 10rem;
@@ -30,7 +33,7 @@
 
 /*VALIDACION*/
 /*cambia color de borde
-dependiendo la validación*/
+dependiendo de lo que arroge el submit del form*/
 .error input {
     border:2px red solid;
 }
@@ -48,12 +51,13 @@ dependiendo la validación*/
  }
 
 /*muestra iconos al ser el caso validado*/
+/*Correcto*/
  .success i.fa-check-circle{
     font-size: 24px;
      visibility: visible;
      color:green;
  }
-
+/*Incorrecto*/
  .error i.fa-exclamation-circle {
    font-size: 24px;
     visibility: visible;
@@ -83,6 +87,7 @@ dependiendo la validación*/
 }
 /*Efecto inputs*/
 /*---------------------------------------------------*/
+/*Forma y tamaño de inputs y contenido de inputs*/
 .form-outline{
   position: relative;
   height: 4rem;
@@ -108,6 +113,7 @@ dependiendo la validación*/
   padding-top: 1.7rem;
 }
 
+/*Efecto al colocar cursos sobre inputs y dar clic a los mismos*/
 .form-input:hover{
   border:2px solid var(--rosa-kitty);
 }
@@ -115,6 +121,8 @@ dependiendo la validación*/
 .form-input:focus{
   border: 2px solid var(--rosa-obscuro);
 }
+
+/*formato y posición de títulos de inputs antes de agregar contenido*/
 .label-name{
   position: absolute;
   font-size: 14px;
@@ -130,6 +138,7 @@ dependiendo la validación*/
   background-color: var(--rosa-3);
 }
 
+/*Efecto de elevar los títulos al dar clic dentro de los inputs*/
 .form-input:focus ~ .label-name, 
 .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .label-name{
   top: -3rem;
@@ -161,6 +170,8 @@ dependiendo la validación*/
 }
 /*----------------------------------*/
 
+/*Media querry para cambiar tamaño de títulos que empalmen con
+ la responsividad de la página*/
 @media only screen and (max-width: 1230px)  {
 
   .container-registro{

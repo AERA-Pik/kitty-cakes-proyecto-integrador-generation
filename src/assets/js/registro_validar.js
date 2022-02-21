@@ -1,4 +1,4 @@
-/* accedemos a todos los elementos */
+/* accedemos a todos los elementos por ID*/
 const form = document.getElementById('form1');
 const nombre = document.getElementById('firstName');
 const apellidos = document.getElementById('lastName');
@@ -25,12 +25,10 @@ form.addEventListener('submit', (event)=>{
             backdrop: true,
             confirmButtonText: 'OK',
             timer: 8000,
-            //timerProgressBar: true,
             allowOutsideClick: false,
             allowEscapeKey: false,
             allowEnterKey: false,
             confirmButtonColor: 'green',
-            //stopKeyDownPropagation: true
             }).then((result) => {
                 if (result.isConfirmed) {
                     //al confirmar el boton OK valida el form por completo
@@ -44,6 +42,8 @@ form.addEventListener('submit', (event)=>{
 
 });
 
+/* Toma la respuesta de la validación de cada input al dar submit y dependiendo 
+la respuesta regresa un valor que hara que se mande o no el form*/
 function isFormValid(){
     const inputContainers = form.querySelectorAll('.form-outline');
     let result = true;
