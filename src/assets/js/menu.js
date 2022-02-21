@@ -1,3 +1,4 @@
+/* Popup con detalles del producto 1 */
 function sweetalertclick1() {
     Swal.fire({
         html: 
@@ -12,6 +13,7 @@ function sweetalertclick1() {
     })
 }
 
+/* Popup con detalles del producto 2 */
 function sweetalertclick2() {
     Swal.fire({
         html: 
@@ -26,6 +28,7 @@ function sweetalertclick2() {
     })
 }
 
+/* Popup con detalles del producto 3 */
 function sweetalertclick3() {
     Swal.fire({
         html: 
@@ -40,6 +43,7 @@ function sweetalertclick3() {
     })
 }
 
+/* Popup con detalles del producto 4 */
 function sweetalertclick4() {
     Swal.fire({
         html: 
@@ -54,6 +58,7 @@ function sweetalertclick4() {
     })
 }
 
+/* Popup con detalles del producto 5 */
 function sweetalertclick5() {
     Swal.fire({
         html: 
@@ -68,6 +73,7 @@ function sweetalertclick5() {
     })
 }
 
+/* Popup con detalles del producto 6 */
 function sweetalertclick6() {
     Swal.fire({
         html: 
@@ -82,6 +88,7 @@ function sweetalertclick6() {
     })
 }
 
+/* Popup con detalles del producto 7 */
 function sweetalertclick7() {
     Swal.fire({
         html: 
@@ -96,6 +103,7 @@ function sweetalertclick7() {
     })
 }
 
+/* Popup con detalles del producto 8 */
 function sweetalertclick8() {
     Swal.fire({
         html: 
@@ -110,6 +118,7 @@ function sweetalertclick8() {
     })
 }
 
+/* Popup con detalles del producto 9 */
 function sweetalertclick9() {
     Swal.fire({
         html: 
@@ -124,6 +133,7 @@ function sweetalertclick9() {
     })
 }
 
+/* Popup para confirmación de que el producto se agregó al miau carrito */
 function sweetalertcarrito() {
     Swal.fire({
         icon: 'success',
