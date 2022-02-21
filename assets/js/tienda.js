@@ -1,4 +1,4 @@
-function sweetalertclick() {
+function sweetalertclick() { /* funciones de las cards */
     Swal.fire({
         html: 
         '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/destapador.jpg" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><p class= "titulo-pop h1"><span  class="pop-titulo">Michi Destapador</span></p><p class="pop-texto text-justify">Destapa tus cervecitas al estilo gatuno con este hermoso michi destapador.</p><br><p><span class="pop-precio">$ 169.00</span></p></div></div></div>',
@@ -153,7 +153,7 @@ function sweetalertclick11() {
 }
 
 
-function sweetalertcarrito() {
+function sweetalertcarrito() { /* funcion al dar click en el carrito */
     Swal.fire({
         icon: 'success',
         html: 
