@@ -14,7 +14,20 @@
      <link rel="stylesheet" href="assets/css/login-style.css">
     <title>Iniciar sesión Kitty Cakes</title>
 </head>
-<body>
+<body class="hidden">
+  <div class="centrado" id="onload">
+    <div class="preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
   <div  class="container-nav sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="nav-link active d-none d-lg-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226"></a>
@@ -65,7 +78,7 @@
       <div class="container py-5">
         <div class="row justify-content-center align-items-center">
           <div>
-            <h1 class="title-login text-center">BIENVENIDE</h1>
+            <h1 class="title-login text-center">BIENVENIDO</h1>
             <div class="card strong card-registration" style="border-radius: 15px;">
               <div class="card-body p-10 p-md-15">
         <!--Formulario-->
@@ -208,7 +221,8 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/loader.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
