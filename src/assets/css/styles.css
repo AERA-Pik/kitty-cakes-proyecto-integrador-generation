@@ -27,6 +27,11 @@ body{
     background-color: white;
 }
 
+/* Cursor de patita */
+body {
+    cursor: url('../img/cursor_kitty.cur'), auto;
+}
+
 /* borrar y poner en 0 el margen o el padding por defecto de bootstrap */
 .pad-0{
     padding: 0;
