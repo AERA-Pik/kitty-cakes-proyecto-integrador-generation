@@ -43,7 +43,7 @@ dependiendo la validación*/
 .form-outline i {
      position:absolute;
      right:25px;
-     top:8px;
+     top: 8px;
      visibility: hidden;
  }
 
@@ -110,7 +110,6 @@ dependiendo la validación*/
 
 .form-input:hover{
   border:2px solid var(--rosa-kitty);
-
 }
 
 .form-input:focus{
