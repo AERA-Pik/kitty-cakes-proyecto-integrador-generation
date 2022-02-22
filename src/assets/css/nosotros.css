@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2&family=Be+Vietnam+Pro&family=Montserrat:ital,wght@1,300&family=Roboto+Slab&display=swap');
 
-
-
 /*Centra el texto sobre la Imagen de banner */
 .txt_somos{
     background-color: var(--rosa-3);
@@ -25,7 +23,6 @@
 .header_banner{
     padding: 0 0 6% 0;
 }
-
 /*Despues de este tamaño se le asigna que acomode sus elementos de una manera diferente*/
 @media (max-width: 920PX) { 
     
