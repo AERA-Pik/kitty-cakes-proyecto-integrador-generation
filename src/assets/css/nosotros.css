@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2&family=Be+Vietnam+Pro&family=Montserrat:ital,wght@1,300&family=Roboto+Slab&display=swap');
 
 
-body {
-    cursor: url('/src/assets/img/cursor_kitty.cur'), auto;
-}
+
 /*Centra el texto sobre la Imagen de banner */
 .txt_somos{
     background-color: var(--rosa-3);
@@ -11,42 +9,25 @@ body {
     border-radius: 40px;
     padding-right: 50px;
     padding-left: 50px;
-    
-    
-    
 }
-
 .linea{
-   
     width: 150px;
     margin-bottom: 10px;
     border: solid 1px var(--rosa-obscuro);
     align-self: center;
 }
-
 /*Hace que la carta realte con un tono a su alredor rosa*/
 .card:hover{
     box-shadow: 5px 5px 20px rgba(202, 71, 71, 1);
     cursor: default;
     transition: all 400ms ease;
-
 }
-
 .header_banner{
     padding: 0 0 6% 0;
-
 }
 
-
-
-
-
-
-
-
-
-
-@media (max-width: 920PX) { /*Despues de este tamaño se le asigna que acomode sus elementos de una manera diferente*/
+/*Despues de este tamaño se le asigna que acomode sus elementos de una manera diferente*/
+@media (max-width: 920PX) { 
     
     .img_gato{
         /*width: 350px;*/
@@ -63,9 +44,6 @@ body {
         justify-content: center;
         color: var(--rosa-obscuro);
         font-size: 3rem;
-        
-        
-    
     }
     .nosotros_header{
         position: absolute;
@@ -73,9 +51,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         color: var(--rosa-obscuro);
-        font-size: 5rem;
-        
-          
+        font-size: 5rem;      
     }
     .card{
         background-color: var(--rosa-2);
@@ -84,12 +60,8 @@ body {
         cursor: default;
         transition: all 400ms ease;
         margin: 30px;
-        border: none;
-        
+        border: none;  
     }
-    
-
-
 }
 
 .img_gato{
@@ -106,19 +78,13 @@ body {
     display: inline-flex;
     justify-content: center;
     color: var(--rosa-obscuro);
-    
-    
-
 }
 .nosotros_header{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: var(--rosa-obscuro);
-    
-    
-      
+    color: var(--rosa-obscuro);    
 }
 .card{
     background-color: var(--rosa-2);
@@ -126,57 +92,33 @@ body {
     box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
     cursor: default;
     transition: all 400ms ease;
-
-    /**/
     margin: 30px;
     border: none;
-
 }
-
-
-
-
-
-
-
-
 .img_pastelitos {
     width: 100%;
     /*height: 50px ;*/
     margin-top: 40px;
     display: inline-flex;
     justify-content: center;
-
 }
 .pastelitos{
     width: 900px;
-   /* height: 40px;*/
-    
-
 }
-
 .img_header{
     opacity: 0.5;
     position: relative;
     display: inline-block;
     text-align: center;
-
 }
-
 .iconos_card{
     background-color: var(--rosa-kitty);
-
 }
-
-
-.card-img-top{
-    
+.card-img-top{ 
     width: 70%;
-    /*height: 70%;*/
     align-self: center;
     border-radius: 40px;
-    background-size: contain   
-    
+    background-size: contain     
 }
 
 /*Color a la letra y tamaño*/

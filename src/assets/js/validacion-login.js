@@ -35,11 +35,11 @@ form.addEventListener('submit', (event)=>{
     if(isFormValid()==true){ //si formulario es valido muestra ventana de exito
         //ventana emergente sweetalert2
         Swal.fire({
-            title: '¡Bienvenide!',
-            width: '20%',
+            title: '¡Miau!',
+            width: 'auto',
             backdrop: true,
             confirmButtonText: 'OK',
-            timer: 1000,
+            timer: 1700,
             //timerProgressBar: true,
             allowOutsideClick: false,
             allowEscapeKey: false,

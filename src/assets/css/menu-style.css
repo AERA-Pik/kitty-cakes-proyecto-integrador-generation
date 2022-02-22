@@ -1,7 +1,4 @@
-body {
-    cursor: url('/assets/img/cursor_kitty.cur'), auto;
-}
-
+/* Estilos generales del banner del Menú de comestibles */
 .banner-menu {   
     position: relative; 
     display: flex;
@@ -12,6 +9,7 @@ body {
     margin: 0;
 }
 
+/* Estilos del título en el banner del Menú de comestibles */
 .titulo-menu {
     color: var(--rosa-obscuro);
     position: absolute;
@@ -20,12 +18,14 @@ body {
     transform: translate(-50%, -50%);
 }
 
+/* Alineación de todo el row de los productos del Menú de comestibles */
 .menu .container-fluid .row {
     max-width: 100%;
     margin-right: auto;
     margin-left: auto;
 }
 
+/* Alineación de cada uno de los productos del Menú de comestibles */
 .menu .container-fluid .row .producto{
     text-align: center;
     align-content: center;
@@ -36,52 +36,59 @@ body {
     overflow: hidden;
 }
 
+/* Estilos de las imágenes de cada uno de los productos */
 .menu .container-fluid .row .producto .img-producto img {
     filter: drop-shadow(0.4rem 0.4rem 0.6rem var(--rosa-2));
     border-radius: 40px;
-    left: 0;
-    cursor: pointer;    
+    left: 0;   
 }
 
+/* Posición de las imágenes de cada uno de los productos para colocarlos debajo de la capa rosa */
 .menu .container-fluid .row .img-producto {
     position: relative;    
 }
 
+/* Estilos y posición de la capa rosa para el hover en los productos */
 .menu .container-fluid .row .img-producto img.capa {
     border-radius: 42px;
     position: absolute;
     top: 0; 
     opacity: 0;
     transition: opacity 0.3s;
-    cursor: url('/assets/img/cursor_kitty.cur'), auto;
+    cursor: url('../img/cursor_kitty.cur'), auto;
 }
 
+/* transición y posición de la capa rosa para el hover en los productos */
 .menu .container-fluid .row .img-producto img.capa > * {
     transform: translateY(20px);
     transition: transform 0.3s;
 }
 
+/* Estilos para el hover de la capa rosa en los productos */
 .menu .container-fluid .row .img-producto img.capa:hover{
     opacity: 0.85; 
-    transform: scale(1.01);
-    
+    transform: scale(1.01);    
 }
 
+/* Hover de la capa rosa en los productos */
 .menu .container-fluid .row .img-producto img.capa:hover > *{   
     transition: transform 0.3s;
 }
 
+/* Estilos para el nombre de cada uno de los productos */
 .menu .container-fluid .row p.nombre-producto {    
     font-size: 1.8rem;
     padding-top: 1.8rem; 
 }
 
+/* Estilos para el precio de cada uno de los productos */
 .menu .container-fluid p.precio {
     font-size: 1.8rem;
     color: var(--rosa-kitty);
     padding-bottom: 1rem; 
 } 
 
+/* Alineación del popup con detalles de cada producto */
 .swal-wide .row {
     max-width: 100%;
     align-items: center;
@@ -89,6 +96,7 @@ body {
     padding: 0;
 }
 
+/* Alineación de la imagen del popup con detalles de cada producto */
 .row img.pop-image {
     margin-top: 2rem;  
     margin-bottom: 1rem;
@@ -96,22 +104,26 @@ body {
     width: 80%;
 }
 
+/* Alineación del texto general del popup con detalles de cada producto */
 .row .card-text {
     text-align: left;
     width: 80%;
 }
 
+/* Alineación del título en el popup con detalles de cada producto */
 .row .pop-titulo {
     font-weight: bold;
     font-size: 1.5rem;
     color: var(--rosa-obscuro);
 }
 
+/* Alineación de la descripción en el popup con detalles de cada producto  */
 .row .pop-texto {
     font-size: 1.5rem;
     color: var(--gris-kitty);
 }
 
+/* Alineación del precio en el popup con detalles de cada producto */
 .row .pop-precio {
     font-weight: bold;
     font-size: 1.5rem;
@@ -119,6 +131,7 @@ body {
     margin-bottom: 0;
 }
 
+/* Parte responsive del popup con detalles de cada producto */
 @media only screen and (max-width: 768px) {
    
     .swal-wide {
@@ -141,6 +154,7 @@ body {
     }
 }
 
+/* Parte responsive de toda la página del Menú de comestibles */
 @media only screen and (max-width: 992px) {
     .banner-menu {   
         position: relative; 

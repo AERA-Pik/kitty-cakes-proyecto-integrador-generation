@@ -13,12 +13,23 @@
   <script src="assets/js/nosotros.js"></script>
   <link rel="shortcut icon" href="assets/img/logos/logo-simplificado.png" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
   <title>Nosotros Kitty Cakes</title>
 </head>
-
-<body>
-  <div  class="container-nav sticky-top"><!--Nav de la pagina-->
+<body class="hidden">
+  <div class="centrado" id="onload">
+    <div class="preloader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div  class="container-nav sticky-top"><!--Inicio Nav-->
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="nav-link active d-none d-lg-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226"></a>
         <a class="nav-link active d-lg-none d-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-simplificado.png" alt="logo kitty" width="48"></a>
@@ -60,7 +71,6 @@
         </div>
     </nav>
 </div><!--Fin de nav de la pagina-->
-
   <!--NOSOTROS-->
   <!--Banner con imagen y texto de nosotros-->
   <div class="col-12 col-lg-12 pb-5 pl-0 pr-0 header_banner">
@@ -80,18 +90,13 @@
           reiciendis iusto, atque nam eligendi veniam? Ab alias pariatur quaerat sapiente.</p>
       </div>
     </div><!--Fin de seccion 02 -->
-
-
     <div class="img_pastelitos">
       <img src="assets/img/pastelitos-long.png" class="img-fluid pastelitos" alt="">
     </div>
     <div>
       <h2 class="txt_kity_cakes txt_pastelitos ">Equipo Kitty Cakes</h2>
     </div>
-
-
     <!--03 Comienzo de CARTAS-->
-    
     <div class="row mt-5">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"><!--Manedo de columnas-->
         <div class="card">
@@ -128,14 +133,12 @@
           <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Francisco <br> Domínguez</p>
           <div class="linea"></div>
           <div class="card-body">
-          
             <div class="d-flex justify-content-center">
               <i onclick="ocultarDos()" class="fas fa-arrow-circle-up m-2 m-2"
                 style="font-size: 20px; cursor:pointer;"></i>
               <i onclick="mostrarDos()" class="fas fa-arrow-circle-down m-2"
                 style="font-size: 20px; cursor:pointer"></i>
             </div>
-            
               <p id="ocultarTextDos" class="card-text text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
                 adipisicing elit. Culpa neque
                 ea ipsam nam aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat
@@ -202,9 +205,7 @@
       </div>
     </div>
     <!--Fin de primera seccion de cartas -->
-      <!---->
-      <!--ROW-->
-
+     
   <!--Segunda seccion de cartas -->
     <div class="row d-flex justify-content-center">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-5">
@@ -228,14 +229,12 @@
           <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
             <a target="_blank" href=""><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
             <a target="_blank" href=""><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
-
           </div>
         </div>
       </div>
       <!---->
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-5">
         <div class="card">
-
           <img
             src="assets/img/fotos-personales/Leti.jpg"
             class="img-fluid card-img-top mt-4" alt="...">
@@ -256,15 +255,12 @@
           <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
             <a target="_blank" href="https://www.linkedin.com/in/leticia-somera/"><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
             <a target="_blank" href="https://github.com/Leticia-Somera"><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
-
           </div>
         </div>
-
       </div>
       <!---->
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-5">
         <div class="card">
-
           <img
             src="assets/img/fotos-personales/Oscar.jpg"
             class="img-fluid card-img-top mt-4" alt="...">
@@ -288,27 +284,14 @@
     </div>
   </div>
   <!--FIN-->
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!--Inicio Footer-->
   <footer class="sticky-bottom">
     <div class="bg-image bg-image-movil">
       <div class="container">
         <div class="row ">
           <div class="d-flex secciones col-12 col-sm-12 col-md-12  col-lg-4">
             <ul class="list-unstyled mx-auto texto-nav">
-              <li class="dropdown"><a href="nosotros.html">Nosotros
-                </a></li>
+              <li class="dropdown"><a href="nosotros.html">Nosotros</a></li>
               <li class="dropdown"><a href="menu.html">Menú</a></li>
               <li class="dropdown"><a href="tienda.html">Michi tienda</a></li>
               <li class="dropdown"><a href="contacto.html">Contacto</a></li>
@@ -340,13 +323,12 @@
                 <p><img class="icon-24" src="assets/img/iconos/clock.png" alt="horarios_kitty_cakes">Horario: 9:00 -
                   17:00 horas</p>
               </li>
-
             </ul>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </footer><!--Fin footer-->
 
   <!-- Optional JavaScript; choose one of the two! -->
 
@@ -357,6 +339,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
     crossorigin="anonymous"></script>
+<!-- Script loader -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="assets/js/loader.js"></script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
