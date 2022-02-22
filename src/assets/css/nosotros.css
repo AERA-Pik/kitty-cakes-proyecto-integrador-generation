@@ -17,6 +17,7 @@
     box-shadow: 5px 5px 20px rgba(202, 71, 71, 1);
     cursor: default;
     transition: all 400ms ease;
+    cursor: url('../img/cursor_kitty.cur'), auto;
 }
 .header_banner{
     padding: 0 0 6% 0;
@@ -112,3 +113,4 @@
     border-radius: 40px;
     background-size: contain     
 }
+
