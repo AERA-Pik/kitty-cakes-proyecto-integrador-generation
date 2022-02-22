@@ -17,6 +17,7 @@
   <title>Nosotros Kitty Cakes</title>
 </head>
 
+
 <body class="hidden">
   <div class="centrado" id="onload">
     <div class="preloader">
@@ -73,16 +74,18 @@
           </ul>
         </div>
     </nav>
-</div>
+</div><!--Fin de nav de la pagina-->
 
   <!--NOSOTROS-->
+  <!--Banner con imagen y texto de nosotros-->
   <div class="col-12 col-lg-12 pb-5 pl-0 pr-0 header_banner">
     <img class="img-fluid img_header" src="assets/img/productos/header3.png" alt="">
     <h1 class="nosotros_header text-sm-center">NOSOTROS</h1>
-  </div>
+  </div><!--Fin Banner-->
 
+<!--Body contenedor-->
   <div class="container-fluid">
-    <div class="row p-0">
+    <div class="row p-0"><!--Seccion 02 de Imagen de gatitaChef y texto accerca de nosotros-->
       <div class="col-12 col-lg-6 mt-5">
         <img class="img-fluid mx-auto img_gato" src="assets/img/LaChef-1-02.jpg" alt="header">
       </div>
@@ -91,7 +94,7 @@
           consectetur adipisicing elit. Non cumque fuga, totam, ea consequuntur consectetur doloribus ad soluta porro
           reiciendis iusto, atque nam eligendi veniam? Ab alias pariatur quaerat sapiente.</p>
       </div>
-    </div>
+    </div><!--Fin de seccion 02 -->
 
 
     <div class="img_pastelitos">
@@ -102,26 +105,28 @@
     </div>
 
 
-    <!--CARTAS-->
+    <!--03 Comienzo de CARTAS-->
+    
     <div class="row mt-5">
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3"><!--Manedo de columnas-->
         <div class="card">
           <img
             src="assets/img/fotos-personales/Alfonso.jpg"
             class="img-fluid card-img-top mt-4 " alt="...">
-          <p class="text-center mt-2 ml-2 mr-2 font-weight-bold">Brian <br> Bocanegra</p>
+          <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Brian <br> Bocanegra</p>
           <div class="linea"></div>
-          <div class="card-body">
+          <div  class="card-body">
             <div class="d-flex justify-content-center">
               <i onclick="ocultarUno()" class="fas fa-arrow-circle-up m-2 m-2"
                 style="font-size: 20px; cursor:pointer;"></i>
               <i onclick="mostrarUno()" class="fas fa-arrow-circle-down m-2"
                 style="font-size: 20px; cursor:pointer"></i>
             </div>
-            <p id="ocultarTextUno" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
+            <p id="ocultarTextUno" class="card-text text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Culpa neque
               ea ipsam nam aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat
               consequuntur nihil, esse distinctio aut?</p>
+              <div id="img"></div>
           </div>
           <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
             <a target="_blank" href="https://www.linkedin.com/in/brian-alfonso-bh/" type=""><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid"></a>
@@ -138,17 +143,19 @@
           <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Francisco <br> Domínguez</p>
           <div class="linea"></div>
           <div class="card-body">
+          
             <div class="d-flex justify-content-center">
               <i onclick="ocultarDos()" class="fas fa-arrow-circle-up m-2 m-2"
                 style="font-size: 20px; cursor:pointer;"></i>
               <i onclick="mostrarDos()" class="fas fa-arrow-circle-down m-2"
                 style="font-size: 20px; cursor:pointer"></i>
             </div>
-            <p id="ocultarTextDos" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Culpa neque
-              ea ipsam nam aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat
-              consequuntur nihil, esse distinctio aut?</p>
-          </div>
+            
+              <p id="ocultarTextDos" class="card-text text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Culpa neque
+                ea ipsam nam aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat
+                consequuntur nihil, esse distinctio aut?</p>
+            </div>
           <div class="d-flex justify-content-around p-2 rounded-pill  ml-4 mr-4 mb-4 iconos_card">
             <a target="_blank" href="https://www.linkedin.com/in/dominguez-mejia/"><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
             <a target="_blank" href="https://github.com/010278Francisco"><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
@@ -170,7 +177,7 @@
               <i onclick="mostrarCuatro()" class="fas fa-arrow-circle-down m-2"
                 style="font-size: 20px; cursor:pointer"></i>
             </div>
-            <p id="ocultarTextCuatro" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
+            <p id="ocultarTextCuatro" class="card-text text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Culpa neque ea ipsam nam
               aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat consequuntur
               nihil, esse distinctio aut?</p>
@@ -184,7 +191,7 @@
       </div>
       <!---->
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-        <div class="card">
+        <div class="card ">
           <img
             src="assets/img/fotos-personales/Karla.png"
             class="img-fluid card-img-top mt-4" alt="...">
@@ -197,7 +204,7 @@
               <i onclick="mostrarCinco()" class="fas fa-arrow-circle-down m-2"
                 style="font-size: 20px; cursor:pointer"></i>
             </div>
-            <p id="ocultarTextCinco" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
+            <p id="ocultarTextCinco" class="card-text text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Culpa neque ea ipsam nam
               aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat consequuntur
               nihil, esse distinctio aut?</p>
@@ -209,12 +216,14 @@
         </div>
       </div>
     </div>
+    <!--Fin de primera seccion de cartas -->
       <!---->
       <!--ROW-->
+
+  <!--Segunda seccion de cartas -->
     <div class="row d-flex justify-content-center">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-5">
         <div class="card">
-
           <img
             src="assets/img/fotos-personales/Aaron.jpg"
             class="img-fluid card-img-top mt-4" alt="...">
@@ -227,10 +236,9 @@
               <i onclick="mostrarSeis()" class="fas fa-arrow-circle-down m-2"
                 style="font-size: 20px; cursor:pointer"></i>
             </div>
-            <p id="ocultarTextSeis" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
+            <p id="ocultarTextSeis" class="card-text text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Culpa neque ea ipsam nam
-              aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat consequuntur
-              nihil, esse distinctio aut?</p>
+              aspernatur aut veritati</p>
           </div>
           <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
             <a target="_blank" href=""><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
@@ -255,10 +263,10 @@
               <i onclick="mostrarSiete()" class="fas fa-arrow-circle-down m-2"
                 style="font-size: 20px; cursor:pointer"></i>
             </div>
-            <p id="ocultarTextSiete" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
+            <p id="ocultarTextSiete" class="card-text text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Culpa neque ea ipsam nam
               aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat consequuntur
-              nihil, esse distinctio aut?</p>
+              nihil, esse distinctio aut?porro in nemo ipsa! Doloribus placeat consequuntur nihil, esse distinctio aut?</p>
           </div>
           <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
             <a target="_blank" href="https://www.linkedin.com/in/leticia-somera/"><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
@@ -284,57 +292,16 @@
               <i onclick="mostrarOcho()" class="fas fa-arrow-circle-down m-2"
                 style="font-size: 20px; cursor:pointer;"></i>
             </div>
-            <p id="ocultarTextOcho" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Culpa neque ea
-              ipsam nam aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat
-              consequuntur nihil, esse distinctio aut?</p>
+            <p id="ocultarTextOcho" class="card-text text-justify mt-2 ml-4 mr-4">¡Mucho gusto! Mi nombre es Oscar, soy Ingeniero en Mecatrónica, un apasionado de la programación y la electrónica; y recién egresado del Bootcamp Java Fullstack Developer en Generation Mx. Mi meta es forjar una carrera en el desarrollo de software y participar en proyectos tecnológicos innovadores.</p>
           </div>
           <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
             <a target="_blank" href="https://www.linkedin.com/in/oscar-sosa10969/"><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
             <a target="_blank" href=""><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
-
-          </div>
-        </div>
-
-      </div>
-
-      <!--
-
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-        <div class="card">
-          <img
-            src="https://png.pngtree.com/png-vector/20191003/ourlarge/pngtree-cyber-man-icon-isolated-on-abstract-background-png-image_1779361.jpg"
-            class="img-fluid card-img-top mt-4" alt="...">
-          <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Luis <br> García</p>
-          <div class="linea"></div>
-          <div class="card-body">
-            <div class="d-flex justify-content-center">
-              <i onclick="ocultarTres()" class="fas fa-arrow-circle-up m-2 m-2"
-                style="font-size: 20px; cursor:pointer;"></i>
-              <i onclick="mostrarTres()" class="fas fa-arrow-circle-down m-2"
-                style="font-size: 20px; cursor:pointer"></i>
-            </div>
-            <p id="ocultarTextTres" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Culpa neque ea 
-              ipsam nam aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat
-              consequuntur nihil, esse distinctio aut?</p>
-          </div>
-          <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
-            <a target="_blank" href=""><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
-            <a target="_blank" href=""><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
           </div>
         </div>
       </div>
-
-      -->
-
-
-
     </div>
   </div>
-
-  
-
   <!--FIN-->
 
 
