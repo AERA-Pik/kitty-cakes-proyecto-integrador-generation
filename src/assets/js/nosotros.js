@@ -1,18 +1,54 @@
-//CartaUno
+//Funcion para mandar llamar mas de una función con el metodo ONLOAD
+//
+function addLoadEvent(func){
+    var oldonload = window.onload;
+    if (typeof window.onload != 'function')
+    {
+    window.onload = func;
+    }else{
+    window.onload = function(){
+    if (oldonload)
+    {
+    oldonload();
+    }
+    func();
+    }
+    }
+    }
+    addLoadEvent(function(){
+    ocultarUno();
+    ocultarDos();
+    ocultarCuatro();
+    ocultarCinco();
+    ocultarSeis();
+    ocultarSiete();
+    ocultarOcho();
+    });
+
+
+
+
+
+//Funcion para ocultar texto de 
 function ocultarUno(){
     let cartaUno = document.getElementById('ocultarTextUno')
     cartaUno.style.display = 'none'
 }
+
+//Funcion para mostrar texto
 function mostrarUno(){
     let cartaUno = document.getElementById('ocultarTextUno');
     cartaUno.style.display = 'block'
 }
+
+
 
 //CARTADOS
 
 function ocultarDos(){
     let cartaDos = document.getElementById('ocultarTextDos');
     cartaDos.style.display = 'none'
+    
 }
 function mostrarDos(){
     let cartaDos = document.getElementById('ocultarTextDos');
@@ -92,6 +128,8 @@ function mostrarOcho(){
     cartaOcho.style.display = 'block'
 
 }
+
+
 
 
 
