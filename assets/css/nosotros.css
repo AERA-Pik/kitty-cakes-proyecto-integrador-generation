@@ -1,19 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Baloo+Bhai+2&family=Be+Vietnam+Pro&family=Montserrat:ital,wght@1,300&family=Roboto+Slab&display=swap');
-
-
-body {
-    cursor: url('/src/assets/img/cursor_kitty.cur'), auto;
-}
 /*Centra el texto sobre la Imagen de banner */
 .txt_somos{
     background-color: var(--rosa-3);
     margin: 5% 10% 5px 10%;
     border-radius: 40px;
     padding-right: 50px;
-    padding-left: 50px;
-    
-    
-    
+    padding-left: 50px;  
 }
 
 .linea{
@@ -29,21 +20,11 @@ body {
     box-shadow: 5px 5px 20px rgba(202, 71, 71, 1);
     cursor: default;
     transition: all 400ms ease;
-
 }
 
 .header_banner{
     padding: 0 0 6% 0;
-
 }
-
-
-
-
-
-
-
-
 
 
 @media (max-width: 920PX) { /*Despues de este tamaño se le asigna que acomode sus elementos de una manera diferente*/
@@ -63,10 +44,8 @@ body {
         justify-content: center;
         color: var(--rosa-obscuro);
         font-size: 3rem;
-        
-        
-    
     }
+    
     .nosotros_header{
         position: absolute;
         top: 50%;
@@ -74,9 +53,8 @@ body {
         transform: translate(-50%, -50%);
         color: var(--rosa-obscuro);
         font-size: 5rem;
-        
-          
     }
+    
     .card{
         background-color: var(--rosa-2);
         border-radius: 40px;
@@ -84,12 +62,8 @@ body {
         cursor: default;
         transition: all 400ms ease;
         margin: 30px;
-        border: none;
-        
-    }
-    
-
-
+        border: none;        
+    }   
 }
 
 .img_gato{
@@ -99,17 +73,16 @@ body {
     align-content: center;
     /*margin-top: 10px;*/
 }
+
 .txt_pastelitos{
     width: 100%;
     height: 50px;
     margin-top: 40px;
     display: inline-flex;
     justify-content: center;
-    color: var(--rosa-obscuro);
-    
-    
-
+    color: var(--rosa-obscuro);    
 }
+
 .nosotros_header{
     position: absolute;
     top: 50%;
