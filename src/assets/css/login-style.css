@@ -1,3 +1,4 @@
+/* Fondo cupcake */
 .login-box{
   background-image: url(../img/registro/fondo-cupcakes.png);
   background-size: cover;
@@ -8,18 +9,32 @@
  
 }
 
-.boton-primario.registro,
+/* .boton-primario.registro,
 .boton-secundario.registro{
-width: 170px; /*130*/
+width: 170px; 
 }
 .errorlogin{
 text-align: center;
 font-size: 15px;
+} */
+
+/* Titulo de Bienvenida */
+h1{
+  font-size: 7vw;
 }
+
+/* Titulo de contacto */
+h2{
+color: black;
+}
+
+
+/* Bienvenida color */
 .title-login{
   color: var(--rosa-obscuro);
 }
 
+/* Contenido de formulario (color, alineación y diseño) */
 .card-logo{
 border-color:transparent;
 background-color: var(--rosa-3);
@@ -30,6 +45,54 @@ background-color: var(--rosa-3);
 border-radius: 10rem;
 align-items: center;
 }
+
+
+/*
+preloader de la pagina
+*/
+.hidden{
+  overflow:hidden;
+}   
+.centrado{
+  height: 100vh;
+  background-color: var(--rosa-3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Efecto de loader al cargar la página */
+.preloader {
+
+  margin: auto;
+  margin-top: 250px;
+  width: 150px;
+  height: 150px;
+  border: 10px solid #eee;
+  border-top: 10px solid var(--rosa-obscuro);
+  border-radius: 50%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  
+} 
+/* Efecto de giro para el borde  */
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* img{
+  margin: auto;
+  width: 150px;
+  } */
+
+/*Termina preloader*/ 
 
 /*VALIDACION*/
 /*cambia color de borde
@@ -84,12 +147,14 @@ font-size: 16px;
 left: 1.5rem;
 background-color: var(--rosa-3);
 }
-/*Efecto inputs*/
+/*Imputs*/
 /*---------------------------------------------------*/
+/* Forma de inputs y  su contenido*/
+
 .form-outline{
 position: relative;
 height: 4rem;
-width: 500px;
+width: 330px;
 background-color: var(--blanco-kitty);
 border-radius: 2rem;
 }
@@ -112,6 +177,7 @@ background: none;
 padding-top: 1.7rem;
 }
 
+/* Efectos de hover al dar click */
 .form-input:hover{
 border:2px solid var(--rosa-kitty);
 
@@ -120,6 +186,8 @@ border:2px solid var(--rosa-kitty);
 .form-input:focus{
 border: 2px solid var(--rosa-obscuro);
 }
+
+/* Posciion de titulos */
 .label-name{
 position: absolute;
 font-size: 14px;
@@ -134,7 +202,7 @@ left 200ms ease-in,
 font-size 200ms ease-in;
 background-color: var(--rosa-3);
 }
-
+/* Efecto zoom de letras al hacer click sobre el campo */
 .form-input:focus ~ .label-name, 
 .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .label-name{
 top: -3rem;
@@ -166,7 +234,7 @@ padding-top: 9px;
 }
 /*----------------------------------*/
 
-@media only screen and (max-width: 1230px)  {
+/* @media only screen and (max-width: 1230px)  {
 
 .container-registro{
   align-items: center;
@@ -176,9 +244,17 @@ padding-top: 9px;
   font-size: 90px;
 }
 
+} */
+
+
+@media (max-widht:480px){
+  form{
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 1050px)  {
+
+/* @media only screen and (max-width: 1050px)  {
 
 .container-registro{
   align-items: center;
@@ -201,11 +277,11 @@ padding-top: 9px;
 }
 
 }
-
-@media only screen and (max-width: 576px) {
+ */
+@media only screen and (max-width: 200px) {
 .title-login{
   color: var(--rosa-obscuro);
-  font-size: 45px;
+  font-size: 20px;
 }
 .subtitle-signup{
   font-size: 30px;

@@ -12,8 +12,24 @@
     <link rel="shortcut icon" href="assets/img/logos/logo-simplificado.png" type="image/x-icon">
     <title>Registro | Kitty Cakes</title>
 </head>
-<body>
-  <div  class="container-nav sticky-top">
+<body class="hidden">
+    <!--  LOADER DE PAGINA  -->
+    <div class="centrado" id="onload">
+      <div class="preloader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+
+    <!--  NAVBAR  -->
+    <div  class="container-nav sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="nav-link active d-none d-lg-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226"></a>
             <a class="nav-link active d-lg-none d-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-simplificado.png" alt="logo kitty" width="48"></a>
@@ -55,189 +71,188 @@
             </div>
         </nav>
     </div>
-
-
     
-<!--Sign Up-->
+    <!--  SIGN UP  -->
     <section class="container-registro">
       <div class="container py-5">
         <div class="row justify-content-center align-items-center">
-          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-            <h1 class="title-login text-center">BIENVENIDE</h1>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6"> <!--Responsivo de Ancho de tarjeta del FORM-->
+            <h1 class="title-login text-center">BIENVENIDO</h1>
             <div class="card shadow-2-strong card-registration" style="border-radius: 15px;">
               <div class="card-body">
-        <!--Formulario-->
-        <form action="" class="form p-2 p-sm-3 p-md-3 p-lg-3" id="form1" method="get">
-          <h2 class="subtitle-signup text-center">Regístrate</h2>
-          <!--LOGO KITTY CAKES-->
-          <div class="card mx-auto card-logo mb-5" style="width: 20rem;">
-            <img class="card-img-top" src="assets/img/logos/logo-simplificado.png" alt="Card image cap">
-          </div>
-          <!--NOMBRE Y APELLIDOS-->
-          <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5 pb-5"> <!--Parte Responsive-->
-                  <div class="form-outline">
-                    <input type="text" id="firstName" class="form-input" placeholder="Escribe tu nombre aquí"/>
-                    <label class="label-name" for="firstName">Nombre</label>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <p>Error Message</p>
+                <!--  Formulario  -->
+                <form action="" class="form p-2 p-sm-3 p-md-3 p-lg-3" id="form1" method="get">
+                  <h2 class="subtitle-signup text-center">Regístrate</h2>
+                  <!--LOGO KITTY CAKES-->
+                  <div class="card mx-auto card-logo mb-5" style="width: 20rem;">
+                    <img class="card-img-top" src="assets/img/logos/logo-simplificado.png" alt="Card image cap">
+                  </div>
+                  <!--NOMBRE Y APELLIDOS-->
+                  <div class="row">
+                        <!--NOMBRE-->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5 pb-5"> <!--Parte Responsive-->
+                          <div class="form-outline">
+                            <input type="text" id="firstName" class="form-input" placeholder="Escribe tu nombre aquí"/>
+                            <label class="label-name" for="firstName">Nombre</label>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p>Error Message</p>
+                          </div>   
+                        </div>
+                        <!--APELLIDOS-->
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5 pb-5"> <!--Parte Responsive-->
+                          <div class="form-outline">
+                            <input type="text" id="lastName" class="form-input" placeholder="Escribe tus apellidos aquí"/>
+                            <label class="label-name" for="lastName">Apellidos</label>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p>Error Message</p>
+                          </div>
+                        </div>
+                  </div>
+                  <!--TELÉFONO-->
+                  <div class="row mt-5 pb-5">
+                    <div class="col-md-12">
+                        <div class="form-outline">
+                          <input type="text" id="phoneNumber" class="form-input pb-3" placeholder="Ej. 5564748494" />
+                          <label class="label-name" for="phoneNumber">Teléfono</label>
+                          <i class="fas fa-check-circle"></i>
+                          <i class="fas fa-exclamation-circle"></i>
+                          <p>Error Message</p>
+                        </div>
+                    </div>
+                  </div>
+                  <!--CORREO-->
+                  <div class="row mt-5 pb-5">
+                    <div class="col-md-12">
+                        <div class="form-outline">
+                          <input type="email" id="email" class="form-input" placeholder="ejemplo@kittycakes.com" required/>
+                          <label class="label-name" for="email">Correo electrónico</label>
+                          <i class="fas fa-check-circle"></i>
+                          <i class="fas fa-exclamation-circle"></i>
+                          <p>Error Message</p>
+                        </div>
+                    </div>
+                  </div>
+                  <!--CONTRASEÑA Y CONFIRMAR-CONTRASEÑA-->
+                  <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5">
+                          <div class="form-outline">
+                            <input type="password" id="password-1" class="form-input" placeholder="******"/>
+                            <label class="label-name" for="password-1">Contraseña</label>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>                
+                            <div class="input-group-append">
+                                  <button id="show-password-1" class="btn-password mr-2" type="button">     
+                                    <span class="fa fa-eye-slash icon1"></span> 
+                                  </button>
+                            </div>
+                            <p class="pt-4">Error Message</p>   
+                          </div>
+                          <label class="form-password-label ml-2 mt-4" id="label-contra" for="form2Example3g">
+                                "De 6 a 12 caracteres, al menos 1 número, al menos 1 mayúscula, 
+                                al menos 1 carácter especial (/$@*#!%?&._-), sin espacios"
+                          </label>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5 mb-5">
+                          <div class="form-outline">
+                            <input type="password" id="password-2" class="form-input" placeholder="******"/>
+                            <label class="label-name" for="password-2">Confirmar contraseña</label>
+                            <div class="input-group-append">
+                                  <button id="show-password-2" class="btn-password mr-2" type="button">     
+                                    <span class="fa fa-eye-slash icon2"></span> 
+                                  </button>
+                            </div>
+                            <i class="fas fa-check-circle"></i>
+                            <i class="fas fa-exclamation-circle"></i>
+                            <p class="pt-4">Error Message</p>
+                          </div>
+                        </div>
+                  </div>
+                  <!-- TERMINOS Y CONDICIONES-->
+                  <div class="form-check mt-1">
+                      <input
+                          class="form-check-input"
+                          type="checkbox"
+                          required
+                          value=""
+                          id="form2Example3cg"
+                      />
+                      <label class="form-check-label ml-2" for="form2Example3g">
+                          He leído y acepto los <a href="terminos_condiciones.html" class="text-body"><u>Términos y condiciones</u></a>
+                      </label>
+                  </div>
+                  <!--SUBMIT FORM-->
+                  <div class="d-flex justify-content-center mt-1 pt-4">
+                    <button type="submit" class="boton-primario" id="registro">Regístrarse</button>
                   </div>   
-                </div>
-
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5 pb-5"> <!--Parte Responsive-->
-                  <div class="form-outline">
-                    <input type="text" id="lastName" class="form-input" placeholder="Escribe tus apellidos aquí"/>
-                    <label class="label-name" for="lastName">Apellidos</label>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <p>Error Message</p>
+                  <!-- IR A LOGIN-->
+                  <p class="text-center text-muted mt-5">¿Ya tienes una cuenta?</p>
+                  <div class="d-flex justify-content-center mt-2">
+                    <a href="login.html">
+                      <button type="button" class="boton-secundario">Iniciar sesión</button>
+                    </a>
                   </div>
-                </div>
-          </div>
-
-          <!--TELÉFONO-->
-          <div class="row mt-5 pb-5">
-            <div class="col-md-12">
-                <div class="form-outline">
-                  <input type="text" id="phoneNumber" class="form-input pb-3" placeholder="Ej. 5564748494" />
-                  <label class="label-name" for="phoneNumber">Teléfono</label>
-                  <i class="fas fa-check-circle"></i>
-                  <i class="fas fa-exclamation-circle"></i>
-                  <p>Error Message</p>
-                </div>
+                </form>
+              </div>
             </div>
           </div>
-          <!--CORREO-->
-          <div class="row mt-5 pb-5">
-            <div class="col-md-12">
-                <div class="form-outline">
-                  <input type="email" id="email" class="form-input" placeholder="ejemplo@kittycakes.com" required/>
-                  <label class="label-name" for="email">Correo electrónico</label>
-                  <i class="fas fa-check-circle"></i>
-                  <i class="fas fa-exclamation-circle"></i>
-                  <p>Error Message</p>
-                </div>
-            </div>
-          </div>
-          <!--CONTRASEÑA CONFIRMAR-CONTRASEÑA-->
-          <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5">
-                  <div class="form-outline">
-                    <input type="password" id="password-1" class="form-input" placeholder="******"/>
-                    <label class="label-name" for="password-1">Contraseña</label>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>                
-                    <div class="input-group-append">
-                          <button id="show-password-1" class="btn-password mr-2" type="button">     
-                            <span class="fa fa-eye-slash icon1"></span> 
-                          </button>
-                    </div>
-                    <p class="pt-4">Error Message</p>   
-                  </div>
-                  <label class="form-password-label ml-2 mt-4" id="label-contra" for="form2Example3g">
-                        "De 6 a 12 caracteres, al menos 1 número, al menos 1 mayúscula, 
-                        al menos 1 carácter especial (/$@*#!%?&._-), sin espacios"
-                  </label>
-                </div>
-                <div class="col-12 col-sm-12 col-md-12 col-lg-6 mt-5 mb-5">
-                  <div class="form-outline">
-                    <input type="password" id="password-2" class="form-input" placeholder="******"/>
-                    <label class="label-name" for="password-2">Confirmar contraseña</label>
-                    <div class="input-group-append">
-                          <button id="show-password-2" class="btn-password mr-2" type="button">     
-                            <span class="fa fa-eye-slash icon2"></span> 
-                          </button>
-                    </div>
-                    <i class="fas fa-check-circle"></i>
-                    <i class="fas fa-exclamation-circle"></i>
-                    <p class="pt-4">Error Message</p>
-                  </div>
-                </div>
-          </div>
-          <div class="form-check mt-1">
-              <input
-                  class="form-check-input"
-                  type="checkbox"
-                  required
-                  value=""
-                  id="form2Example3cg"
-              />
-              <label class="form-check-label ml-2" for="form2Example3g">
-                  He leído y acepto los <a href="terminos_condiciones.html" class="text-body"><u>Términos y condiciones</u></a>
-              </label>
-          </div>
-          <div class="d-flex justify-content-center mt-1 pt-4">
-            <button type="submit" class="boton-primario" id="registro">Regístrarse</button>
-          </div>   
-          <p class="text-center text-muted mt-5">¿Ya tienes una cuenta?</p>
-          <div class="d-flex justify-content-center mt-2">
-            <a href="login.html">
-              <button type="button" class="boton-secundario">Iniciar sesión</button>
-            </a>
-            
-          </div>
-        </form>
         </div>
       </div>
-    </div>
-  </div>
-</div>
-</section>
+    </section>
 
-
-<footer>
-  <div class="bg-image bg-image-movil">  
-      <div class="container">              
-        <div class="row">
-          <div class="d-flex secciones col-12 col-sm-12 col-md-12  col-lg-4">
-            <ul class="list-unstyled mx-auto texto-nav">
-                <li class="dropdown"><a href="nosotros.html">Nosotros
-                    </a></li>
-                <li class="dropdown"><a href="menu.html">Menú</a></li>
-                <li class="dropdown"><a href="tienda.html">Michi tienda</a></li>
-                <li class="dropdown"><a href="contacto.html">Contacto</a></li>
-            </ul> 
-          </div>
-          <div class="iconos col-12 col-sm-12 col-md-12 col-lg-4">
-            <div class="icono-kitty">
-                <a href="#top"><img src="assets/img/logos/logo-completo.png" alt=""></a>
-            </div>
-            <div class="redes-sociales">               
-                <a class="dropdown" href="https://www.facebook.com/KittyCakesPastelitos/?ref=pages_you_manage "><img class="icon-24" src="assets/img/iconos/facebook.png" alt="facebook_kitty_cakes">
-                </a>
-                <a href="https://www.instagram.com/kittycakespastelitos/"><img class="icon-24" src="assets/img/iconos/instagram.png" alt="instagram_kitty_cakes">
-                </a>
-                <a href="#"><img class="icon-24" src="assets/img/iconos/whatsapp.png" alt="whatsapp_kitty_cakes">
-                </a>
-            </div>
-            <p class="copyright">Kitty Cakes Pastelitos 2022</p>
-          </div>
-          <div class="d-flex dir-hora col-12 col-sm-12 col-md-12 col-lg-4">
-            <ul class="list-unstyled mx-auto">
-                <li class="direccion">                        
-                    <p><img class="icon-24" src="assets/img/iconos/geo-alt.png" alt="direccion_kitty_cakes">Narvarte Poniente, CDMX, C. P. 03600</p>
-                </li>
-                <li class="horarios">                        
-                    <p><img class="icon-24" src="assets/img/iconos/clock.png" alt="horarios_kitty_cakes">Horario: 9:00 - 17:00 horas</p>
-                </li>
-                
-            </ul>
-          </div>
-      </div>                   
-      </div>                
-  </div>
-</footer>
+    <footer>
+      <div class="bg-image bg-image-movil">  
+          <div class="container">              
+            <div class="row">
+              <div class="d-flex secciones col-12 col-sm-12 col-md-12  col-lg-4">
+                <ul class="list-unstyled mx-auto texto-nav">
+                    <li class="dropdown"><a href="nosotros.html">Nosotros
+                        </a></li>
+                    <li class="dropdown"><a href="menu.html">Menú</a></li>
+                    <li class="dropdown"><a href="tienda.html">Michi tienda</a></li>
+                    <li class="dropdown"><a href="contacto.html">Contacto</a></li>
+                </ul> 
+              </div>
+              <div class="iconos col-12 col-sm-12 col-md-12 col-lg-4">
+                <div class="icono-kitty">
+                    <a href="#top"><img src="assets/img/logos/logo-completo.png" alt=""></a>
+                </div>
+                <div class="redes-sociales">               
+                    <a class="dropdown" href="https://www.facebook.com/KittyCakesPastelitos/?ref=pages_you_manage "><img class="icon-24" src="assets/img/iconos/facebook.png" alt="facebook_kitty_cakes">
+                    </a>
+                    <a href="https://www.instagram.com/kittycakespastelitos/"><img class="icon-24" src="assets/img/iconos/instagram.png" alt="instagram_kitty_cakes">
+                    </a>
+                    <a href="#"><img class="icon-24" src="assets/img/iconos/whatsapp.png" alt="whatsapp_kitty_cakes">
+                    </a>
+                </div>
+                <p class="copyright">Kitty Cakes Pastelitos 2022</p>
+              </div>
+              <div class="d-flex dir-hora col-12 col-sm-12 col-md-12 col-lg-4">
+                <ul class="list-unstyled mx-auto">
+                    <li class="direccion">                        
+                        <p><img class="icon-24" src="assets/img/iconos/geo-alt.png" alt="direccion_kitty_cakes">Narvarte Poniente, CDMX, C. P. 03600</p>
+                    </li>
+                    <li class="horarios">                        
+                        <p><img class="icon-24" src="assets/img/iconos/clock.png" alt="horarios_kitty_cakes">Horario: 9:00 - 17:00 horas</p>
+                    </li>
+                </ul>
+              </div>
+            </div>                   
+          </div>                
+      </div>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="assets/js/registro_validar.js"></script>
+    <!--  LLAMAR A LIBRERIA DE SWEETALERT PARA POPUPS-->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     
-
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/loader.js"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

@@ -27,6 +27,11 @@ body{
     background-color: white;
 }
 
+/* Cursor de patita */
+body {
+    cursor: url('../img/cursor_kitty.cur'), auto;
+}
+
 /* borrar y poner en 0 el margen o el padding por defecto de bootstrap */
 .pad-0{
     padding: 0;
@@ -135,3 +140,44 @@ p {
     background-color: var(--blanco-kitty);
     border: 2px solid var(--rosa-obscuro);
 }
+
+/*
+preloader de la pagina
+*/
+.hidden{
+    overflow:hidden;
+  }   
+  .centrado{
+    height: 100vh;
+    background-color: var(--rosa-3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .preloader {
+  
+    margin: auto;
+    margin-top: 250px;
+    width: 150px;
+    height: 150px;
+    border: 10px solid #eee;
+    border-top: 10px solid var(--rosa-obscuro);
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+  } 
+  
+  @keyframes girar {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*Termina preloader*/ 
