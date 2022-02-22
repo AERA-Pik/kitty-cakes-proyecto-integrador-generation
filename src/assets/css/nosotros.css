@@ -7,6 +7,7 @@
     border-radius: 40px;
     padding-right: 50px;
     padding-left: 50px;
+    padding-left: 50px;  
 }
 .linea{
     width: 150px;
@@ -24,8 +25,7 @@
     padding: 0 0 6% 0;
 }
 /*Despues de este tamaño se le asigna que acomode sus elementos de una manera diferente*/
-@media (max-width: 920PX) { 
-    
+@media (max-width: 920PX) { /*Despues de este tamaño se le asigna que acomode sus elementos de una manera diferente*/
     .img_gato{
         /*width: 350px;*/
         height: 350px;
@@ -49,7 +49,9 @@
         transform: translate(-50%, -50%);
         color: var(--rosa-obscuro);
         font-size: 5rem;      
+        font-size: 5rem;
     }
+    
     .card{
         background-color: var(--rosa-2);
         border-radius: 40px;
@@ -58,9 +60,8 @@
         transition: all 400ms ease;
         margin: 30px;
         border: none;  
-    }
-}
-
+    }    
+    }   
 .img_gato{
     /*width: 350px;*/
     height: 350px;
@@ -75,6 +76,7 @@
     display: inline-flex;
     justify-content: center;
     color: var(--rosa-obscuro);
+    color: var(--rosa-obscuro);    
 }
 .nosotros_header{
     position: absolute;
