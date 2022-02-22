@@ -10,13 +10,11 @@
   <link rel="stylesheet" href="assets/css/nav-style.css">
   <link rel="stylesheet" href="assets/css/footer-style.css">
   <link rel="stylesheet" href="assets/css/nosotros.css">
-  <script src="assets/js/nosotros.js"></script>
   <link rel="shortcut icon" href="assets/img/logos/logo-simplificado.png" type="image/x-icon">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
   <title>Nosotros Kitty Cakes</title>
 </head>
-
 <body class="hidden">
   <div class="centrado" id="onload">
     <div class="preloader">
@@ -32,8 +30,8 @@
     </div>
   </div>
 
-  <div  class="container-nav sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light">
+  <div  class="container-nav sticky-top"><!--Contenedor Nav-->
+    <nav class="navbar navbar-expand-lg navbar-light"><!--Menu-->
         <a class="nav-link active d-none d-lg-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226"></a>
         <a class="nav-link active d-lg-none d-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-simplificado.png" alt="logo kitty" width="48"></a>
         <ul class="row ml-auto">
@@ -72,17 +70,17 @@
             </li>
           </ul>
         </div>
-    </nav>
-</div>
+    </nav><!--Cierre del menu-->
+</div><!--Cierre del Nav-->
 
-  <!--NOSOTROS-->
+  <!--Contenedor Banner-->
   <div class="col-12 col-lg-12 pb-5 pl-0 pr-0 header_banner">
     <img class="img-fluid img_header" src="assets/img/productos/header3.png" alt="">
     <h1 class="nosotros_header text-sm-center">NOSOTROS</h1>
-  </div>
-
+  </div><!--Cierre Banner-->
+  <!--Contenedor BodyCartas-->
   <div class="container-fluid">
-    <div class="row p-0">
+    <div class="row p-0"><!--Contenedor header del cuerpo-->
       <div class="col-12 col-lg-6 mt-5">
         <img class="img-fluid mx-auto img_gato" src="assets/img/LaChef-1-02.jpg" alt="header">
       </div>
@@ -91,9 +89,7 @@
           consectetur adipisicing elit. Non cumque fuga, totam, ea consequuntur consectetur doloribus ad soluta porro
           reiciendis iusto, atque nam eligendi veniam? Ab alias pariatur quaerat sapiente.</p>
       </div>
-    </div>
-
-
+    </div><!--Cierre del contenedor Header cuerpo-->
     <div class="img_pastelitos">
       <img src="assets/img/pastelitos-long.png" class="img-fluid pastelitos" alt="">
     </div>
@@ -101,8 +97,7 @@
       <h2 class="txt_kity_cakes txt_pastelitos ">Equipo Kitty Cakes</h2>
     </div>
 
-
-    <!--CARTAS-->
+    <!--Creacion de Cartas primera sección-->
     <div class="row mt-5">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
         <div class="card">
@@ -165,6 +160,32 @@
           <div class="linea"></div>
           <div class="card-body">
             <div class="d-flex justify-content-center">
+              <i onclick="ocultarTres()" class="fas fa-arrow-circle-up m-2 m-2"
+                style="font-size: 20px; cursor:pointer;"></i>
+              <i onclick="mostrarTres()" class="fas fa-arrow-circle-down m-2"
+                style="font-size: 20px; cursor:pointer"></i>
+            </div>
+            <p id="ocultarTextTres" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Culpa neque ea ipsam nam
+              aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat consequuntur
+              nihil, esse distinctio aut?</p>
+          </div>
+          <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
+            <a target="_blank" href="https://www.linkedin.com/in/victor-hernandez-hh2/"><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
+            <a target="_blank" href="https://github.com/VictorH2ernandez"><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
+          </div>
+        </div>
+      </div>
+      <!---->
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="card">
+          <img
+            src="assets/img/fotos-personales/Karla.png"
+            class="img-fluid card-img-top mt-4" alt="...">
+          <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Karla <br> León</p>
+          <div class="linea"></div>
+          <div class="card-body">
+            <div class="d-flex justify-content-center">
               <i onclick="ocultarCuatro()" class="fas fa-arrow-circle-up m-2 m-2"
                 style="font-size: 20px; cursor:pointer;"></i>
               <i onclick="mostrarCuatro()" class="fas fa-arrow-circle-down m-2"
@@ -176,19 +197,21 @@
               nihil, esse distinctio aut?</p>
           </div>
           <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
-            <a target="_blank" href="https://www.linkedin.com/in/victor-hernandez-hh2/"><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
-            <a target="_blank" href="https://github.com/VictorH2ernandez"><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
-
+            <a target="_blank" href="https://www.linkedin.com/in/karla-leon-r/"><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
+            <a target="_blank" href="https://github.com/KARLA-LEON"><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
           </div>
         </div>
       </div>
-      <!---->
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+    </div><!--Cierre de cartas primera seccion-->
+      
+    <!--Creación de cartas segunda seccion-->
+    <div class="row d-flex justify-content-center">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-5">
         <div class="card">
           <img
-            src="assets/img/fotos-personales/Karla.png"
+            src="assets/img/fotos-personales/Aaron.jpg"
             class="img-fluid card-img-top mt-4" alt="...">
-          <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Karla <br> León</p>
+          <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Aarón <br> Ramírez</p>
           <div class="linea"></div>
           <div class="card-body">
             <div class="d-flex justify-content-center">
@@ -203,22 +226,18 @@
               nihil, esse distinctio aut?</p>
           </div>
           <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
-            <a target="_blank" href="https://www.linkedin.com/in/karla-leon-r/"><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
-            <a target="_blank" href="https://github.com/KARLA-LEON"><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
+            <a target="_blank" href=""><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
+            <a target="_blank" href=""><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
           </div>
         </div>
       </div>
-    </div>
       <!---->
-      <!--ROW-->
-    <div class="row d-flex justify-content-center">
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-5">
         <div class="card">
-
           <img
-            src="assets/img/fotos-personales/Aaron.jpg"
+            src="assets/img/fotos-personales/Leti.jpg"
             class="img-fluid card-img-top mt-4" alt="...">
-          <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Aarón <br> Ramírez</p>
+          <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Leticia <br>Somera</p>
           <div class="linea"></div>
           <div class="card-body">
             <div class="d-flex justify-content-center">
@@ -233,45 +252,14 @@
               nihil, esse distinctio aut?</p>
           </div>
           <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
-            <a target="_blank" href=""><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
-            <a target="_blank" href=""><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
-
-          </div>
-        </div>
-      </div>
-      <!---->
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-5">
-        <div class="card">
-
-          <img
-            src="assets/img/fotos-personales/Leti.jpg"
-            class="img-fluid card-img-top mt-4" alt="...">
-          <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Leticia <br>Somera</p>
-          <div class="linea"></div>
-          <div class="card-body">
-            <div class="d-flex justify-content-center">
-              <i onclick="ocultarSiete()" class="fas fa-arrow-circle-up m-2 m-2"
-                style="font-size: 20px; cursor:pointer;"></i>
-              <i onclick="mostrarSiete()" class="fas fa-arrow-circle-down m-2"
-                style="font-size: 20px; cursor:pointer"></i>
-            </div>
-            <p id="ocultarTextSiete" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Culpa neque ea ipsam nam
-              aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat consequuntur
-              nihil, esse distinctio aut?</p>
-          </div>
-          <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
             <a target="_blank" href="https://www.linkedin.com/in/leticia-somera/"><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
             <a target="_blank" href="https://github.com/Leticia-Somera"><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
-
           </div>
         </div>
-
       </div>
       <!---->
       <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mb-5">
         <div class="card">
-
           <img
             src="assets/img/fotos-personales/Oscar.jpg"
             class="img-fluid card-img-top mt-4" alt="...">
@@ -279,12 +267,12 @@
           <div class="linea"></div>
           <div class="card-body">
             <div class="d-flex justify-content-center">
-              <i onclick="ocultarOcho()" class="fas fa-arrow-circle-up m-2 m-2"
+              <i onclick="ocultarSiete()" class="fas fa-arrow-circle-up m-2 m-2"
                 style="font-size: 20px; cursor:pointer;"></i>
-              <i onclick="mostrarOcho()" class="fas fa-arrow-circle-down m-2"
+              <i onclick="mostrarSiete()" class="fas fa-arrow-circle-down m-2"
                 style="font-size: 20px; cursor:pointer;"></i>
             </div>
-            <p id="ocultarTextOcho" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
+            <p id="ocultarTextSiete" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
               adipisicing elit. Culpa neque ea
               ipsam nam aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat
               consequuntur nihil, esse distinctio aut?</p>
@@ -297,58 +285,11 @@
         </div>
 
       </div>
-
-      <!--
-
-      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-        <div class="card">
-          <img
-            src="https://png.pngtree.com/png-vector/20191003/ourlarge/pngtree-cyber-man-icon-isolated-on-abstract-background-png-image_1779361.jpg"
-            class="img-fluid card-img-top mt-4" alt="...">
-          <p class="text-center mt-2 ml-5 mr-5 font-weight-bold">Luis <br> García</p>
-          <div class="linea"></div>
-          <div class="card-body">
-            <div class="d-flex justify-content-center">
-              <i onclick="ocultarTres()" class="fas fa-arrow-circle-up m-2 m-2"
-                style="font-size: 20px; cursor:pointer;"></i>
-              <i onclick="mostrarTres()" class="fas fa-arrow-circle-down m-2"
-                style="font-size: 20px; cursor:pointer"></i>
-            </div>
-            <p id="ocultarTextTres" class="text-justify mt-2 ml-4 mr-4">Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Culpa neque ea 
-              ipsam nam aspernatur aut veritatis, mollitia reiciendis, dolores porro in nemo ipsa! Doloribus placeat
-              consequuntur nihil, esse distinctio aut?</p>
-          </div>
-          <div class="d-flex justify-content-around p-2 rounded-pill ml-4 mr-4 mb-4 iconos_card">
-            <a target="_blank" href=""><img src="assets/img/iconos/linkedin.png" alt="" class="icon-32 img-fluid "></a>
-            <a target="_blank" href=""><img src="assets/img/iconos/Icon_git_Hub.png" alt="" class="icon-32 img-fluid"></a>
-          </div>
-        </div>
-      </div>
-
-      -->
-
-
-
-    </div>
-  </div>
-
-  
-
+    </div><!--Cierre de cartas segunda seccion-->
+  </div><!--Cierre de Contenedor BodyCartas-->
   <!--FIN-->
 
-
-
-
-
-
-
-
-
-
-
-
-
+  <!--Comienzo de footer-->
   <footer class="sticky-bottom">
     <div class="bg-image bg-image-movil">
       <div class="container">
@@ -388,13 +329,12 @@
                 <p><img class="icon-24" src="assets/img/iconos/clock.png" alt="horarios_kitty_cakes">Horario: 9:00 -
                   17:00 horas</p>
               </li>
-
             </ul>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+  </footer><!--Cierre de Footer-->
 
   <!-- Optional JavaScript; choose one of the two! -->
 
@@ -407,8 +347,9 @@
     crossorigin="anonymous"></script>
 <!-- Script loader -->
 
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="assets/js/loader.js"></script>
+<script async src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script async src="assets/js/nosotros.js"></script>
+<script defer src="assets/js/loader.js"></script>
 
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
