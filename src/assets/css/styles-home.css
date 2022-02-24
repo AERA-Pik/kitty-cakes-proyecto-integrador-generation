@@ -139,51 +139,40 @@
     background-color: red;
 } */
 
-/* =========SECCIÓN 3 CARRUSEL IMAGENES NOSOTROS============ */
 
- #nosotros-margen-carrusel{
-  /* margin-top: 10%;
-   margin-left: 15%;
-   margin-right: 15%;
-*/
-    margin-left: 22.5%;
+/* =====SECCIÓN 3 CARRUSEL INFERIOR ======== */
 
-} 
-
-.margen-logo-carrusel{
-    margin-bottom: 0;
-}
-
-.team-header{
+.carrusel-team {
+    padding-top: 2%;
     text-align: center;
-    font-size: 8vw;
-    margin-bottom: 0;
-    color: #32322E;
 }
 
-/* .last-btn-align{
-margin-top: 80%;
-} */
-
-.btn-font-nosotros{
-    color: white;
-    font-weight: bold;
-    font-size: 2.5vw;
-    background-color: #FA94A2;
-    border-width: thin;
-    border: none;
-    margin-top: 70%;
-    border-radius: 1rem;
+.carrusel-team-kitty {
+    padding-top: 2%;
+    padding-bottom: 0%;
 }
 
-.fixed-img-size{
-    margin-left: auto;
-    margin-right: auto;
+.carrusel-team-kitty img{
+    width: 30%;    
+}
+
+.carrusel-team-kitty a{
+    text-decoration: none;   
+}
+
+.carrusel-team-kitty h1{
+    color: var(--gris-kitty);
+    font-size: 8rem;    
+}
+
+.carrusel-team-img {
+    border-radius: 20%;
     width: 100%;
-    height: auto;
+    padding: 10%;
 }
 
-.nosotros-carrusel-size{
-    height: 55%;
-    width: 55%;
+.slider {    
+    padding: 0%;
+    width: 80%;
+    margin: 0% auto;
 }
