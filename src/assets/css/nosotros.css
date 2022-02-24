@@ -113,4 +113,21 @@
     border-radius: 40px;
     background-size: contain     
 }
+p{
+    color: var(--gris-kitty);
+    font-size: 1.5rem;}
 
+/*Estilos imagen KITTY CAKES */
+.logo-inicio-carrusel {
+    width: 30%;
+    margin-top: 2%;
+}
+/*Estilos H3 texto Team*/
+.carrusel-team {
+    text-align: center;
+  }
+
+.carrusel-team h1 {
+    color: var(--gris-kitty);
+    font-size: 8rem;
+  }
