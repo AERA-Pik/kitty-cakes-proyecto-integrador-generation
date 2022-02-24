@@ -6,7 +6,6 @@ const correo = document.getElementById('email');
 const mensaje = document.getElementById('message');
 
 /*crea callback method */
-/*$form.addEventListener('submit', (event)=>{*/
 $form.addEventListener('submit', handleSubmit)
 async function handleSubmit(event){
     event.preventDefault();
@@ -21,7 +20,7 @@ async function handleSubmit(event){
         }
     }) 
     
-     if(isFormValid()==true && response.ok){ //si formulario es valido muestra ventana de exito
+     if(isFormValid()==true && response.ok){ //formulario es valido y damos ok en ventana de exito
         
         //ventana emergente sweetalert2
         Swal.fire({
@@ -49,14 +48,10 @@ async function handleSubmit(event){
                     event.preventDefault();*/
                 } 
             })
-            
-
     }else {
         event.preventDefault();
     } 
 }
-
-/*});*/
 
 function isFormValid(){
     const inputContainers = $form.querySelectorAll('.form-outline');
