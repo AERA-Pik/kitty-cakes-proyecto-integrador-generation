@@ -29,7 +29,7 @@ body{
 
 /* Cursor de patita */
 body {
-    cursor: url('../img/cursor_kitty.cur'), auto;
+    cursor: url('../img/cursorKittyReducido.png'), auto;
 }
 
 /* borrar y poner en 0 el margen o el padding por defecto de bootstrap */
