@@ -100,7 +100,7 @@
 /*-------------------------------------------*/
 
 #pastel-menu-preview{
-    width: 50rem;
+    width: 60%;
     height: auto;
     clip-path: circle();
     display: block;
@@ -108,7 +108,7 @@
 }
 
 #articulos-preview{
-    width: 50rem;
+    width: 60%;
     height: auto;
     clip-path: circle();
     display: block;
