@@ -66,6 +66,17 @@
     border-radius: 1rem;
 }
 
+@media (min-width: 0px) {
+    .objects-hidden {
+      display: none;
+    }
+  }
+  @media (min-width: 750px) {
+    .objects-hidden {
+      display:flex;
+    }
+  }
+
 
 /* =====SECCIÓN 2 PREVIEW PRODUCTOS======== */
 .margen-inf-btn-orejas{
@@ -89,7 +100,7 @@
 /*-------------------------------------------*/
 
 #pastel-menu-preview{
-    width: 47%;
+    width: 50rem;
     height: auto;
     clip-path: circle();
     display: block;
@@ -97,7 +108,7 @@
 }
 
 #articulos-preview{
-    width: 68%;
+    width: 50rem;
     height: auto;
     clip-path: circle();
     display: block;
@@ -135,10 +146,6 @@
     text-align: center;
     font-size: 2vw;
 }
-/* .fondo-orejas{
-    background-color: red;
-} */
-
 
 /* =====SECCIÓN 3 CARRUSEL INFERIOR ======== */
 
