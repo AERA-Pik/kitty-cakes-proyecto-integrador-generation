@@ -27,7 +27,7 @@
     </div>
   </div>
 
-  <!-- Barra de navegación -->
+  <!-- ============== Barra de navegación ============== -->
     <div  class="container-nav sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="nav-link active d-none d-lg-inline" aria-current="page" href="index.html"><img src="assets/img/logos/logo-horizontal.png" alt="logo kitty" width="226"></a>
@@ -71,104 +71,32 @@
         </nav>
     </div>
 
-<!-- Banner del Menú de comestibles -->
+<!-- ============== Banner del Menú de comestibles ============== -->
     <section class="banner-menu col- col-sm-12 col-md-12 col-lg-12">
       <img src="assets/img/productos/header3.png" alt="" style="opacity: 0.5; max-width: 100%;">
       <h1 class="titulo-menu">MENÚ</h1>              
     </section>
 
-<!-- Catálogo de productos del Menú de comestibles -->
+<!-- ============== Catálogo de productos del Menú de comestibles ============== -->
     <section class="menu" >
       <div class="container-fluid">
-        <div class="row"> <!-- Todos los productos se encuentran en un mismo row -->
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
-            <div class="img-producto">
-              <img class="box img-fluid" src="assets/img/productos/abuelita1.png" alt=""> <!-- Imagen del producto -->
-              <img class="capa img-fluid" onclick="sweetalertclick1()" src="assets/img/filtro_producto.png" alt=""> <!-- Capa rosa para hover del producto -->
-            </div>     
-            <p class="nombre-producto">Cupcats de chocolate abuelita</p>            
-            <p class="precio">$ 20.00</p>  
-            <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button> <!-- Botón con popup de confirmación de que se agregó al carrito el producto -->
-          </div>
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
-            <div class="img-producto">
-              <img class="box img-fluid" src="assets/img/productos/cafe1.png" alt=""> 
-              <img class="capa img-fluid" onclick="sweetalertclick2()" src="assets/img/filtro_producto.png" alt="">
-            </div>     
-            <p class="nombre-producto">Cupcats de café</p>            
-            <p class="precio">$ 20.00</p>  
-            <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
-            <div class="img-producto">
-              <img class="box img-fluid" src="assets/img/productos/oreo1.png" alt=""> 
-              <img class="capa img-fluid" onclick="sweetalertclick3()" src="assets/img/filtro_producto.png" alt="">
-            </div>     
-            <p class="nombre-producto">Cupcats de oreo</p>            
-            <p class="precio">$ 20.00</p>  
-            <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
-            <div class="img-producto">
-              <img class="box img-fluid" src="assets/img/productos/devils_cat-1.png" alt=""> 
-              <img class="capa img-fluid" onclick="sweetalertclick4()" src="assets/img/filtro_producto.png" alt="">
-            </div>     
-            <p class="nombre-producto">Devil's Cat</p>            
-            <p class="precio">$ 280.00</p>  
-            <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
-            <div class="img-producto">
-              <img class="box img-fluid" src="assets/img/productos/catcake_rosa.png" alt=""> 
-              <img class="capa img-fluid" onclick="sweetalertclick5()" src="assets/img/filtro_producto.png" alt="">
-            </div>     
-            <p class="nombre-producto">Catcake</p>            
-            <p class="precio">$ 250.00</p>  
-            <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
-            <div class="img-producto">
-              <img class="box img-fluid" src="assets/img/productos/pastel_abuelita.png" alt=""> 
-              <img class="capa img-fluid" onclick="sweetalertclick6()" src="assets/img/filtro_producto.png" alt="">
-            </div>     
-            <p class="nombre-producto">Mokcat</p>            
-            <p class="precio">$ 250.00</p>  
-            <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
-            <div class="img-producto">
-              <img class="box img-fluid" src="assets/img/productos/unicornio.jpg" alt=""> 
-              <img class="capa img-fluid" onclick="sweetalertclick7()" src="assets/img/filtro_producto.png" alt="">
-            </div>     
-            <p class="nombre-producto">Pastel Unicornio</p>            
-            <p class="precio">$ 550.00</p>  
-            <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
-          <!-- =======AQUÍ ABAJITO AGREGUÉ EL ID PROMOS PARA REDIRECCIÓN DESDE CARRUSEL======= -->
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4" id="promos">  
-            <div class="img-producto">
-              <img class="box img-fluid" src="assets/img/productos/promo_cuchara.png" alt=""> 
-              <img class="capa img-fluid" onclick="sweetalertclick8()" src="assets/img/filtro_producto.png" alt="">
-            </div>     
-            <p class="nombre-producto">Promo Michi Cuchara</p>            
-            <p class="precio">GRATIS</p>  
-            <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
-            <div class="img-producto">
-              <img class="box img-fluid" src="assets/img/productos/promo_cupcakes.png" alt=""> 
-              <img class="capa img-fluid" onclick="sweetalertclick9()" src="assets/img/filtro_producto.png" alt="">
-            </div>     
-            <p class="nombre-producto">Promo Cupcats Clásicos</p>            
-            <p class="precio">$ 12.00</p>  
-            <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>         
-        </div>     
-      </div>
+        <div class="row" id="items"> <!-- Todos los productos se encuentran en un mismo row -->            
+          <template id="template-card">
+            <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
+              <div class="img-producto">
+                <img class="box img-fluid" src="assets/img/productos/abuelita1.png" alt=""> <!-- Imagen del producto -->
+                <img class="capa img-fluid" onclick="sweetalertclick1()" src="assets/img/filtro_producto.png" alt=""> <!-- Capa rosa para hover del producto -->
+              </div>     
+              <p class="nombre-producto">Cupcats de chocolate abuelita</p>            
+              <p class="pesos">$ <span class="precio"></span>.00</p>  
+              <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button> <!-- Botón con popup de confirmación de que se agregó al carrito el producto -->
+            </div>
+          </template>    
+        </div>      
+      </div>      
     </section>
 
-
-  <!-- Footer -->
+  <!-- ============== Footer ============== -->
     <footer>
       <div class="bg-image bg-image-movil">  
           <div class="container">              
@@ -204,7 +132,6 @@
                     <li class="horarios">                        
                         <p><img class="icon-24" src="assets/img/iconos/clock.png" alt="horarios_kitty_cakes">Horario: 9:00 - 17:00 horas</p>
                     </li>
-                    
                 </ul>
               </div>
           </div>                   
@@ -212,14 +139,25 @@
       </div>
   </footer>
 
-    
+    <!-- ============== Script de JS menú - carrito  ============== -->
+    <script src="assets/js/cartasMenu.js"></script>
+
+    <!-- ============== Scripts de Bootstrap  ============== -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>   
+    
+    <!-- ============== Script de popup sweetalert2  ============== -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- ============== Script de popups de productos  ============== -->
     <script src="assets/js/menu.js"></script>
-   <!-- Scripts de loader  -->
+
+   <!-- ============== Scripts de loader  ============== -->
    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
    <script src="assets/js/loader.js"></script>
+
+   
+   
 </body>
 </html>
