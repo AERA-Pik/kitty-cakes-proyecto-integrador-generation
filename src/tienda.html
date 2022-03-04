@@ -70,13 +70,33 @@
       <h1 class="titulo-tienda">MICHI TIENDA</h1>              
     </section>
 
-    <!-- === CARDS === -->
+    <!-- ============== Catálogo de productos de la Michi Tienda ============== -->
     <section class="tienda" >
       <div class="container-fluid">
         <!-- === Row que contiene las cardas === -->
-        <div class="row">
+        <div class="row" id="items"> 
+          <!-- === Template de productos === -->         
+          <template id="template-card">
+            <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
+              <div class="img-producto">
+                <img class="box img-fluid" src="assets/img/productos/destapador.jpg" alt=""> 
+                <img class="capa img-fluid" onclick="sweetalertclick10()" src="assets/img/filtro_producto.png" alt="Michi destapador">
+              </div>     
+              <p class="nombre-producto">Michi Destapado</p>            
+              <p class="pesos">$ <span class="precio"></span>.00</p>  
+              <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button> <!-- Botón con popup de confirmación de que se agregó al carrito el producto -->
+            </div>
+          </template>    
+        </div>      
+      </div>      
+    </section>
+
+    <!-- <section class="tienda" >
+      <div class="container-fluid"> -->
+        <!-- === Row que contiene las cardas === -->
+        <!-- <div class="row"> -->
           <!-- ===Destapador=== -->
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
+          <!-- <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">  
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/destapador.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick()" src="assets/img/filtro_producto.png" alt="Michi destapador">
@@ -84,9 +104,9 @@
             <p class="nombre-producto">Michi Destapador</p>            
             <p class="precio">$ 169.00</p>  
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
+          </div> -->
           <!-- ===Esoatula=== -->
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+          <!-- <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/espatula.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick2()" src="assets/img/filtro_producto.png" alt="Michi Espatula">
@@ -94,9 +114,9 @@
             <p class="nombre-producto">Michi Espátula Antiadherente</p>            
             <p class="precio">$ 179.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
+          </div> -->
           <!-- ===Guante=== -->
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">           
+          <!-- <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">           
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/guante.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick3()" src="assets/img/filtro_producto.png" alt="Michi Guante">
@@ -104,9 +124,9 @@
             <p class="nombre-producto">Michi Guante de Cocina</p>            
             <p class="precio">$ 169.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
-          <!-- ===claceta blanca=== -->
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+          </div> -->
+          <!-- ===calceta blanca=== -->
+          <!-- <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/calceta_m_clara.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick4()" src="assets/img/filtro_producto.png" alt="Michi Calcetas Blancas">
@@ -119,9 +139,9 @@
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/calceta_m_obscura.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick5()" src="assets/img/filtro_producto.png" alt="Michi Calcetas Obscuras">
-            </div>  
+            </div>   -->
             <!-- ===calceta obscura=== -->  
-            <p class="nombre-producto">Michi Calcetines Obscuros</p>            
+            <!-- <p class="nombre-producto">Michi Calcetines Obscuros</p>            
             <p class="precio">$ 65.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
           </div>
@@ -129,14 +149,14 @@
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/calceta_negra.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick6()" src="assets/img/filtro_producto.png" alt="Michi Calcetas Rayadas">
-            </div>
+            </div> -->
             <!-- ===calceta rayada=== -->    
-            <p class="nombre-producto">Michi Calcetines Rayados</p>            
+            <!-- <p class="nombre-producto">Michi Calcetines Rayados</p>            
             <p class="precio">$ 65.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
+          </div> -->
           <!-- ===pin calabaza=== -->
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+          <!-- <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/halloween_pin_1.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick7()" src="assets/img/filtro_producto.png" alt="Michi Pin Calabaza">
@@ -144,9 +164,9 @@
             <p class="nombre-producto">Michi Pin Calabaza</p>            
             <p class="precio">$ 55.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
+          </div> -->
           <!-- ===pin lunar=== -->
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+          <!-- <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/pin_michiLunar.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick8()" src="assets/img/filtro_producto.png" alt="Michi Pin Lunar">
@@ -154,9 +174,9 @@
             <p class="nombre-producto">Michi Pin Lunar</p>            
             <p class="precio">$ 55.00</p>
             <button class="boton-primario" onclick="sweetalertcarrito()">Agregar al carrito</button>
-          </div>
+          </div> -->
           <!-- ===pin astronauta=== -->
-          <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
+          <!-- <div class="producto col-12 col-sm-12 col-md-6 col-lg-4">
             <div class="img-producto">
               <img class="box img-fluid" src="assets/img/productos/pin_michiAstronauta.jpg" alt=""> 
               <img class="capa img-fluid" onclick="sweetalertclick9()" src="assets/img/filtro_producto.png" alt="Michi Pin Astronauta">
@@ -167,7 +187,7 @@
           </div>
         </div>     
       </div>
-    </section>
+    </section> -->
 
     <!-- ===Footer=== -->
     <footer>
@@ -212,12 +232,16 @@
           </div>                
       </div>
   </footer>
-  <!-- ===Bootstap=== -->
+
+    <!-- ============== Script de JS menú - carrito  ============== -->
+    <script src="assets/js/cartasTienda.js"></script>
+    <!-- ===Bootstap=== -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
     <!-- ===sweetAlert=== -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- ===js tienda=== -->
     <script src="assets/js/tienda.js"></script>
+
 </body>
 </html>

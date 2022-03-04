@@ -72,7 +72,14 @@
     padding-top: 1.8rem; 
 }
 
-.tienda .container-fluid p.precio { /* estilo del precio */
+.tienda .container-fluid span.precio { /* estilo del precio */
+    font-size: 1.8rem;
+    color: var(--rosa-kitty);
+    padding-bottom: 1rem; 
+} 
+
+.producto p.pesos {
+    
     font-size: 1.8rem;
     color: var(--rosa-kitty);
     padding-bottom: 1rem; 
