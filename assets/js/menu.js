@@ -17,7 +17,7 @@ function sweetalertclick1() {
 function sweetalertclick2() {
     Swal.fire({
         html: 
-        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/cafe1.png" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Cupcats de café</h5><p class="pop-texto">Rico pan de mantequilla con un toque de café y decorado con crema sabor a esta deliciosa bebida</p><p class="pop-precio">$ 20.00</p></div></div></div>',
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/oreo1.png" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Cupcats de oreo</h5><p class="pop-texto">Delicioso pan de chocolate con un toque de galleta oreo y decorado con buttercream con pizcas de galleta</p><p class="pop-precio">$ 20.00</p></div></div></div>',
         confirmButtonText: 'Regresar',
         confirmButtonColor: '#FA94A2',
         width: '50%',
@@ -32,14 +32,14 @@ function sweetalertclick2() {
 function sweetalertclick3() {
     Swal.fire({
         html: 
-        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/oreo1.png" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Cupcats de oreo</h5><p class="pop-texto">Delicioso pan de chocolate con un toque de galleta oreo y decorado con buttercream con pizcas de galleta</p><p class="pop-precio">$ 20.00</p></div></div></div>',
+        '<div class="row container-fluid"><div class="col-12 col-sm-12 col-md-12 col-lg-6"><img class="pop-image" src="assets/img/productos/cafe1.png" alt=""></div><div class="col-12 col-sm-12 col-md-12 col-lg-6"><div class="card-text"><h5 class="pop-titulo">Cupcats de café</h5><p class="pop-texto">Rico pan de mantequilla con un toque de café y decorado con crema sabor a esta deliciosa bebida</p><p class="pop-precio">$ 20.00</p></div></div></div>',
         confirmButtonText: 'Regresar',
         confirmButtonColor: '#FA94A2',
         width: '50%',
         padding: '1%',
         backdrop: 'rgb(239,187,187,0.7)',
         background: 'var(--blanco-kitty);',
-        customClass: 'swal-wide'
+        customClass: 'swal-wide'        
     })
 }
 

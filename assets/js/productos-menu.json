@@ -1,0 +1,83 @@
+[
+    {
+      "id_producto": 1,
+      "nombre_producto": "Cupcats de chocolate abuelita",
+      "descripcion_producto": "Suave pan de mantequilla con un toque de chocolate abuelita y decorado con buttercream del mismo sabor.",
+      "precio_producto": 20.0,
+      "imagen_producto": "https://raw.githubusercontent.com/AERA-Pik/kitty-cakes-proyecto-integrador-generation/main/src/assets/img/productos/abuelita1.png",
+      "cantidad_disponible": 15,
+      "tipo_producto": "m"
+    },
+    {
+      "id_producto": 2,
+      "nombre_producto": "Cupcats de oreo",
+      "descripcion_producto": "Delicioso pan de chocolate con un toque de galleta oreo y decorado con buttercream con pizcas de galleta.",
+      "precio_producto": 20.0,
+      "imagen_producto": "https://raw.githubusercontent.com/AERA-Pik/kitty-cakes-proyecto-integrador-generation/main/src/assets/img/productos/oreo1.png",
+      "cantidad_disponible": 18,
+      "tipo_producto": "m"
+    },
+    {
+      "id_producto": 3,
+      "nombre_producto": "Cupcats de caf\u00e9",
+      "descripcion_producto": "Rico pan de mantequilla con un toque de caf\u00e9 y decorado con crema sabor a esta deliciosa bebida.",
+      "precio_producto": 20.0,
+      "imagen_producto": "https://raw.githubusercontent.com/AERA-Pik/kitty-cakes-proyecto-integrador-generation/main/src/assets/img/productos/cafe1.png",
+      "cantidad_disponible": 19,
+      "tipo_producto": "m"
+    },
+    {
+      "id_producto": 4,
+      "nombre_producto": "Devil\u00b4s cat",
+      "descripcion_producto": "Irresistible pan de chocolate relleno de fudge y cubierto con ganache de chocolate (8 - 10 personas aprox.)",
+      "precio_producto": 280.0,
+      "imagen_producto": "https://raw.githubusercontent.com/AERA-Pik/kitty-cakes-proyecto-integrador-generation/main/src/assets/img/productos/devils_cat-1.png",
+      "cantidad_disponible": 2,
+      "tipo_producto": "m"
+    },
+    {
+      "id_producto": 5,
+      "nombre_producto": "Catcake",
+      "descripcion_producto": "Esponjoso pan de mantequilla relleno y decorado con exquisita crema batida (8 - 10 personas aprox.)",
+      "precio_producto": 250.0,
+      "imagen_producto": "https://raw.githubusercontent.com/AERA-Pik/kitty-cakes-proyecto-integrador-generation/main/src/assets/img/productos/catcake_rosa.png",
+      "cantidad_disponible": 1,
+      "tipo_producto": "m"
+    },
+    {
+      "id_producto": 6,
+      "nombre_producto": "Mokcat",
+      "descripcion_producto": "Pan de vainilla ba\u00f1ado en una combinaci\u00f3n de tres leches sabor moka (8 - 10 personas aprox.)",
+      "precio_producto": 250.0,
+      "imagen_producto": "https://raw.githubusercontent.com/AERA-Pik/kitty-cakes-proyecto-integrador-generation/main/src/assets/img/productos/pastel_abuelita.png",
+      "cantidad_disponible": 3,
+      "tipo_producto": "m"
+    },
+    {
+      "id_producto": 7,
+      "nombre_producto": "Pastel unicornio",
+      "descripcion_producto": "Pan de caf\u00e9 y mantequilla relleno con crema batida y decorado con deliciosa buttercream (20 personas aprox.)",
+      "precio_producto": 550.0,
+      "imagen_producto": "https://raw.githubusercontent.com/AERA-Pik/kitty-cakes-proyecto-integrador-generation/main/src/assets/img/productos/unicornio.jpg",
+      "cantidad_disponible": 1,
+      "tipo_producto": "m"
+    },
+    {
+      "id_producto": 8,
+      "nombre_producto": "Promo michi cuchara",
+      "descripcion_producto": "En la compra de alguno de nuestros michi pasteles ll\u00e9vate GRATIS una michi cuchara.",
+      "precio_producto": 0.0,
+      "imagen_producto": "https://raw.githubusercontent.com/AERA-Pik/kitty-cakes-proyecto-integrador-generation/main/src/assets/img/productos/promo_cuchara.png",
+      "cantidad_disponible": 25,
+      "tipo_producto": "m"
+    },
+    {
+      "id_producto": 9,
+      "nombre_producto": "Promo cupcats cl\u00e1sicos",
+      "descripcion_producto": "Cupcakes de chocolate y mantequilla decorados con crema batida, a s\u00f3lo $12.00 cada uno.",
+      "precio_producto": 12.0,
+      "imagen_producto": "https://raw.githubusercontent.com/AERA-Pik/kitty-cakes-proyecto-integrador-generation/main/src/assets/img/productos/promo_cupcakes.png",
+      "cantidad_disponible": 22,
+      "tipo_producto": "m"
+    }
+  ]

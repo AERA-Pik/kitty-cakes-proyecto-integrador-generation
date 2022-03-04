@@ -26,7 +26,7 @@
 }
 
 /* Alineación de cada uno de los productos del Menú de comestibles */
-.menu .container-fluid .row .producto{
+.producto {
     text-align: center;
     align-content: center;
     padding-right: 5%;
@@ -37,52 +37,59 @@
 }
 
 /* Estilos de las imágenes de cada uno de los productos */
-.menu .container-fluid .row .producto .img-producto img {
+.producto .img-producto img {
     filter: drop-shadow(0.4rem 0.4rem 0.6rem var(--rosa-2));
     border-radius: 40px;
     left: 0;   
 }
 
 /* Posición de las imágenes de cada uno de los productos para colocarlos debajo de la capa rosa */
-.menu .container-fluid .row .img-producto {
+.img-producto {
     position: relative;    
 }
 
 /* Estilos y posición de la capa rosa para el hover en los productos */
-.menu .container-fluid .row .img-producto img.capa {
+.img-producto img.capa {
     border-radius: 42px;
     position: absolute;
     top: 0; 
     opacity: 0;
     transition: opacity 0.3s;
-    cursor: url('../img/cursor_kitty.cur'), auto;
+    /* cursor: url('../img/cursor_kitty.cur'), auto; */
 }
 
 /* transición y posición de la capa rosa para el hover en los productos */
-.menu .container-fluid .row .img-producto img.capa > * {
+.img-producto img.capa > * {
     transform: translateY(20px);
     transition: transform 0.3s;
 }
 
 /* Estilos para el hover de la capa rosa en los productos */
-.menu .container-fluid .row .img-producto img.capa:hover{
+.img-producto img.capa:hover{
     opacity: 0.85; 
     transform: scale(1.01);    
 }
 
 /* Hover de la capa rosa en los productos */
-.menu .container-fluid .row .img-producto img.capa:hover > *{   
+.img-producto img.capa:hover > *{ 
     transition: transform 0.3s;
 }
 
 /* Estilos para el nombre de cada uno de los productos */
-.menu .container-fluid .row p.nombre-producto {    
+.producto p.nombre-producto {    
     font-size: 1.8rem;
     padding-top: 1.8rem; 
 }
 
 /* Estilos para el precio de cada uno de los productos */
-.menu .container-fluid p.precio {
+.producto span.precio {
+    font-size: 1.8rem;
+    color: var(--rosa-kitty);
+    padding-bottom: 1rem; 
+} 
+
+.producto p.pesos {
+    
     font-size: 1.8rem;
     color: var(--rosa-kitty);
     padding-bottom: 1rem; 
@@ -175,7 +182,7 @@
         transform: translate(-50%, -50%);
     }
 
-    .menu .container-fluid .row .producto {
+    .producto {
         padding-bottom: 20%;
     }
 
